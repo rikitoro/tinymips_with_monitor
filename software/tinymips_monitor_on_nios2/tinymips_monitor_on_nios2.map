@@ -1,0 +1,768 @@
+Archive member included to satisfy reference by file (symbol)
+
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+                              obj/default/src/peripheral_driver/uart.o (alt_getchar)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+                              ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o (alt_load)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+                              ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o (alt_main)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+                              obj/default/src/hello_world_small.o (alt_printf)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o) (alt_putchar)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+                              obj/default/src/hello_world_small.o (alt_putstr)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o) (altera_avalon_uart_read)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o) (altera_avalon_uart_write)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o) (alt_fd_list)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o) (alt_errno)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o) (errno)
+d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                              ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o) (strlen)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000008000 0x0000000000000020
+onchip_memory    0x0000000000008020 0x0000000000007fe0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/src/hello_world_small.o
+LOAD obj/default/src/memory_data.o
+LOAD obj/default/src/peripheral_driver/dmem.o
+LOAD obj/default/src/peripheral_driver/imem.o
+LOAD obj/default/src/peripheral_driver/ioport.o
+LOAD obj/default/src/peripheral_driver/prg_mode.o
+LOAD obj/default/src/peripheral_driver/rst.o
+LOAD obj/default/src/peripheral_driver/uart.o
+LOAD obj/default/src/utility/hexchar_int.o
+LOAD obj/default/src/utility/hexformat.o
+LOAD obj/default/src/utility/monitor_command.o
+LOAD d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+LOAD d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a
+START GROUP
+LOAD d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a
+LOAD ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a
+LOAD d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libm.a
+END GROUP
+LOAD d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/mno-hw-mul\libgcc.a
+                0x0000000000008000                __alt_mem_onchip_memory = 0x8000
+
+.entry          0x0000000000008000       0x20
+ *(.entry)
+ .entry         0x0000000000008000       0x20 ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+                0x0000000000008000                __reset
+                0x000000000000800c                _exit
+
+.exceptions     0x0000000000008020        0x0
+                0x0000000000008020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x0000000000008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                0x0000000000008020                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x0000000000008020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x0000000000008020     0x1338
+                0x0000000000008020                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000008020       0x3c ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+                0x0000000000008020                _start
+ .text          0x000000000000805c      0x260 obj/default/src/hello_world_small.o
+                0x000000000000805c                do_ASRS
+                0x000000000000807c                do_NGRS
+                0x000000000000809c                do_ASPM
+                0x00000000000080bc                do_NGPM
+                0x00000000000080dc                do_RDIM
+                0x0000000000008114                do_WRIM
+                0x0000000000008144                do_RDDM
+                0x000000000000817c                do_WRDM
+                0x00000000000081ac                do_STIP
+                0x00000000000081dc                do_GTOP
+                0x0000000000008214                pp_memory_data
+ .text.startup  0x00000000000082bc       0xf8 obj/default/src/hello_world_small.o
+                0x00000000000082bc                main
+ .text          0x00000000000083b4      0x548 obj/default/src/memory_data.o
+                0x00000000000083b4                write_memory_data_to_imem
+                0x0000000000008428                read_imem_for_memory_data
+                0x000000000000849c                write_memory_data_to_dmem
+                0x0000000000008510                read_dmem_for_memory_data
+                0x0000000000008584                write_memory_data_to_iport_data
+                0x000000000000858c                read_oport_data_for_memory_data
+                0x00000000000085c0                checksum_of_memory_data
+                0x000000000000863c                convert_hexformat_to_memory_data
+                0x00000000000086d0                convert_memory_data_to_hexformat
+ .text          0x00000000000088fc       0x90 obj/default/src/peripheral_driver/dmem.o
+                0x00000000000088fc                assert_dmem_we
+                0x000000000000890c                negate_dmem_we
+                0x0000000000008918                assert_dmem_clk
+                0x0000000000008928                negate_dmem_clk
+                0x0000000000008934                dmem_wd
+                0x0000000000008968                dmem_rd
+ .text          0x000000000000898c       0x8c obj/default/src/peripheral_driver/imem.o
+                0x000000000000898c                assert_imem_we
+                0x000000000000899c                negate_imem_we
+                0x00000000000089a8                assert_imem_clk
+                0x00000000000089b8                negate_imem_clk
+                0x00000000000089c4                imem_wd
+                0x00000000000089f4                imem_rd
+ .text          0x0000000000008a18       0x18 obj/default/src/peripheral_driver/ioport.o
+                0x0000000000008a18                iport_wd
+                0x0000000000008a24                oport_rd
+ .text          0x0000000000008a30       0x1c obj/default/src/peripheral_driver/prg_mode.o
+                0x0000000000008a30                assert_prg_mode
+                0x0000000000008a40                negate_prg_mode
+ .text          0x0000000000008a4c       0x1c obj/default/src/peripheral_driver/rst.o
+                0x0000000000008a4c                assert_rst
+                0x0000000000008a5c                negate_rst
+ .text          0x0000000000008a68       0x8c obj/default/src/peripheral_driver/uart.o
+                0x0000000000008a68                getchar
+                0x0000000000008a6c                getstr
+                0x0000000000008ae8                putstr
+                0x0000000000008aec                tx_str
+                0x0000000000008af0                rx_str
+ .text          0x0000000000008af4      0x15c obj/default/src/utility/hexchar_int.o
+                0x0000000000008af4                hexchar_to_int
+                0x0000000000008b20                hex2chars_to_int
+                0x0000000000008b94                hex4chars_to_int
+                0x0000000000008c2c                hex_nth_digit
+ .text          0x0000000000008c50      0x108 obj/default/src/utility/hexformat.o
+                0x0000000000008c50                bytecount_of_hexformat
+                0x0000000000008c60                address_of_hexformat
+                0x0000000000008c78                recordtype_of_hexformat
+                0x0000000000008c88                data_of_hexformat
+                0x0000000000008d1c                checksum_of_hexformat
+ .text          0x0000000000008d58      0x138 obj/default/src/utility/monitor_command.o
+                0x0000000000008d58                monitor_command
+                0x0000000000008e50                unique
+ .text          0x0000000000008e90       0x44 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+                0x0000000000008e90                alt_getchar
+ .text          0x0000000000008ed4       0xf8 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+                0x0000000000008ed4                alt_load
+ .text          0x0000000000008fcc       0x2c ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000008fcc                alt_main
+ .text          0x0000000000008ff8      0x16c ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+                0x0000000000008ff8                alt_printf
+ .text          0x0000000000009164       0x48 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+                0x0000000000009164                alt_putchar
+ .text          0x00000000000091ac       0x38 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+                0x00000000000091ac                alt_putstr
+ .text          0x00000000000091e4       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00000000000091e4                alt_irq_init
+                0x0000000000009204                alt_sys_init
+ .text          0x0000000000009208       0x8c ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                0x0000000000009208                altera_avalon_uart_read
+ .text          0x0000000000009294       0x90 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                0x0000000000009294                altera_avalon_uart_write
+ .text          0x0000000000009324        0x4 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000000009324                alt_dcache_flush_all
+ .text          0x0000000000009328        0x8 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x0000000000009330        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x0000000000009330        0x4 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000000009330                alt_icache_flush_all
+ .text          0x0000000000009334        0x8 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000009334                altera_nios2_gen2_irq_init
+ .text          0x000000000000933c        0x0 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .text          0x000000000000933c        0x0 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x000000000000933c       0x1c d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x000000000000933c                strlen
+ *(.gnu.warning.*)
+ *(.fini)
+                0x0000000000009358                PROVIDE (__etext, ABSOLUTE (.))
+                0x0000000000009358                PROVIDE (_etext, ABSOLUTE (.))
+                0x0000000000009358                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x0000000000009358                . = ALIGN (0x4)
+                0x0000000000009358                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x0000000000009358                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x0000000000009358                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x0000000000009358                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x0000000000009358                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x0000000000009358                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x0000000000009358                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x0000000000009358                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x0000000000009358                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x0000000000009358                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x0000000000009358                . = ALIGN (0x4)
+
+.rodata         0x0000000000009358       0xd0
+                0x0000000000009358                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x0000000000009358                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x0000000000009358       0x9a obj/default/src/hello_world_small.o
+                                         0xa0 (size before relaxing)
+ .rodata        0x00000000000093f2       0x27 obj/default/src/utility/hexchar_int.o
+ *fill*         0x0000000000009419        0x3 
+ .rodata.str1.4
+                0x000000000000941c        0xc ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x0000000000009428                . = ALIGN (0x4)
+                0x0000000000009428                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x0000000000009358                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x0000000000009428       0x78 load address 0x00000000000094a0
+                0x0000000000009428                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0000000000009428                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000000009428        0x0 obj/default/src/hello_world_small.o
+ .data          0x0000000000009428        0x0 obj/default/src/memory_data.o
+ .data          0x0000000000009428        0x0 obj/default/src/peripheral_driver/dmem.o
+ .data          0x0000000000009428        0x0 obj/default/src/peripheral_driver/imem.o
+ .data          0x0000000000009428        0x0 obj/default/src/peripheral_driver/ioport.o
+ .data          0x0000000000009428        0x0 obj/default/src/peripheral_driver/prg_mode.o
+ .data          0x0000000000009428        0x0 obj/default/src/peripheral_driver/rst.o
+ .data          0x0000000000009428        0x0 obj/default/src/peripheral_driver/uart.o
+ .data          0x0000000000009428        0x0 obj/default/src/utility/hexchar_int.o
+ .data          0x0000000000009428        0x0 obj/default/src/utility/hexformat.o
+ .data          0x0000000000009428        0x0 obj/default/src/utility/monitor_command.o
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .data          0x0000000000009428        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0000000000009428       0x58 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000009428                alt_fd_list
+                0x0000000000009458                alt_dev_null
+ .data          0x0000000000009480        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x0000000000009480        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000009480        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x0000000000009480        0x0 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .data          0x0000000000009480        0x0 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x0000000000011480                _gp = ABSOLUTE ((. + 0x8000))
+                0x0000000000011480                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0000000000009480        0x8 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000009480                uart
+                0x0000000000009484                jtag_uart_0
+ .sdata         0x0000000000009488       0x14 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000009488                alt_max_fd
+                0x000000000000948c                alt_dev_list
+                0x0000000000009494                alt_fs_list
+ .sdata         0x000000000000949c        0x4 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+                0x000000000000949c                alt_errno
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00000000000094a0                . = ALIGN (0x4)
+                0x00000000000094a0                _edata = ABSOLUTE (.)
+                0x00000000000094a0                PROVIDE (edata, ABSOLUTE (.))
+                0x00000000000094a0                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00000000000094a0                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0000000000009518       0x10
+                0x0000000000009518                __bss_start = ABSOLUTE (.)
+                0x0000000000009518                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x0000000000009518                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000000000009518        0xc ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000009518                alt_envp
+                0x000000000000951c                alt_argv
+                0x0000000000009520                alt_argc
+ .sbss          0x0000000000009524        0x4 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                0x0000000000009524                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x0000000000009528                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x0000000000009528                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000000000009528        0x0 obj/default/src/hello_world_small.o
+ .bss           0x0000000000009528        0x0 obj/default/src/memory_data.o
+ .bss           0x0000000000009528        0x0 obj/default/src/peripheral_driver/dmem.o
+ .bss           0x0000000000009528        0x0 obj/default/src/peripheral_driver/imem.o
+ .bss           0x0000000000009528        0x0 obj/default/src/peripheral_driver/ioport.o
+ .bss           0x0000000000009528        0x0 obj/default/src/peripheral_driver/prg_mode.o
+ .bss           0x0000000000009528        0x0 obj/default/src/peripheral_driver/rst.o
+ .bss           0x0000000000009528        0x0 obj/default/src/peripheral_driver/uart.o
+ .bss           0x0000000000009528        0x0 obj/default/src/utility/hexchar_int.o
+ .bss           0x0000000000009528        0x0 obj/default/src/utility/hexformat.o
+ .bss           0x0000000000009528        0x0 obj/default/src/utility/monitor_command.o
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000000000009528        0x0 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x0000000000009528        0x0 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x0000000000009528        0x0 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ *(COMMON)
+                0x0000000000009528                . = ALIGN (0x4)
+                0x0000000000009528                __bss_end = ABSOLUTE (.)
+
+.onchip_memory  0x0000000000009528        0x0
+                0x0000000000009528                PROVIDE (_alt_partition_onchip_memory_start, ABSOLUTE (.))
+ *(.onchip_memory .onchip_memory. onchip_memory.*)
+                0x0000000000009528                . = ALIGN (0x4)
+                0x0000000000009528                PROVIDE (_alt_partition_onchip_memory_end, ABSOLUTE (.))
+                0x0000000000009528                _end = ABSOLUTE (.)
+                0x0000000000009528                end = ABSOLUTE (.)
+                0x0000000000009528                __alt_stack_base = ABSOLUTE (.)
+                0x0000000000009528                PROVIDE (_alt_partition_onchip_memory_load_addr, LOADADDR (.onchip_memory))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x23
+ *(.comment)
+ .comment       0x0000000000000000       0x23 obj/default/src/hello_world_small.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 obj/default/src/memory_data.o
+ .comment       0x0000000000000000       0x24 obj/default/src/peripheral_driver/dmem.o
+ .comment       0x0000000000000000       0x24 obj/default/src/peripheral_driver/imem.o
+ .comment       0x0000000000000000       0x24 obj/default/src/peripheral_driver/ioport.o
+ .comment       0x0000000000000000       0x24 obj/default/src/peripheral_driver/prg_mode.o
+ .comment       0x0000000000000000       0x24 obj/default/src/peripheral_driver/rst.o
+ .comment       0x0000000000000000       0x24 obj/default/src/peripheral_driver/uart.o
+ .comment       0x0000000000000000       0x24 obj/default/src/utility/hexchar_int.o
+ .comment       0x0000000000000000       0x24 obj/default/src/utility/hexformat.o
+ .comment       0x0000000000000000       0x24 obj/default/src/utility/monitor_command.o
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x0000000000000000       0x24 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x0000000000000000       0x24 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x0000000000000000       0x24 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x380
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x28 obj/default/src/hello_world_small.o
+ .debug_aranges
+                0x0000000000000050       0x20 obj/default/src/memory_data.o
+ .debug_aranges
+                0x0000000000000070       0x20 obj/default/src/peripheral_driver/dmem.o
+ .debug_aranges
+                0x0000000000000090       0x20 obj/default/src/peripheral_driver/imem.o
+ .debug_aranges
+                0x00000000000000b0       0x20 obj/default/src/peripheral_driver/ioport.o
+ .debug_aranges
+                0x00000000000000d0       0x20 obj/default/src/peripheral_driver/prg_mode.o
+ .debug_aranges
+                0x00000000000000f0       0x20 obj/default/src/peripheral_driver/rst.o
+ .debug_aranges
+                0x0000000000000110       0x20 obj/default/src/peripheral_driver/uart.o
+ .debug_aranges
+                0x0000000000000130       0x20 obj/default/src/utility/hexchar_int.o
+ .debug_aranges
+                0x0000000000000150       0x20 obj/default/src/utility/hexformat.o
+ .debug_aranges
+                0x0000000000000170       0x20 obj/default/src/utility/monitor_command.o
+ .debug_aranges
+                0x0000000000000190       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_aranges
+                0x00000000000001b0       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000000000001d0       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000000000001f0       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_aranges
+                0x0000000000000210       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_aranges
+                0x0000000000000230       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_aranges
+                0x0000000000000250       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x0000000000000270       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_aranges
+                0x0000000000000290       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_aranges
+                0x00000000000002b0       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000000000002d0       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000000000002f0       0x18 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x0000000000000308       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x0000000000000328       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x0000000000000348       0x18 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x0000000000000360       0x20 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x3348
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x95 ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000000000000095      0x822 obj/default/src/hello_world_small.o
+ .debug_info    0x00000000000008b7      0x691 obj/default/src/memory_data.o
+ .debug_info    0x0000000000000f48      0x17b obj/default/src/peripheral_driver/dmem.o
+ .debug_info    0x00000000000010c3      0x17b obj/default/src/peripheral_driver/imem.o
+ .debug_info    0x000000000000123e       0xa8 obj/default/src/peripheral_driver/ioport.o
+ .debug_info    0x00000000000012e6       0x8b obj/default/src/peripheral_driver/prg_mode.o
+ .debug_info    0x0000000000001371       0x8b obj/default/src/peripheral_driver/rst.o
+ .debug_info    0x00000000000013fc      0x1e0 obj/default/src/peripheral_driver/uart.o
+ .debug_info    0x00000000000015dc      0x1e6 obj/default/src/utility/hexchar_int.o
+ .debug_info    0x00000000000017c2      0x229 obj/default/src/utility/hexformat.o
+ .debug_info    0x00000000000019eb      0x1d5 obj/default/src/utility/monitor_command.o
+ .debug_info    0x0000000000001bc0      0x33b ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_info    0x0000000000001efb      0x1ba ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00000000000020b5      0x17b ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000000000002230      0x153 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_info    0x0000000000002383      0x138 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_info    0x00000000000024bb      0x15d ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_info    0x0000000000002618      0x1af ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000000000027c7      0x1ab ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_info    0x0000000000002972      0x1bf ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_info    0x0000000000002b31       0x8b ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x0000000000002bbc      0x492 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x000000000000304e       0x9f ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x00000000000030ed       0x8b ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000000000003178       0x8b ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x0000000000003203       0x83 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x0000000000003286       0xc2 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_abbrev   0x0000000000000000     0x1517
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012      0x1b1 obj/default/src/hello_world_small.o
+ .debug_abbrev  0x00000000000001c3      0x1a1 obj/default/src/memory_data.o
+ .debug_abbrev  0x0000000000000364       0xb7 obj/default/src/peripheral_driver/dmem.o
+ .debug_abbrev  0x000000000000041b       0xb7 obj/default/src/peripheral_driver/imem.o
+ .debug_abbrev  0x00000000000004d2       0x78 obj/default/src/peripheral_driver/ioport.o
+ .debug_abbrev  0x000000000000054a       0x42 obj/default/src/peripheral_driver/prg_mode.o
+ .debug_abbrev  0x000000000000058c       0x42 obj/default/src/peripheral_driver/rst.o
+ .debug_abbrev  0x00000000000005ce      0x15a obj/default/src/peripheral_driver/uart.o
+ .debug_abbrev  0x0000000000000728       0xea obj/default/src/utility/hexchar_int.o
+ .debug_abbrev  0x0000000000000812       0xf3 obj/default/src/utility/hexformat.o
+ .debug_abbrev  0x0000000000000905       0xe8 obj/default/src/utility/monitor_command.o
+ .debug_abbrev  0x00000000000009ed      0x11f ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_abbrev  0x0000000000000b0c       0xd8 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000000000000be4      0x120 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000000000000d04       0xde ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_abbrev  0x0000000000000de2       0xd4 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_abbrev  0x0000000000000eb6       0xe2 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_abbrev  0x0000000000000f98      0x107 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x000000000000109f       0xe1 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_abbrev  0x0000000000001180       0xe8 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_abbrev  0x0000000000001268       0x42 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000000000012aa       0xd9 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000000000001383       0x5a ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x00000000000013dd       0x42 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x000000000000141f       0x42 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x0000000000001461       0x37 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x0000000000001498       0x7f d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_line     0x0000000000000000     0x1434
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x66 ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x0000000000000066      0x178 obj/default/src/hello_world_small.o
+ .debug_line    0x00000000000001de      0x1c3 obj/default/src/memory_data.o
+ .debug_line    0x00000000000003a1       0xa2 obj/default/src/peripheral_driver/dmem.o
+ .debug_line    0x0000000000000443       0xa2 obj/default/src/peripheral_driver/imem.o
+ .debug_line    0x00000000000004e5       0x8a obj/default/src/peripheral_driver/ioport.o
+ .debug_line    0x000000000000056f       0x8c obj/default/src/peripheral_driver/prg_mode.o
+ .debug_line    0x00000000000005fb       0x87 obj/default/src/peripheral_driver/rst.o
+ .debug_line    0x0000000000000682       0xb2 obj/default/src/peripheral_driver/uart.o
+ .debug_line    0x0000000000000734       0x93 obj/default/src/utility/hexchar_int.o
+ .debug_line    0x00000000000007c7       0x80 obj/default/src/utility/hexformat.o
+ .debug_line    0x0000000000000847       0x86 obj/default/src/utility/monitor_command.o
+ .debug_line    0x00000000000008cd       0xb7 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_line    0x0000000000000984       0xa6 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000000a2a       0xbd ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000000ae7      0x10d ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_line    0x0000000000000bf4       0x55 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_line    0x0000000000000c49       0xff ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_line    0x0000000000000d48      0x119 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000000e61       0xfc ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_line    0x0000000000000f5d       0xec ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_line    0x0000000000001049       0x4e ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000001097       0xf3 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x000000000000118a       0x51 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00000000000011db       0x4e ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x0000000000001229       0x50 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x0000000000001279       0x5f d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x00000000000012d8      0x15c d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_frame    0x0000000000000000      0x88c
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x170 obj/default/src/hello_world_small.o
+ .debug_frame   0x0000000000000170      0x170 obj/default/src/memory_data.o
+ .debug_frame   0x00000000000002e0       0x70 obj/default/src/peripheral_driver/dmem.o
+ .debug_frame   0x0000000000000350       0x70 obj/default/src/peripheral_driver/imem.o
+ .debug_frame   0x00000000000003c0       0x30 obj/default/src/peripheral_driver/ioport.o
+ .debug_frame   0x00000000000003f0       0x30 obj/default/src/peripheral_driver/prg_mode.o
+ .debug_frame   0x0000000000000420       0x30 obj/default/src/peripheral_driver/rst.o
+ .debug_frame   0x0000000000000450       0x84 obj/default/src/peripheral_driver/uart.o
+ .debug_frame   0x00000000000004d4       0x80 obj/default/src/utility/hexchar_int.o
+ .debug_frame   0x0000000000000554       0x90 obj/default/src/utility/hexformat.o
+ .debug_frame   0x00000000000005e4       0x30 obj/default/src/utility/monitor_command.o
+ .debug_frame   0x0000000000000614       0x2c ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_frame   0x0000000000000640       0x30 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000000000000670       0x2c ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000000000000069c       0x54 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_frame   0x00000000000006f0       0x30 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_frame   0x0000000000000720       0x30 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_frame   0x0000000000000750       0x3c ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000000000000078c       0x2c ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_frame   0x00000000000007b8       0x34 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_frame   0x00000000000007ec       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x000000000000080c       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x000000000000082c       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x000000000000084c       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x000000000000086c       0x20 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_str      0x0000000000000000      0xf22
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x3a8 obj/default/src/hello_world_small.o
+                                        0x3bf (size before relaxing)
+ .debug_str     0x00000000000003a8       0xe2 obj/default/src/memory_data.o
+                                        0x2c0 (size before relaxing)
+ .debug_str     0x000000000000048a       0xb7 obj/default/src/peripheral_driver/dmem.o
+                                        0x188 (size before relaxing)
+ .debug_str     0x0000000000000541       0x5b obj/default/src/peripheral_driver/imem.o
+                                        0x188 (size before relaxing)
+ .debug_str     0x000000000000059c       0x1f obj/default/src/peripheral_driver/ioport.o
+                                        0x149 (size before relaxing)
+ .debug_str     0x00000000000005bb       0x21 obj/default/src/peripheral_driver/prg_mode.o
+                                        0x154 (size before relaxing)
+ .debug_str     0x00000000000005dc       0x1c obj/default/src/peripheral_driver/rst.o
+                                        0x145 (size before relaxing)
+ .debug_str     0x00000000000005f8       0x36 obj/default/src/peripheral_driver/uart.o
+                                         0xf8 (size before relaxing)
+ .debug_str     0x000000000000062e       0x6b obj/default/src/utility/hexchar_int.o
+                                        0x11d (size before relaxing)
+ .debug_str     0x0000000000000699       0x35 obj/default/src/utility/hexformat.o
+                                        0x147 (size before relaxing)
+ .debug_str     0x00000000000006ce       0x25 obj/default/src/utility/monitor_command.o
+                                        0x1fe (size before relaxing)
+ .debug_str     0x00000000000006f3      0x13e ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_getchar.o)
+                                        0x231 (size before relaxing)
+ .debug_str     0x0000000000000831      0x11b ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+                                        0x246 (size before relaxing)
+ .debug_str     0x000000000000094c       0x5e ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x1bf (size before relaxing)
+ .debug_str     0x00000000000009aa       0x53 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+                                        0x11c (size before relaxing)
+ .debug_str     0x00000000000009fd       0x2f ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+                                        0x186 (size before relaxing)
+ .debug_str     0x0000000000000a2c       0x23 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+                                        0x192 (size before relaxing)
+ .debug_str     0x0000000000000a4f       0xcb ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x269 (size before relaxing)
+ .debug_str     0x0000000000000b1a       0x4b ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                                        0x20b (size before relaxing)
+ .debug_str     0x0000000000000b65       0x27 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                                        0x213 (size before relaxing)
+ .debug_str     0x0000000000000b8c       0x1f ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x15f (size before relaxing)
+ .debug_str     0x0000000000000bab      0x120 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_dev.o)
+                                        0x30f (size before relaxing)
+ .debug_str     0x0000000000000ccb       0x14 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_errno.o)
+                                        0x14f (size before relaxing)
+ .debug_str     0x0000000000000cdf       0x1f ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x15f (size before relaxing)
+ .debug_str     0x0000000000000cfe       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x166 (size before relaxing)
+ .debug_str     0x0000000000000d1e      0x132 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                                        0x1ca (size before relaxing)
+ .debug_str     0x0000000000000e50       0xd2 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                                        0x1d7 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0xf61
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x111 obj/default/src/hello_world_small.o
+ .debug_loc     0x0000000000000111      0x411 obj/default/src/memory_data.o
+ .debug_loc     0x0000000000000522       0x21 obj/default/src/peripheral_driver/dmem.o
+ .debug_loc     0x0000000000000543       0x21 obj/default/src/peripheral_driver/imem.o
+ .debug_loc     0x0000000000000564       0xea obj/default/src/peripheral_driver/uart.o
+ .debug_loc     0x000000000000064e      0x247 obj/default/src/utility/hexchar_int.o
+ .debug_loc     0x0000000000000895      0x19f obj/default/src/utility/hexformat.o
+ .debug_loc     0x0000000000000a34       0x63 obj/default/src/utility/monitor_command.o
+ .debug_loc     0x0000000000000a97      0x1c6 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_loc     0x0000000000000c5d       0x2c ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putchar.o)
+ .debug_loc     0x0000000000000c89       0x37 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_loc     0x0000000000000cc0       0x21 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x0000000000000ce1      0x106 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_loc     0x0000000000000de7      0x15c ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_loc     0x0000000000000f43       0x1e d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x10
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x10 ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+                0x0000000000010000                __alt_data_end = 0x10000
+                0x0000000000010000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x0000000000009528                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x0000000000009528                PROVIDE (__alt_heap_start, end)
+                0x0000000000010000                PROVIDE (__alt_heap_limit, 0x10000)
+OUTPUT(tinymips_monitor_on_nios2.elf elf32-littlenios2)
+
+.debug_ranges   0x0000000000000000       0xc8
+ .debug_ranges  0x0000000000000000       0x20 ../tinymips_monitor_on_nios2_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0x18 obj/default/src/hello_world_small.o
+ .debug_ranges  0x0000000000000038       0x48 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x0000000000000080       0x18 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(alt_printf.o)
+ .debug_ranges  0x0000000000000098       0x20 ../tinymips_monitor_on_nios2_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_ranges  0x00000000000000b8       0x10 d:/altera_lite/15.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4.9.2/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)

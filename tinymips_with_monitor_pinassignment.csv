@@ -1,0 +1,67 @@
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+
+# Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+# File: D:\yoshiaki\devel\quartus_workspace\tinymips_with_monitor\tinymips_with_monitor_pinassignment.csv
+# Generated on: Thu Aug 04 19:19:20 2016
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Transceiver Analog Settings Protocol,VCCR_GXB/VCCT_GXB Voltage,Transceiver I/O Pin Termination,Transceiver Dedicated Refclk Pin Termination,Transmitter Common Mode Driver Voltage,Transmitter Slew Rate Control,Transmitter Differential Output Voltage,Receiver Buffer Common Mode Voltage,Strict Preservation
+clk0,Output,PIN_W19,4A,B4A_N0,,,,,,,,,,,,,,
+clk1,Output,PIN_T14,4A,B4A_N0,,,,,,,,,,,,,,
+clk2,Output,PIN_P14,4A,B4A_N0,,,,,,,,,,,,,,
+clk3,Output,PIN_C1,2A,B2A_N0,,,,,,,,,,,,,,
+clk_src,Input,PIN_M7,3A,B3A_N0,,,,,,,,,,,,,,
+dbg_hex0[0],Output,PIN_U21,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex0[1],Output,PIN_V21,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex0[2],Output,PIN_W22,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex0[3],Output,PIN_W21,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex0[4],Output,PIN_Y22,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex0[5],Output,PIN_Y21,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex0[6],Output,PIN_AA22,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex1[0],Output,PIN_AA20,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex1[1],Output,PIN_AB20,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex1[2],Output,PIN_AA19,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex1[3],Output,PIN_AA18,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex1[4],Output,PIN_AB18,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex1[5],Output,PIN_AA17,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex1[6],Output,PIN_U22,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex2[0],Output,PIN_Y19,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex2[1],Output,PIN_AB17,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex2[2],Output,PIN_AA10,3B,B3B_N0,,,,,,,,,,,,,,
+dbg_hex2[3],Output,PIN_Y14,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex2[4],Output,PIN_V14,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex2[5],Output,PIN_AB22,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex2[6],Output,PIN_AB21,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex3[0],Output,PIN_Y16,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex3[1],Output,PIN_W16,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex3[2],Output,PIN_Y17,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex3[3],Output,PIN_V16,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex3[4],Output,PIN_U17,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex3[5],Output,PIN_V18,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_hex3[6],Output,PIN_V19,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_ra[0],Input,PIN_AA15,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_ra[1],Input,PIN_AB15,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_ra[2],Input,PIN_AA14,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_ra[3],Input,PIN_AA13,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_ra[4],Input,PIN_AB13,4A,B4A_N0,,,,,,,,,,,,,,
+dbg_sw,Input,PIN_AB12,4A,B4A_N0,,,,,,,,,,,,,,
+hl_sw,Input,PIN_M6,3A,B3A_N0,,,,,,,,,,,,,,
+nonitor_clk,Input,PIN_M9,3B,B3B_N0,,,,,,,,,,,,,,
+nonitor_rst_n,Input,PIN_U7,3A,B3A_N0,,,,,,,,,,,,,,
+rst_n,Input,PIN_W9,3A,B3A_N0,,,,,,,,,,,,,,
+uart_rxd,Input,PIN_T20,5A,B5A_N0,,,,,,,,,,,,,,
+uart_txd,Output,PIN_T18,5A,B5A_N0,,,,,,,,,,,,,,

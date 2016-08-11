@@ -1,0 +1,23 @@
+	component monitor is
+		port (
+			clk_clk            : in  std_logic                     := 'X';             -- clk
+			dmem_addr_export   : out std_logic_vector(31 downto 0);                    -- export
+			dmem_clk_export    : out std_logic;                                        -- export
+			dmem_rd_export     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			dmem_wd_export     : out std_logic_vector(31 downto 0);                    -- export
+			dmem_we_export     : out std_logic;                                        -- export
+			imem_addr_export   : out std_logic_vector(31 downto 0);                    -- export
+			imem_clk_export    : out std_logic;                                        -- export
+			imem_rd_export     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			imem_wd_export     : out std_logic_vector(31 downto 0);                    -- export
+			imem_we_export     : out std_logic;                                        -- export
+			iport3_data_export : out std_logic_vector(31 downto 0);                    -- export
+			oport3_data_export : in  std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			prg_mode_export    : out std_logic;                                        -- export
+			reset_reset_n      : in  std_logic                     := 'X';             -- reset_n
+			rst_export         : out std_logic;                                        -- export
+			uart_rxd           : in  std_logic                     := 'X';             -- rxd
+			uart_txd           : out std_logic                                         -- txd
+		);
+	end component monitor;
+
