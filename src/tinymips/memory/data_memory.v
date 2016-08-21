@@ -28,11 +28,13 @@ module data_memory(
   input wire  [31:0]  iport3  
   );
 
+  /*
   wire internal_clk;
   wire internal_we;
   wire [31:0] internal_addr;
   wire [31:0] internal_wd;
   wire [31:0] internal_rd;
+  */
   
   wire          dataram_we;
   wire  [7:0]   ioport_we;
@@ -51,6 +53,7 @@ module data_memory(
   wire  [31:0]  io7_rd;
   wire  [31:0]  io_rd;
   
+  /*
   assign internal_clk   = (prg_mode == 1'b0) ? clk    : prg_clk;
   assign internal_we    = (prg_mode == 1'b0) ? we     : prg_we;
   assign internal_addr  = (prg_mode == 1'b0) ? addr   : prg_addr;
@@ -58,11 +61,12 @@ module data_memory(
   
   assign rd             = (prg_mode == 1'b0) ? internal_rd : 32'b0;
   assign prg_rd         = (prg_mode == 1'b0) ? 32'b0       : internal_rd;
+  */
   
   // *** address decoder for memory mapped io *** //
   address_decoder address_decoder(
-    .we             (internal_we),
-    .addr           (internal_addr),
+    .we             (we),
+    .addr           (addr),
     //
     .dataram_we     (dataram_we),
     .ioport_we      (ioport_we),
@@ -76,7 +80,7 @@ module data_memory(
     .s(rd_sel),
     .d0(dataram_rd),
     .d1(io_rd),
-    .y(internal_rd)
+    .y(rd)
     );
     
   // select which ioport
@@ -94,77 +98,84 @@ module data_memory(
     );
     
   // *** data ram *** //
-  ram dataram(
-    .clk  (internal_clk),
-    .we   (dataram_we),
-    .addr (internal_addr),
-    .rd   (dataram_rd),
-    .wd   (internal_wd)
-    );
+  dualport_ram data_ram(
+    // data ram
+    .clock_a    (clk),
+    .wren_a     (we),
+    .address_a  (addr[12:2]),
+    .data_a     (wd),
+    .q_a        (dataram_rd),
+    // <-> monitor server
+    .clock_b    (prg_clk),
+    .wren_b     (prg_we),
+    .address_b  (prg_addr[12:2]),
+    .data_b     (prg_wd),
+    .q_b        (prg_rd));
+    
     
   // *** output devices *** //  
   output_device output_device0(
-    .clk    (internal_clk),
+    .clk    (clk),
     .we     (ioport_we[0]),
-    .wd     (internal_wd),
+    .wd     (wd),
     .rd     (io0_rd),
     .oport  (oport0)
   );
 
   output_device output_device1(
-    .clk    (internal_clk),
+    .clk    (clk),
     .we     (ioport_we[1]),
-    .wd     (internal_wd),
+    .wd     (wd),
     .rd     (io1_rd),
     .oport  (oport1)
   );
   
   output_device output_device2(
-    .clk    (internal_clk),
+    .clk    (clk),
     .we     (ioport_we[2]),
-    .wd     (internal_wd),
+    .wd     (wd),
     .rd     (io2_rd),
     .oport  (oport2)
   );
 
   output_device output_device3(
-    .clk    (internal_clk),
+    .clk    (clk),
     .we     (ioport_we[3]),
-    .wd     (internal_wd),
+    .wd     (wd),
     .rd     (io3_rd),
     .oport  (oport3)
   );
 
   // *** input devices *** //
   input_device input_device0(
-    .clk    (internal_clk),
+    .clk    (clk),
     .we     (ioport_we[4]),
-    .wd     (internal_wd),
+    .wd     (wd),
     .rd     (io4_rd),
     .iport  (iport0)
   );
 
 
   input_device input_device1(
-    .clk    (internal_clk),
+    .clk    (clk),
     .we     (ioport_we[5]),
-    .wd     (internal_wd),
+    .wd     (wd),
     .rd     (io5_rd),
     .iport  (iport1)
   );
 
   input_device input_device2(
-    .clk    (internal_clk),
+    .clk    (clk),
     .we     (ioport_we[6]),
-    .wd     (internal_wd),
+    .wd     (wd),
     .rd     (io6_rd),
     .iport  (iport2)
   );
 
   input_device input_device3(
-    .clk    (internal_clk),
+    .clk    (clk),
     .we     (ioport_we[7]),
-    .wd     (internal_wd),
+    .wd     (wd),
     .rd     (io7_rd),
     .iport  (iport3)
   );

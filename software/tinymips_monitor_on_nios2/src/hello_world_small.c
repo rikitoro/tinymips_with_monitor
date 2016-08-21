@@ -89,6 +89,8 @@
 // data
 #include "memory_data.h"
 
+const char* EOF = ":00000001FF\r\n";
+
 ///
 void do_ASRS();
 void do_NGRS();

@@ -48,6 +48,6 @@ module worddata_display(
   hexdata_display u3(.hexdata(halfword[15:12]), .hex(hex3));
   hexdata_display u2(.hexdata(halfword[11:8]),  .hex(hex2));
   hexdata_display u1(.hexdata(halfword[7:4]),   .hex(hex1));
-  hexdata_display u0(.hexdata(halfword[5:0]),   .hex(hex0));
+  hexdata_display u0(.hexdata(halfword[3:0]),   .hex(hex0));
 
 endmodule

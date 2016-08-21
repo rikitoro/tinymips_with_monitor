@@ -168,4 +168,5 @@ set_global_assignment -name VERILOG_FILE src/tinymips/datapath/alu.v
 set_global_assignment -name VERILOG_FILE src/tinymips/datapath/adder.v
 set_global_assignment -name VERILOG_FILE src/de0interface/worddata_display.v
 set_global_assignment -name QSYS_FILE src/monitor_qsys/monitor.qsys
+set_global_assignment -name QIP_FILE src/tinymips/memory/dualport_ram.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
