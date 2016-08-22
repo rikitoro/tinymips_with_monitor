@@ -1,5 +1,5 @@
 Assembler report for top
-Sun Aug 21 21:55:31 2016
+Mon Aug 22 15:44:39 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -12,7 +12,8 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
   6. Assembler Device Options: D:/yoshiaki/devel/quartus_workspace/tinymips_with_monitor/output_files/top.sof
-  7. Assembler Messages
+  7. Assembler Device Options: D:/yoshiaki/devel/quartus_workspace/tinymips_with_monitor/output_files/top.pof
+  8. Assembler Messages
 
 
 
@@ -39,7 +40,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Aug 21 21:55:31 2016 ;
+; Assembler Status      ; Successful - Mon Aug 22 15:44:39 2016 ;
 ; Revision Name         ; top                                   ;
 ; Top-level Entity Name ; top                                   ;
 ; Family                ; Cyclone V                             ;
@@ -70,6 +71,7 @@ agreement for further details.
 ; File Name                                                                      ;
 +--------------------------------------------------------------------------------+
 ; D:/yoshiaki/devel/quartus_workspace/tinymips_with_monitor/output_files/top.sof ;
+; D:/yoshiaki/devel/quartus_workspace/tinymips_with_monitor/output_files/top.pof ;
 +--------------------------------------------------------------------------------+
 
 
@@ -79,9 +81,21 @@ agreement for further details.
 ; Option         ; Setting                                                                                 ;
 +----------------+-----------------------------------------------------------------------------------------+
 ; Device         ; 5CEBA4F23C7                                                                             ;
-; JTAG usercode  ; 0x01358996                                                                              ;
-; Checksum       ; 0x01358996                                                                              ;
+; JTAG usercode  ; 0x012ECB70                                                                              ;
+; Checksum       ; 0x012ECB70                                                                              ;
 +----------------+-----------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/yoshiaki/devel/quartus_workspace/tinymips_with_monitor/output_files/top.pof ;
++--------------------+-------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                             ;
++--------------------+-------------------------------------------------------------------------------------+
+; Device             ; EPCS64                                                                              ;
+; JTAG usercode      ; 0x00000000                                                                          ;
+; Checksum           ; 0x7357168E                                                                          ;
+; Compression Ratio  ; 2                                                                                   ;
++--------------------+-------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -90,13 +104,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Sun Aug 21 21:55:12 2016
+    Info: Processing started: Mon Aug 22 15:44:15 2016
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off tinymips_with_monitor -c top
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 908 megabytes
-    Info: Processing ended: Sun Aug 21 21:55:32 2016
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 899 megabytes
+    Info: Processing ended: Mon Aug 22 15:44:40 2016
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:23
 
 

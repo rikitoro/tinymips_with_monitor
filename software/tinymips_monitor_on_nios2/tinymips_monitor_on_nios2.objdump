@@ -9,84 +9,84 @@ Program Header:
     LOAD off    0x00001000 vaddr 0x00008000 paddr 0x00008000 align 2**12
          filesz 0x00000020 memsz 0x00000020 flags r-x
     LOAD off    0x00001020 vaddr 0x00008020 paddr 0x00008020 align 2**12
-         filesz 0x00001408 memsz 0x00001408 flags r-x
-    LOAD off    0x00002428 vaddr 0x00009428 paddr 0x000094a4 align 2**12
+         filesz 0x000013a8 memsz 0x000013a8 flags r-x
+    LOAD off    0x000023c8 vaddr 0x000093c8 paddr 0x00009444 align 2**12
          filesz 0x0000007c memsz 0x0000007c flags rw-
-    LOAD off    0x00002520 vaddr 0x00009520 paddr 0x00009520 align 2**12
+    LOAD off    0x000024c0 vaddr 0x000094c0 paddr 0x000094c0 align 2**12
          filesz 0x00000000 memsz 0x00000010 flags rw-
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
   0 .entry        00000020  00008000  00008000  00001000  2**5
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .exceptions   00000000  00008020  00008020  000024a4  2**0
+  1 .exceptions   00000000  00008020  00008020  00002444  2**0
                   CONTENTS
-  2 .text         00001338  00008020  00008020  00001020  2**2
+  2 .text         0000131c  00008020  00008020  00001020  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  3 .rodata       000000d0  00009358  00009358  00002358  2**2
+  3 .rodata       0000008c  0000933c  0000933c  0000233c  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  4 .rwdata       0000007c  00009428  000094a4  00002428  2**2
+  4 .rwdata       0000007c  000093c8  00009444  000023c8  2**2
                   CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
-  5 .bss          00000010  00009520  00009520  00002520  2**2
+  5 .bss          00000010  000094c0  000094c0  000024c0  2**2
                   ALLOC, SMALL_DATA
-  6 .onchip_memory 00000000  00009530  00009530  000024a4  2**0
+  6 .onchip_memory 00000000  000094d0  000094d0  00002444  2**0
                   CONTENTS
-  7 .comment      00000023  00000000  00000000  000024a4  2**0
+  7 .comment      00000023  00000000  00000000  00002444  2**0
                   CONTENTS, READONLY
-  8 .debug_aranges 00000380  00000000  00000000  000024c8  2**3
+  8 .debug_aranges 00000380  00000000  00000000  00002468  2**3
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_info   00003359  00000000  00000000  00002848  2**0
+  9 .debug_info   00003308  00000000  00000000  000027e8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_abbrev 00001528  00000000  00000000  00005ba1  2**0
+ 10 .debug_abbrev 00001526  00000000  00000000  00005af0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_line   00001434  00000000  00000000  000070c9  2**0
+ 11 .debug_line   0000142e  00000000  00000000  00007016  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_frame  0000088c  00000000  00000000  00008500  2**2
+ 12 .debug_frame  0000088c  00000000  00000000  00008444  2**2
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_str    00000f22  00000000  00000000  00008d8c  2**0
+ 13 .debug_str    00000f22  00000000  00000000  00008cd0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_loc    00000f61  00000000  00000000  00009cae  2**0
+ 14 .debug_loc    00000f61  00000000  00000000  00009bf2  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_alt_sim_info 00000010  00000000  00000000  0000ac10  2**2
+ 15 .debug_alt_sim_info 00000010  00000000  00000000  0000ab54  2**2
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_ranges 000000c8  00000000  00000000  0000ac20  2**3
+ 16 .debug_ranges 000000c8  00000000  00000000  0000ab68  2**3
                   CONTENTS, READONLY, DEBUGGING
- 17 .thread_model 00000003  00000000  00000000  0000c550  2**0
+ 17 .thread_model 00000003  00000000  00000000  0000c498  2**0
                   CONTENTS, READONLY
- 18 .cpu          0000000f  00000000  00000000  0000c553  2**0
+ 18 .cpu          0000000f  00000000  00000000  0000c49b  2**0
                   CONTENTS, READONLY
- 19 .qsys         00000001  00000000  00000000  0000c562  2**0
+ 19 .qsys         00000001  00000000  00000000  0000c4aa  2**0
                   CONTENTS, READONLY
- 20 .simulation_enabled 00000001  00000000  00000000  0000c563  2**0
+ 20 .simulation_enabled 00000001  00000000  00000000  0000c4ab  2**0
                   CONTENTS, READONLY
- 21 .sysid_hash   00000004  00000000  00000000  0000c564  2**0
+ 21 .sysid_hash   00000004  00000000  00000000  0000c4ac  2**0
                   CONTENTS, READONLY
- 22 .sysid_base   00000004  00000000  00000000  0000c568  2**0
+ 22 .sysid_base   00000004  00000000  00000000  0000c4b0  2**0
                   CONTENTS, READONLY
- 23 .sysid_time   00000004  00000000  00000000  0000c56c  2**0
+ 23 .sysid_time   00000004  00000000  00000000  0000c4b4  2**0
                   CONTENTS, READONLY
- 24 .stderr_dev   0000000b  00000000  00000000  0000c570  2**0
+ 24 .stderr_dev   0000000b  00000000  00000000  0000c4b8  2**0
                   CONTENTS, READONLY
- 25 .stdin_dev    00000004  00000000  00000000  0000c57b  2**0
+ 25 .stdin_dev    00000004  00000000  00000000  0000c4c3  2**0
                   CONTENTS, READONLY
- 26 .stdout_dev   00000004  00000000  00000000  0000c57f  2**0
+ 26 .stdout_dev   00000004  00000000  00000000  0000c4c7  2**0
                   CONTENTS, READONLY
- 27 .sopc_system_name 00000007  00000000  00000000  0000c583  2**0
+ 27 .sopc_system_name 00000007  00000000  00000000  0000c4cb  2**0
                   CONTENTS, READONLY
- 28 .quartus_project_dir 00000039  00000000  00000000  0000c58a  2**0
+ 28 .quartus_project_dir 00000039  00000000  00000000  0000c4d2  2**0
                   CONTENTS, READONLY
- 29 .jdi          00004323  00000000  00000000  0000c5c3  2**0
+ 29 .jdi          00004323  00000000  00000000  0000c50b  2**0
                   CONTENTS, READONLY
- 30 .sopcinfo     0008a9b9  00000000  00000000  000108e6  2**0
+ 30 .sopcinfo     0008a9b9  00000000  00000000  0001082e  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 00008000 l    d  .entry	00000000 .entry
 00008020 l    d  .exceptions	00000000 .exceptions
 00008020 l    d  .text	00000000 .text
-00009358 l    d  .rodata	00000000 .rodata
-00009428 l    d  .rwdata	00000000 .rwdata
-00009520 l    d  .bss	00000000 .bss
-00009530 l    d  .onchip_memory	00000000 .onchip_memory
+0000933c l    d  .rodata	00000000 .rodata
+000093c8 l    d  .rwdata	00000000 .rwdata
+000094c0 l    d  .bss	00000000 .bss
+000094d0 l    d  .onchip_memory	00000000 .onchip_memory
 00000000 l    d  .comment	00000000 .comment
 00000000 l    d  .debug_aranges	00000000 .debug_aranges
 00000000 l    d  .debug_info	00000000 .debug_info
@@ -108,8 +108,8 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 rst.c
 00000000 l    df *ABS*	00000000 uart.c
 00000000 l    df *ABS*	00000000 hexchar_int.c
-00009402 l     O .rodata	00000017 CSWTCH.1
-000093f2 l     O .rodata	00000010 CSWTCH.5
+000093a2 l     O .rodata	00000017 CSWTCH.1
+00009392 l     O .rodata	00000010 CSWTCH.5
 00000000 l    df *ABS*	00000000 hexformat.c
 00000000 l    df *ABS*	00000000 monitor_command.c
 00000000 l    df *ABS*	00000000 alt_getchar.c
@@ -123,117 +123,117 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 altera_avalon_uart_write.c
 00000000 l    df *ABS*	00000000 alt_dcache_flush_all.c
 00000000 l    df *ABS*	00000000 alt_dev.c
-00009328 l     F .text	00000008 alt_dev_null_write
+0000930c l     F .text	00000008 alt_dev_null_write
 00000000 l    df *ABS*	00000000 alt_errno.c
 00000000 l    df *ABS*	00000000 alt_icache_flush_all.c
 00000000 l    df *ABS*	00000000 altera_nios2_gen2_irq.c
 00000000 l    df *ABS*	00000000 int_errno.c
 00000000 l    df *ABS*	00000000 strlen.c
 000081ac g     F .text	00000030 do_STIP
-00008fcc g     F .text	0000002c alt_main
-0000890c g     F .text	0000000c negate_dmem_we
-000094a4 g       *ABS*	00000000 __flash_rwdata_start
-000089c4 g     F .text	00000030 imem_wd
-00008a6c g     F .text	0000007c getstr
-00008a24 g     F .text	0000000c oport_rd
-00008b20 g     F .text	00000074 hex2chars_to_int
-0000863c g     F .text	00000094 convert_hexformat_to_memory_data
-00009480 g     O .rwdata	00000004 EOF
-000091ac g     F .text	00000038 alt_putstr
-00009334 g     F .text	00000008 altera_nios2_gen2_irq_init
+00008fb0 g     F .text	0000002c alt_main
+000088f0 g     F .text	0000000c negate_dmem_we
+00009444 g       *ABS*	00000000 __flash_rwdata_start
+000089a8 g     F .text	00000030 imem_wd
+00008a50 g     F .text	0000007c getstr
+00008a08 g     F .text	0000000c oport_rd
+00008b04 g     F .text	00000074 hex2chars_to_int
+00008620 g     F .text	00000094 convert_hexformat_to_memory_data
+00009420 g     O .rwdata	00000004 EOF
+00009190 g     F .text	00000038 alt_putstr
+00009318 g     F .text	00000008 altera_nios2_gen2_irq_init
 00000000  w      *UND*	00000000 __errno
-00008918 g     F .text	00000010 assert_dmem_clk
-00008c60 g     F .text	00000018 address_of_hexformat
-00008c50 g     F .text	00000010 bytecount_of_hexformat
+000088fc g     F .text	00000010 assert_dmem_clk
+00008c44 g     F .text	00000018 address_of_hexformat
+00008c34 g     F .text	00000010 bytecount_of_hexformat
 00008000 g     F .entry	0000000c __reset
-00008c2c g     F .text	00000024 hex_nth_digit
-00008ae8 g     F .text	00000004 putstr
-00008a4c g     F .text	00000010 assert_rst
+00008c10 g     F .text	00000024 hex_nth_digit
+00008acc g     F .text	00000004 putstr
+00008a30 g     F .text	00000010 assert_rst
 00008020 g       *ABS*	00000000 __flash_exceptions_start
-0000952c g     O .bss	00000004 errno
-0000899c g     F .text	0000000c negate_imem_we
-00009524 g     O .bss	00000004 alt_argv
-00011480 g       *ABS*	00000000 _gp
+000094cc g     O .bss	00000004 errno
+00008980 g     F .text	0000000c negate_imem_we
+000094c4 g     O .bss	00000004 alt_argv
+00011420 g       *ABS*	00000000 _gp
 000080dc g     F .text	00000038 do_RDIM
-00009428 g     O .rwdata	00000030 alt_fd_list
-00008584 g     F .text	00000008 write_memory_data_to_iport_data
-00008a5c g     F .text	0000000c negate_rst
-0000948c g     O .rwdata	00000004 alt_max_fd
+000093c8 g     O .rwdata	00000030 alt_fd_list
+00008568 g     F .text	00000008 write_memory_data_to_iport_data
+00008a40 g     F .text	0000000c negate_rst
+0000942c g     O .rwdata	00000004 alt_max_fd
 0000807c g     F .text	00000020 do_NGRS
-000085c0 g     F .text	0000007c checksum_of_memory_data
-00009530 g       *ABS*	00000000 __bss_end
-00008e90 g     F .text	00000044 alt_getchar
-000089a8 g     F .text	00000010 assert_imem_clk
-00008d1c g     F .text	0000003c checksum_of_hexformat
-0000849c g     F .text	00000074 write_memory_data_to_dmem
-000089b8 g     F .text	0000000c negate_imem_clk
-00009458 g     O .rwdata	00000028 alt_dev_null
-00009324 g     F .text	00000004 alt_dcache_flush_all
-000094a4 g       *ABS*	00000000 __ram_rwdata_end
+000085a4 g     F .text	0000007c checksum_of_memory_data
+000094d0 g       *ABS*	00000000 __bss_end
+00008e74 g     F .text	00000044 alt_getchar
+0000898c g     F .text	00000010 assert_imem_clk
+00008d00 g     F .text	0000003c checksum_of_hexformat
+00008480 g     F .text	00000074 write_memory_data_to_dmem
+0000899c g     F .text	0000000c negate_imem_clk
+000093f8 g     O .rwdata	00000028 alt_dev_null
+00009308 g     F .text	00000004 alt_dcache_flush_all
+00009444 g       *ABS*	00000000 __ram_rwdata_end
 00008000 g       *ABS*	00000000 __alt_mem_onchip_memory
-00009490 g     O .rwdata	00000008 alt_dev_list
+00009430 g     O .rwdata	00000008 alt_dev_list
 00008144 g     F .text	00000038 do_RDDM
-00009428 g       *ABS*	00000000 __ram_rodata_end
-00009488 g     O .rwdata	00000004 jtag_uart_0
-00009530 g       *ABS*	00000000 end
-00009294 g     F .text	00000090 altera_avalon_uart_write
+000093c8 g       *ABS*	00000000 __ram_rodata_end
+00009428 g     O .rwdata	00000004 jtag_uart_0
+000094d0 g       *ABS*	00000000 end
+00009278 g     F .text	00000090 altera_avalon_uart_write
 0000a000 g       *ABS*	00000000 __alt_stack_pointer
-00008a40 g     F .text	0000000c negate_prg_mode
-00008ff8 g     F .text	0000016c alt_printf
+00008a24 g     F .text	0000000c negate_prg_mode
+00008fdc g     F .text	0000016c alt_printf
 00008020 g     F .text	0000003c _start
-00009204 g     F .text	00000004 alt_sys_init
-00009428 g       *ABS*	00000000 __ram_rwdata_start
-00009358 g       *ABS*	00000000 __ram_rodata_start
-000083b4 g     F .text	00000074 write_memory_data_to_imem
-0000858c g     F .text	00000034 read_oport_data_for_memory_data
-00009530 g       *ABS*	00000000 __alt_stack_base
-00008aec g     F .text	00000004 tx_str
-000088fc g     F .text	00000010 assert_dmem_we
-00008c78 g     F .text	00000010 recordtype_of_hexformat
-000086d0 g     F .text	0000022c convert_memory_data_to_hexformat
+000091e8 g     F .text	00000004 alt_sys_init
+000093c8 g       *ABS*	00000000 __ram_rwdata_start
+0000933c g       *ABS*	00000000 __ram_rodata_start
+00008398 g     F .text	00000074 write_memory_data_to_imem
+00008570 g     F .text	00000034 read_oport_data_for_memory_data
+000094d0 g       *ABS*	00000000 __alt_stack_base
+00008ad0 g     F .text	00000004 tx_str
+000088e0 g     F .text	00000010 assert_dmem_we
+00008c5c g     F .text	00000010 recordtype_of_hexformat
+000086b4 g     F .text	0000022c convert_memory_data_to_hexformat
 0000805c g     F .text	00000020 do_ASRS
-00008af4 g     F .text	0000002c hexchar_to_int
-00009520 g       *ABS*	00000000 __bss_start
-00008928 g     F .text	0000000c negate_dmem_clk
-000082bc g     F .text	000000f8 main
-00009520 g     O .bss	00000004 alt_envp
-0000898c g     F .text	00000010 assert_imem_we
-00008510 g     F .text	00000074 read_dmem_for_memory_data
-00008a68 g     F .text	00000004 getchar
-00008968 g     F .text	00000024 dmem_rd
-000094a0 g     O .rwdata	00000004 alt_errno
-00008b94 g     F .text	00000098 hex4chars_to_int
+00008ad8 g     F .text	0000002c hexchar_to_int
+000094c0 g       *ABS*	00000000 __bss_start
+0000890c g     F .text	0000000c negate_dmem_clk
+000082bc g     F .text	000000dc main
+000094c0 g     O .bss	00000004 alt_envp
+00008970 g     F .text	00000010 assert_imem_we
+000084f4 g     F .text	00000074 read_dmem_for_memory_data
+00008a4c g     F .text	00000004 getchar
+0000894c g     F .text	00000024 dmem_rd
+00009440 g     O .rwdata	00000004 alt_errno
+00008b78 g     F .text	00000098 hex4chars_to_int
 00008214 g     F .text	000000a8 pp_memory_data
-00009358 g       *ABS*	00000000 __flash_rodata_start
+0000933c g       *ABS*	00000000 __flash_rodata_start
 0000809c g     F .text	00000020 do_ASPM
-00008a30 g     F .text	00000010 assert_prg_mode
-000091e4 g     F .text	00000020 alt_irq_init
-00008af0 g     F .text	00000004 rx_str
-00009528 g     O .bss	00000004 alt_argc
-00008934 g     F .text	00000034 dmem_wd
-00008a18 g     F .text	0000000c iport_wd
-00009498 g     O .rwdata	00000008 alt_fs_list
+00008a14 g     F .text	00000010 assert_prg_mode
+000091c8 g     F .text	00000020 alt_irq_init
+00008ad4 g     F .text	00000004 rx_str
+000094c8 g     O .bss	00000004 alt_argc
+00008918 g     F .text	00000034 dmem_wd
+000089fc g     F .text	0000000c iport_wd
+00009438 g     O .rwdata	00000008 alt_fs_list
 00008020 g       *ABS*	00000000 __ram_exceptions_start
 000081dc g     F .text	00000038 do_GTOP
 0000817c g     F .text	00000030 do_WRDM
-000094a4 g       *ABS*	00000000 _edata
-00009530 g       *ABS*	00000000 _end
-00008e50 g     F .text	00000040 unique
+00009444 g       *ABS*	00000000 _edata
+000094d0 g       *ABS*	00000000 _end
+00008e34 g     F .text	00000040 unique
 00008020 g       *ABS*	00000000 __ram_exceptions_end
-00008c88 g     F .text	00000094 data_of_hexformat
+00008c6c g     F .text	00000094 data_of_hexformat
 0000a000 g       *ABS*	00000000 __alt_data_end
-00009484 g     O .rwdata	00000004 uart
+00009424 g     O .rwdata	00000004 uart
 0000800c g       .entry	00000000 _exit
-000089f4 g     F .text	00000024 imem_rd
-0000933c g     F .text	0000001c strlen
-00009164 g     F .text	00000048 alt_putchar
+000089d8 g     F .text	00000024 imem_rd
+00009320 g     F .text	0000001c strlen
+00009148 g     F .text	00000048 alt_putchar
 000080bc g     F .text	00000020 do_NGPM
-00008428 g     F .text	00000074 read_imem_for_memory_data
-00009330 g     F .text	00000004 alt_icache_flush_all
+0000840c g     F .text	00000074 read_imem_for_memory_data
+00009314 g     F .text	00000004 alt_icache_flush_all
 00008114 g     F .text	00000030 do_WRIM
-00009208 g     F .text	0000008c altera_avalon_uart_read
-00008d58 g     F .text	000000f8 monitor_command
-00008ed4 g     F .text	000000f8 alt_load
+000091ec g     F .text	0000008c altera_avalon_uart_read
+00008d3c g     F .text	000000f8 monitor_command
+00008eb8 g     F .text	000000f8 alt_load
 
 
 
@@ -270,7 +270,7 @@ Disassembly of section .text:
     movhi gp, %hi(_gp)
     8028:	06800074 	movhi	gp,1
     ori gp, gp, %lo(_gp)
-    802c:	d6852014 	ori	gp,gp,5248
+    802c:	d6850814 	ori	gp,gp,5152
  */
 #ifndef ALT_SIM_OPTIMIZE
     /* Log that the BSS is about to be cleared. */
@@ -279,12 +279,12 @@ Disassembly of section .text:
     movhi r2, %hi(__bss_start)
     8030:	00800034 	movhi	r2,0
     ori r2, r2, %lo(__bss_start)
-    8034:	10a54814 	ori	r2,r2,38176
+    8034:	10a53014 	ori	r2,r2,38080
 
     movhi r3, %hi(__bss_end)
     8038:	00c00034 	movhi	r3,0
     ori r3, r3, %lo(__bss_end)
-    803c:	18e54c14 	ori	r3,r3,38192
+    803c:	18e53414 	ori	r3,r3,38096
 
     beq r2, r3, 1f
     8040:	10c00326 	beq	r2,r3,8050 <_start+0x30>
@@ -295,28 +295,28 @@ Disassembly of section .text:
     addi r2, r2, 4
     8048:	10800104 	addi	r2,r2,4
     bltu r2, r3, 0b
-    804c:	10fffd36 	bltu	r2,r3,8044 <_gp+0xffff6bc4>
+    804c:	10fffd36 	bltu	r2,r3,8044 <_gp+0xffff6c24>
      * section aren't defined until alt_load() has been called).
      */
     mov   et, zero
 #endif
 
     call alt_load
-    8050:	0008ed40 	call	8ed4 <alt_load>
+    8050:	0008eb80 	call	8eb8 <alt_load>
 
     /* Log that alt_main is about to be called. */
     ALT_LOG_PUTS(alt_log_msg_alt_main)
 
     /* Call the C entry point. It should never return. */
     call alt_main
-    8054:	0008fcc0 	call	8fcc <alt_main>
+    8054:	0008fb00 	call	8fb0 <alt_main>
 
 00008058 <alt_after_alt_main>:
 
     /* Wait in infinite loop in case alt_main does return. */
 alt_after_alt_main:
     br alt_after_alt_main
-    8058:	003fff06 	br	8058 <_gp+0xffff6bd8>
+    8058:	003fff06 	br	8058 <_gp+0xffff6c38>
 
 0000805c <do_ASRS>:
   }
@@ -328,10 +328,10 @@ void do_ASRS() {
     805c:	deffff04 	addi	sp,sp,-4
     8060:	dfc00015 	stw	ra,0(sp)
   assert_rst();
-    8064:	0008a4c0 	call	8a4c <assert_rst>
+    8064:	0008a300 	call	8a30 <assert_rst>
   tx_str(":00000001FF\r\n");
     8068:	01000074 	movhi	r4,1
-    806c:	2124d604 	addi	r4,r4,-27816
+    806c:	2124cf04 	addi	r4,r4,-27844
 }
     8070:	dfc00017 	ldw	ra,0(sp)
     8074:	dec00104 	addi	sp,sp,4
@@ -341,7 +341,7 @@ void do_ASRS() {
 void do_ASRS() {
   assert_rst();
   tx_str(":00000001FF\r\n");
-    8078:	0008aec1 	jmpi	8aec <tx_str>
+    8078:	0008ad01 	jmpi	8ad0 <tx_str>
 
 0000807c <do_NGRS>:
 }
@@ -350,10 +350,10 @@ void do_NGRS() {
     807c:	deffff04 	addi	sp,sp,-4
     8080:	dfc00015 	stw	ra,0(sp)
   negate_rst();
-    8084:	0008a5c0 	call	8a5c <negate_rst>
+    8084:	0008a400 	call	8a40 <negate_rst>
   tx_str(":00000001FF\r\n");
     8088:	01000074 	movhi	r4,1
-    808c:	2124d604 	addi	r4,r4,-27816
+    808c:	2124cf04 	addi	r4,r4,-27844
 }
     8090:	dfc00017 	ldw	ra,0(sp)
     8094:	dec00104 	addi	sp,sp,4
@@ -363,7 +363,7 @@ void do_NGRS() {
 void do_NGRS() {
   negate_rst();
   tx_str(":00000001FF\r\n");
-    8098:	0008aec1 	jmpi	8aec <tx_str>
+    8098:	0008ad01 	jmpi	8ad0 <tx_str>
 
 0000809c <do_ASPM>:
 }
@@ -372,10 +372,10 @@ void do_ASPM() {
     809c:	deffff04 	addi	sp,sp,-4
     80a0:	dfc00015 	stw	ra,0(sp)
   assert_prg_mode();
-    80a4:	0008a300 	call	8a30 <assert_prg_mode>
+    80a4:	0008a140 	call	8a14 <assert_prg_mode>
   tx_str(":00000001FF\r\n");
     80a8:	01000074 	movhi	r4,1
-    80ac:	2124d604 	addi	r4,r4,-27816
+    80ac:	2124cf04 	addi	r4,r4,-27844
 }
     80b0:	dfc00017 	ldw	ra,0(sp)
     80b4:	dec00104 	addi	sp,sp,4
@@ -385,7 +385,7 @@ void do_ASPM() {
 void do_ASPM() {
   assert_prg_mode();
   tx_str(":00000001FF\r\n");
-    80b8:	0008aec1 	jmpi	8aec <tx_str>
+    80b8:	0008ad01 	jmpi	8ad0 <tx_str>
 
 000080bc <do_NGPM>:
 }
@@ -394,10 +394,10 @@ void do_NGPM() {
     80bc:	deffff04 	addi	sp,sp,-4
     80c0:	dfc00015 	stw	ra,0(sp)
   negate_prg_mode();
-    80c4:	0008a400 	call	8a40 <negate_prg_mode>
+    80c4:	0008a240 	call	8a24 <negate_prg_mode>
   tx_str(":00000001FF\r\n");
     80c8:	01000074 	movhi	r4,1
-    80cc:	2124d604 	addi	r4,r4,-27816
+    80cc:	2124cf04 	addi	r4,r4,-27844
 }
     80d0:	dfc00017 	ldw	ra,0(sp)
     80d4:	dec00104 	addi	sp,sp,4
@@ -407,7 +407,7 @@ void do_NGPM() {
 void do_NGPM() {
   negate_prg_mode();
   tx_str(":00000001FF\r\n");
-    80d8:	0008aec1 	jmpi	8aec <tx_str>
+    80d8:	0008ad01 	jmpi	8ad0 <tx_str>
 
 000080dc <do_RDIM>:
 }
@@ -430,17 +430,17 @@ void do_RDIM(const char* hf) {
   char s_msg[522];
 
   convert_hexformat_to_memory_data(hf, &md);
-    80e8:	000863c0 	call	863c <convert_hexformat_to_memory_data>
+    80e8:	00086200 	call	8620 <convert_hexformat_to_memory_data>
   read_imem_for_memory_data(&md);
     80ec:	d9008304 	addi	r4,sp,524
-    80f0:	00084280 	call	8428 <read_imem_for_memory_data>
+    80f0:	000840c0 	call	840c <read_imem_for_memory_data>
   convert_memory_data_to_hexformat(&md, s_msg);
     80f4:	d9008304 	addi	r4,sp,524
     80f8:	d80b883a 	mov	r5,sp
-    80fc:	00086d00 	call	86d0 <convert_memory_data_to_hexformat>
+    80fc:	00086b40 	call	86b4 <convert_memory_data_to_hexformat>
   tx_str(s_msg);
     8100:	d809883a 	mov	r4,sp
-    8104:	0008aec0 	call	8aec <tx_str>
+    8104:	0008ad00 	call	8ad0 <tx_str>
   //pp_memory_data(&md0);
 }
     8108:	dfc0c517 	ldw	ra,788(sp)
@@ -465,14 +465,14 @@ void do_WRIM(const char* hf) {
   MemoryData md;
 
   convert_hexformat_to_memory_data(hf, &md);
-    8120:	000863c0 	call	863c <convert_hexformat_to_memory_data>
+    8120:	00086200 	call	8620 <convert_hexformat_to_memory_data>
   write_memory_data_to_imem(&md);
     8124:	d809883a 	mov	r4,sp
-    8128:	00083b40 	call	83b4 <write_memory_data_to_imem>
+    8128:	00083980 	call	8398 <write_memory_data_to_imem>
   tx_str(":00000001FF\r\n");
     812c:	01000074 	movhi	r4,1
-    8130:	2124d604 	addi	r4,r4,-27816
-    8134:	0008aec0 	call	8aec <tx_str>
+    8130:	2124cf04 	addi	r4,r4,-27844
+    8134:	0008ad00 	call	8ad0 <tx_str>
 }
     8138:	dfc04217 	ldw	ra,264(sp)
     813c:	dec04304 	addi	sp,sp,268
@@ -498,17 +498,17 @@ void do_RDDM(const char* hf) {
   char s_msg[522];
 
   convert_hexformat_to_memory_data(hf, &md);
-    8150:	000863c0 	call	863c <convert_hexformat_to_memory_data>
+    8150:	00086200 	call	8620 <convert_hexformat_to_memory_data>
   read_dmem_for_memory_data(&md);
     8154:	d9008304 	addi	r4,sp,524
-    8158:	00085100 	call	8510 <read_dmem_for_memory_data>
+    8158:	00084f40 	call	84f4 <read_dmem_for_memory_data>
   convert_memory_data_to_hexformat(&md, s_msg);
     815c:	d9008304 	addi	r4,sp,524
     8160:	d80b883a 	mov	r5,sp
-    8164:	00086d00 	call	86d0 <convert_memory_data_to_hexformat>
+    8164:	00086b40 	call	86b4 <convert_memory_data_to_hexformat>
   tx_str(s_msg);
     8168:	d809883a 	mov	r4,sp
-    816c:	0008aec0 	call	8aec <tx_str>
+    816c:	0008ad00 	call	8ad0 <tx_str>
   //pp_memory_data(&md0);
 }
     8170:	dfc0c517 	ldw	ra,788(sp)
@@ -533,14 +533,14 @@ void do_WRDM(const char* hf) {
   MemoryData md;
 
   convert_hexformat_to_memory_data(hf, &md);
-    8188:	000863c0 	call	863c <convert_hexformat_to_memory_data>
+    8188:	00086200 	call	8620 <convert_hexformat_to_memory_data>
   write_memory_data_to_dmem(&md);
     818c:	d809883a 	mov	r4,sp
-    8190:	000849c0 	call	849c <write_memory_data_to_dmem>
+    8190:	00084800 	call	8480 <write_memory_data_to_dmem>
   tx_str(":00000001FF\r\n");
     8194:	01000074 	movhi	r4,1
-    8198:	2124d604 	addi	r4,r4,-27816
-    819c:	0008aec0 	call	8aec <tx_str>
+    8198:	2124cf04 	addi	r4,r4,-27844
+    819c:	0008ad00 	call	8ad0 <tx_str>
 }
     81a0:	dfc04217 	ldw	ra,264(sp)
     81a4:	dec04304 	addi	sp,sp,268
@@ -562,14 +562,14 @@ void do_STIP(const char* hf) {
     81b4:	dfc04215 	stw	ra,264(sp)
   MemoryData md;
   convert_hexformat_to_memory_data(hf, &md);
-    81b8:	000863c0 	call	863c <convert_hexformat_to_memory_data>
+    81b8:	00086200 	call	8620 <convert_hexformat_to_memory_data>
   write_memory_data_to_iport_data(&md);
     81bc:	d809883a 	mov	r4,sp
-    81c0:	00085840 	call	8584 <write_memory_data_to_iport_data>
+    81c0:	00085680 	call	8568 <write_memory_data_to_iport_data>
   tx_str(":00000001FF\r\n");
     81c4:	01000074 	movhi	r4,1
-    81c8:	2124d604 	addi	r4,r4,-27816
-    81cc:	0008aec0 	call	8aec <tx_str>
+    81c8:	2124cf04 	addi	r4,r4,-27844
+    81cc:	0008ad00 	call	8ad0 <tx_str>
 }
     81d0:	dfc04217 	ldw	ra,264(sp)
     81d4:	dec04304 	addi	sp,sp,268
@@ -593,17 +593,17 @@ void do_GTOP(const char* hf) {
   MemoryData md;
   char s_msg[522];
   convert_hexformat_to_memory_data(hf, &md);
-    81e8:	000863c0 	call	863c <convert_hexformat_to_memory_data>
+    81e8:	00086200 	call	8620 <convert_hexformat_to_memory_data>
   read_oport_data_for_memory_data(&md);
     81ec:	d9008304 	addi	r4,sp,524
-    81f0:	000858c0 	call	858c <read_oport_data_for_memory_data>
+    81f0:	00085700 	call	8570 <read_oport_data_for_memory_data>
   convert_memory_data_to_hexformat(&md, s_msg);
     81f4:	d9008304 	addi	r4,sp,524
     81f8:	d80b883a 	mov	r5,sp
-    81fc:	00086d00 	call	86d0 <convert_memory_data_to_hexformat>
+    81fc:	00086b40 	call	86b4 <convert_memory_data_to_hexformat>
   tx_str(s_msg);
     8200:	d809883a 	mov	r4,sp
-    8204:	0008aec0 	call	8aec <tx_str>
+    8204:	0008ad00 	call	8ad0 <tx_str>
 }
     8208:	dfc0c517 	ldw	ra,788(sp)
     820c:	dec0c604 	addi	sp,sp,792
@@ -622,7 +622,7 @@ void pp_memory_data(const MemoryData* md) {
   alt_printf("bytecount  = %x\r\n", md->bytecount);
     8220:	81400017 	ldw	r5,0(r16)
     8224:	01000074 	movhi	r4,1
-    8228:	2124eb04 	addi	r4,r4,-27732
+    8228:	2124d304 	addi	r4,r4,-27828
   tx_str(s_msg);
 }
 
@@ -635,17 +635,17 @@ void pp_memory_data(const MemoryData* md) {
   int i = 0;
 
   alt_printf("bytecount  = %x\r\n", md->bytecount);
-    8238:	0008ff80 	call	8ff8 <alt_printf>
+    8238:	0008fdc0 	call	8fdc <alt_printf>
   alt_printf("address    = %x\r\n", md->address);
     823c:	81400117 	ldw	r5,4(r16)
     8240:	01000074 	movhi	r4,1
-    8244:	2124f004 	addi	r4,r4,-27712
-    8248:	0008ff80 	call	8ff8 <alt_printf>
+    8244:	2124d804 	addi	r4,r4,-27808
+    8248:	0008fdc0 	call	8fdc <alt_printf>
   alt_printf("recordtype = %x\r\n", md->recordtype);
     824c:	81400217 	ldw	r5,8(r16)
     8250:	01000074 	movhi	r4,1
-    8254:	2124f504 	addi	r4,r4,-27692
-    8258:	0008ff80 	call	8ff8 <alt_printf>
+    8254:	2124dd04 	addi	r4,r4,-27788
+    8258:	0008fdc0 	call	8fdc <alt_printf>
     825c:	84800304 	addi	r18,r16,12
   for ( i = 0; i < md->bytecount / 4; ++i) {
     8260:	0023883a 	mov	r17,zero
@@ -660,9 +660,9 @@ void pp_memory_data(const MemoryData* md) {
     8280:	91800017 	ldw	r6,0(r18)
     8284:	294b883a 	add	r5,r5,r5
     8288:	01000074 	movhi	r4,1
-    828c:	2124fa04 	addi	r4,r4,-27672
+    828c:	2124e204 	addi	r4,r4,-27768
     8290:	288b883a 	add	r5,r5,r2
-    8294:	0008ff80 	call	8ff8 <alt_printf>
+    8294:	0008fdc0 	call	8fdc <alt_printf>
   int i = 0;
 
   alt_printf("bytecount  = %x\r\n", md->bytecount);
@@ -671,7 +671,7 @@ void pp_memory_data(const MemoryData* md) {
   for ( i = 0; i < md->bytecount / 4; ++i) {
     8298:	8c400044 	addi	r17,r17,1
     829c:	94800104 	addi	r18,r18,4
-    82a0:	003ff006 	br	8264 <_gp+0xffff6de4>
+    82a0:	003ff006 	br	8264 <_gp+0xffff6e44>
     alt_printf("%x : %x\r\n", md->address + i * 4, md->data[i]);
   }
 }
@@ -690,947 +690,947 @@ void pp_memory_data(const MemoryData* md);
 int main()
 { 
     82bc:	deff6704 	addi	sp,sp,-612
-  char r_msg[600];
+    82c0:	dc409715 	stw	r17,604(sp)
+    //alt_printf("input command with hexformat\r\n");
+    tx_str(EOF);
+    rx_str(r_msg);
+    //alt_printf("\r\n");
 
-  alt_putstr("Hello, This is Tiny MIPS monitor!\r\n");
-    82c0:	01000074 	movhi	r4,1
+    switch (monitor_command(r_msg)) {
+    82c4:	04400074 	movhi	r17,1
 ///
 void pp_memory_data(const MemoryData* md);
 ///
 
 int main()
 { 
-    82c4:	dc009615 	stw	r16,600(sp)
+    82c8:	dc009615 	stw	r16,600(sp)
+    82cc:	dfc09815 	stw	ra,608(sp)
+    //alt_printf("input command with hexformat\r\n");
+    tx_str(EOF);
+    rx_str(r_msg);
+    //alt_printf("\r\n");
+
+    switch (monitor_command(r_msg)) {
+    82d0:	04000244 	movi	r16,9
+    82d4:	8c60c204 	addi	r17,r17,-31992
   char r_msg[600];
 
-  alt_putstr("Hello, This is Tiny MIPS monitor!\r\n");
-    82c8:	2124da04 	addi	r4,r4,-27800
+  //alt_putstr("Hello, This is Tiny MIPS monitor!\r\n");
   while (1) {
-    alt_printf("input command with hexformat\r\n");
+    //alt_printf("input command with hexformat\r\n");
+    tx_str(EOF);
+    82d8:	d1200017 	ldw	r4,-32768(gp)
+    82dc:	0008ad00 	call	8ad0 <tx_str>
     rx_str(r_msg);
-    alt_printf("\r\n");
+    82e0:	d809883a 	mov	r4,sp
+    82e4:	0008ad40 	call	8ad4 <rx_str>
+    //alt_printf("\r\n");
 
     switch (monitor_command(r_msg)) {
-    82cc:	04000074 	movhi	r16,1
-///
-void pp_memory_data(const MemoryData* md);
-///
-
-int main()
-{ 
-    82d0:	dfc09815 	stw	ra,608(sp)
-    82d4:	dc409715 	stw	r17,604(sp)
-  while (1) {
-    alt_printf("input command with hexformat\r\n");
-    rx_str(r_msg);
-    alt_printf("\r\n");
-
-    switch (monitor_command(r_msg)) {
-    82d8:	8420c904 	addi	r16,r16,-31964
-
-int main()
-{ 
-  char r_msg[600];
-
-  alt_putstr("Hello, This is Tiny MIPS monitor!\r\n");
-    82dc:	00091ac0 	call	91ac <alt_putstr>
-  while (1) {
-    alt_printf("input command with hexformat\r\n");
-    rx_str(r_msg);
-    alt_printf("\r\n");
-
-    switch (monitor_command(r_msg)) {
-    82e0:	04400244 	movi	r17,9
-{ 
-  char r_msg[600];
-
-  alt_putstr("Hello, This is Tiny MIPS monitor!\r\n");
-  while (1) {
-    alt_printf("input command with hexformat\r\n");
-    82e4:	01000074 	movhi	r4,1
-    82e8:	2124e304 	addi	r4,r4,-27764
-    82ec:	0008ff80 	call	8ff8 <alt_printf>
-    rx_str(r_msg);
-    82f0:	d809883a 	mov	r4,sp
-    82f4:	0008af00 	call	8af0 <rx_str>
-    alt_printf("\r\n");
-    82f8:	01000074 	movhi	r4,1
-    82fc:	2124ea04 	addi	r4,r4,-27736
-    8300:	0008ff80 	call	8ff8 <alt_printf>
-
-    switch (monitor_command(r_msg)) {
-    8304:	d809883a 	mov	r4,sp
-    8308:	0008d580 	call	8d58 <monitor_command>
-    830c:	10bfffc4 	addi	r2,r2,-1
-    8310:	88bff436 	bltu	r17,r2,82e4 <_gp+0xffff6e64>
-    8314:	100490ba 	slli	r2,r2,2
-    8318:	1405883a 	add	r2,r2,r16
-    831c:	10800017 	ldw	r2,0(r2)
-    8320:	1000683a 	jmp	r2
-    8324:	0000834c 	andi	zero,zero,525
-    8328:	00008354 	movui	zero,525
-    832c:	0000835c 	xori	zero,zero,525
-    8330:	00008364 	muli	zero,zero,525
-    8334:	0000836c 	andhi	zero,zero,525
-    8338:	00008378 	rdprs	zero,zero,525
-    833c:	00008384 	movi	zero,526
-    8340:	00008390 	cmplti	zero,zero,526
-    8344:	0000839c 	xori	zero,zero,526
-    8348:	000083a8 	cmpgeui	zero,zero,526
+    82e8:	d809883a 	mov	r4,sp
+    82ec:	0008d3c0 	call	8d3c <monitor_command>
+    82f0:	10bfffc4 	addi	r2,r2,-1
+    82f4:	80bff836 	bltu	r16,r2,82d8 <_gp+0xffff6eb8>
+    82f8:	100490ba 	slli	r2,r2,2
+    82fc:	1445883a 	add	r2,r2,r17
+    8300:	10800017 	ldw	r2,0(r2)
+    8304:	1000683a 	jmp	r2
+    8308:	00008330 	cmpltui	zero,zero,524
+    830c:	00008338 	rdprs	zero,zero,524
+    8310:	00008340 	call	834 <__reset-0x77cc>
+    8314:	00008348 	cmpgei	zero,zero,525
+    8318:	00008350 	cmplti	zero,zero,525
+    831c:	0000835c 	xori	zero,zero,525
+    8320:	00008368 	cmpgeui	zero,zero,525
+    8324:	00008374 	movhi	zero,525
+    8328:	00008380 	call	838 <__reset-0x77c8>
+    832c:	0000838c 	andi	zero,zero,526
       case MONITOR_COMMAND_ASRS:  // assert reset
         do_ASRS();          break;
-    834c:	000805c0 	call	805c <do_ASRS>
-    8350:	003fe306 	br	82e0 <_gp+0xffff6e60>
+    8330:	000805c0 	call	805c <do_ASRS>
+    8334:	003fe806 	br	82d8 <_gp+0xffff6eb8>
       case MONITOR_COMMAND_NGRS:  // negate reset
         do_NGRS();          break;
-    8354:	000807c0 	call	807c <do_NGRS>
-    8358:	003fe106 	br	82e0 <_gp+0xffff6e60>
+    8338:	000807c0 	call	807c <do_NGRS>
+    833c:	003fe606 	br	82d8 <_gp+0xffff6eb8>
       case MONITOR_COMMAND_ASPM:  // assert programming mode
         do_ASPM();          break;
-    835c:	000809c0 	call	809c <do_ASPM>
-    8360:	003fdf06 	br	82e0 <_gp+0xffff6e60>
+    8340:	000809c0 	call	809c <do_ASPM>
+    8344:	003fe406 	br	82d8 <_gp+0xffff6eb8>
       case MONITOR_COMMAND_NGPM:  // negate programming mode
         do_NGPM();          break;
-    8364:	00080bc0 	call	80bc <do_NGPM>
-    8368:	003fdd06 	br	82e0 <_gp+0xffff6e60>
+    8348:	00080bc0 	call	80bc <do_NGPM>
+    834c:	003fe206 	br	82d8 <_gp+0xffff6eb8>
       case MONITOR_COMMAND_RDIM:  // read instruction memory
         do_RDIM(&r_msg[4]); break;
-    836c:	d9000104 	addi	r4,sp,4
-    8370:	00080dc0 	call	80dc <do_RDIM>
-    8374:	003fda06 	br	82e0 <_gp+0xffff6e60>
+    8350:	d9000104 	addi	r4,sp,4
+    8354:	00080dc0 	call	80dc <do_RDIM>
+    8358:	003fdf06 	br	82d8 <_gp+0xffff6eb8>
       case MONITOR_COMMAND_WRIM:  // write instruction memory
         do_WRIM(&r_msg[4]); break;
-    8378:	d9000104 	addi	r4,sp,4
-    837c:	00081140 	call	8114 <do_WRIM>
-    8380:	003fd706 	br	82e0 <_gp+0xffff6e60>
+    835c:	d9000104 	addi	r4,sp,4
+    8360:	00081140 	call	8114 <do_WRIM>
+    8364:	003fdc06 	br	82d8 <_gp+0xffff6eb8>
       case MONITOR_COMMAND_RDDM:  // read data memory
         do_RDDM(&r_msg[4]); break;
-    8384:	d9000104 	addi	r4,sp,4
-    8388:	00081440 	call	8144 <do_RDDM>
-    838c:	003fd406 	br	82e0 <_gp+0xffff6e60>
+    8368:	d9000104 	addi	r4,sp,4
+    836c:	00081440 	call	8144 <do_RDDM>
+    8370:	003fd906 	br	82d8 <_gp+0xffff6eb8>
       case MONITOR_COMMAND_WRDM:  // write data memory
         do_WRDM(&r_msg[4]); break;
-    8390:	d9000104 	addi	r4,sp,4
-    8394:	000817c0 	call	817c <do_WRDM>
-    8398:	003fd106 	br	82e0 <_gp+0xffff6e60>
+    8374:	d9000104 	addi	r4,sp,4
+    8378:	000817c0 	call	817c <do_WRDM>
+    837c:	003fd606 	br	82d8 <_gp+0xffff6eb8>
       case MONITOR_COMMAND_STIP:  // set iport data
         do_STIP(&r_msg[4]); break;
-    839c:	d9000104 	addi	r4,sp,4
-    83a0:	00081ac0 	call	81ac <do_STIP>
-    83a4:	003fce06 	br	82e0 <_gp+0xffff6e60>
+    8380:	d9000104 	addi	r4,sp,4
+    8384:	00081ac0 	call	81ac <do_STIP>
+    8388:	003fd306 	br	82d8 <_gp+0xffff6eb8>
       case MONITOR_COMMAND_GTOP:  // get oport data
         do_GTOP(&r_msg[4]); break;
-    83a8:	d9000104 	addi	r4,sp,4
-    83ac:	00081dc0 	call	81dc <do_GTOP>
-    83b0:	003fcb06 	br	82e0 <_gp+0xffff6e60>
+    838c:	d9000104 	addi	r4,sp,4
+    8390:	00081dc0 	call	81dc <do_GTOP>
+    8394:	003fd006 	br	82d8 <_gp+0xffff6eb8>
 
-000083b4 <write_memory_data_to_imem>:
+00008398 <write_memory_data_to_imem>:
 #include "memory_data.h"
 
 
 //////////////
 void write_memory_data_to_imem(const MemoryData* md) {
   const int word_count = md->bytecount / 4;
-    83b4:	20800017 	ldw	r2,0(r4)
+    8398:	20800017 	ldw	r2,0(r4)
 
 #include "memory_data.h"
 
 
 //////////////
 void write_memory_data_to_imem(const MemoryData* md) {
-    83b8:	defffb04 	addi	sp,sp,-20
-    83bc:	dfc00415 	stw	ra,16(sp)
-    83c0:	dcc00315 	stw	r19,12(sp)
-    83c4:	dc800215 	stw	r18,8(sp)
-    83c8:	dc400115 	stw	r17,4(sp)
-    83cc:	dc000015 	stw	r16,0(sp)
+    839c:	defffb04 	addi	sp,sp,-20
+    83a0:	dfc00415 	stw	ra,16(sp)
+    83a4:	dcc00315 	stw	r19,12(sp)
+    83a8:	dc800215 	stw	r18,8(sp)
+    83ac:	dc400115 	stw	r17,4(sp)
+    83b0:	dc000015 	stw	r16,0(sp)
   const int word_count = md->bytecount / 4;
-    83d0:	1000010e 	bge	r2,zero,83d8 <write_memory_data_to_imem+0x24>
-    83d4:	108000c4 	addi	r2,r2,3
-    83d8:	1023d0ba 	srai	r17,r2,2
+    83b4:	1000010e 	bge	r2,zero,83bc <write_memory_data_to_imem+0x24>
+    83b8:	108000c4 	addi	r2,r2,3
+    83bc:	1023d0ba 	srai	r17,r2,2
   const int start_address = md->address;
-    83dc:	24c00117 	ldw	r19,4(r4)
-    83e0:	24000304 	addi	r16,r4,12
+    83c0:	24c00117 	ldw	r19,4(r4)
+    83c4:	24000304 	addi	r16,r4,12
   int count = 0;
 
   for (count = 0; count < word_count; ++count) {
-    83e4:	0025883a 	mov	r18,zero
-    83e8:	9440080e 	bge	r18,r17,840c <write_memory_data_to_imem+0x58>
-    83ec:	9489883a 	add	r4,r18,r18
+    83c8:	0025883a 	mov	r18,zero
+    83cc:	9440080e 	bge	r18,r17,83f0 <write_memory_data_to_imem+0x58>
+    83d0:	9489883a 	add	r4,r18,r18
     imem_wd(start_address + 4 * count, md->data[count]);
-    83f0:	81400017 	ldw	r5,0(r16)
-    83f4:	2109883a 	add	r4,r4,r4
-    83f8:	24c9883a 	add	r4,r4,r19
-    83fc:	00089c40 	call	89c4 <imem_wd>
+    83d4:	81400017 	ldw	r5,0(r16)
+    83d8:	2109883a 	add	r4,r4,r4
+    83dc:	24c9883a 	add	r4,r4,r19
+    83e0:	00089a80 	call	89a8 <imem_wd>
 void write_memory_data_to_imem(const MemoryData* md) {
   const int word_count = md->bytecount / 4;
   const int start_address = md->address;
   int count = 0;
 
   for (count = 0; count < word_count; ++count) {
-    8400:	94800044 	addi	r18,r18,1
-    8404:	84000104 	addi	r16,r16,4
-    8408:	003ff706 	br	83e8 <_gp+0xffff6f68>
+    83e4:	94800044 	addi	r18,r18,1
+    83e8:	84000104 	addi	r16,r16,4
+    83ec:	003ff706 	br	83cc <_gp+0xffff6fac>
     imem_wd(start_address + 4 * count, md->data[count]);
   }
 }
-    840c:	dfc00417 	ldw	ra,16(sp)
-    8410:	dcc00317 	ldw	r19,12(sp)
-    8414:	dc800217 	ldw	r18,8(sp)
-    8418:	dc400117 	ldw	r17,4(sp)
-    841c:	dc000017 	ldw	r16,0(sp)
-    8420:	dec00504 	addi	sp,sp,20
-    8424:	f800283a 	ret
+    83f0:	dfc00417 	ldw	ra,16(sp)
+    83f4:	dcc00317 	ldw	r19,12(sp)
+    83f8:	dc800217 	ldw	r18,8(sp)
+    83fc:	dc400117 	ldw	r17,4(sp)
+    8400:	dc000017 	ldw	r16,0(sp)
+    8404:	dec00504 	addi	sp,sp,20
+    8408:	f800283a 	ret
 
-00008428 <read_imem_for_memory_data>:
+0000840c <read_imem_for_memory_data>:
 
 void read_imem_for_memory_data(MemoryData* md) {
   const int word_count = md->bytecount / 4;
-    8428:	20800017 	ldw	r2,0(r4)
+    840c:	20800017 	ldw	r2,0(r4)
   for (count = 0; count < word_count; ++count) {
     imem_wd(start_address + 4 * count, md->data[count]);
   }
 }
 
 void read_imem_for_memory_data(MemoryData* md) {
-    842c:	defffb04 	addi	sp,sp,-20
-    8430:	dfc00415 	stw	ra,16(sp)
-    8434:	dcc00315 	stw	r19,12(sp)
-    8438:	dc800215 	stw	r18,8(sp)
-    843c:	dc400115 	stw	r17,4(sp)
-    8440:	dc000015 	stw	r16,0(sp)
+    8410:	defffb04 	addi	sp,sp,-20
+    8414:	dfc00415 	stw	ra,16(sp)
+    8418:	dcc00315 	stw	r19,12(sp)
+    841c:	dc800215 	stw	r18,8(sp)
+    8420:	dc400115 	stw	r17,4(sp)
+    8424:	dc000015 	stw	r16,0(sp)
   const int word_count = md->bytecount / 4;
-    8444:	1000010e 	bge	r2,zero,844c <read_imem_for_memory_data+0x24>
-    8448:	108000c4 	addi	r2,r2,3
-    844c:	1023d0ba 	srai	r17,r2,2
+    8428:	1000010e 	bge	r2,zero,8430 <read_imem_for_memory_data+0x24>
+    842c:	108000c4 	addi	r2,r2,3
+    8430:	1023d0ba 	srai	r17,r2,2
   const int start_address = md->address;
-    8450:	24c00117 	ldw	r19,4(r4)
-    8454:	24000304 	addi	r16,r4,12
+    8434:	24c00117 	ldw	r19,4(r4)
+    8438:	24000304 	addi	r16,r4,12
   int count = 0;
 
   for (count = 0; count < word_count; ++count) {
-    8458:	0025883a 	mov	r18,zero
-    845c:	9440080e 	bge	r18,r17,8480 <read_imem_for_memory_data+0x58>
-    8460:	9489883a 	add	r4,r18,r18
-    8464:	2109883a 	add	r4,r4,r4
+    843c:	0025883a 	mov	r18,zero
+    8440:	9440080e 	bge	r18,r17,8464 <read_imem_for_memory_data+0x58>
+    8444:	9489883a 	add	r4,r18,r18
+    8448:	2109883a 	add	r4,r4,r4
     md->data[count] = imem_rd(start_address + 4 * count);
-    8468:	24c9883a 	add	r4,r4,r19
-    846c:	00089f40 	call	89f4 <imem_rd>
-    8470:	80800015 	stw	r2,0(r16)
+    844c:	24c9883a 	add	r4,r4,r19
+    8450:	00089d80 	call	89d8 <imem_rd>
+    8454:	80800015 	stw	r2,0(r16)
 void read_imem_for_memory_data(MemoryData* md) {
   const int word_count = md->bytecount / 4;
   const int start_address = md->address;
   int count = 0;
 
   for (count = 0; count < word_count; ++count) {
-    8474:	94800044 	addi	r18,r18,1
-    8478:	84000104 	addi	r16,r16,4
-    847c:	003ff706 	br	845c <_gp+0xffff6fdc>
+    8458:	94800044 	addi	r18,r18,1
+    845c:	84000104 	addi	r16,r16,4
+    8460:	003ff706 	br	8440 <_gp+0xffff7020>
     md->data[count] = imem_rd(start_address + 4 * count);
   }
 }
-    8480:	dfc00417 	ldw	ra,16(sp)
-    8484:	dcc00317 	ldw	r19,12(sp)
-    8488:	dc800217 	ldw	r18,8(sp)
-    848c:	dc400117 	ldw	r17,4(sp)
-    8490:	dc000017 	ldw	r16,0(sp)
-    8494:	dec00504 	addi	sp,sp,20
-    8498:	f800283a 	ret
+    8464:	dfc00417 	ldw	ra,16(sp)
+    8468:	dcc00317 	ldw	r19,12(sp)
+    846c:	dc800217 	ldw	r18,8(sp)
+    8470:	dc400117 	ldw	r17,4(sp)
+    8474:	dc000017 	ldw	r16,0(sp)
+    8478:	dec00504 	addi	sp,sp,20
+    847c:	f800283a 	ret
 
-0000849c <write_memory_data_to_dmem>:
+00008480 <write_memory_data_to_dmem>:
 
 //////////////
 void write_memory_data_to_dmem(const MemoryData* md) {
   const int word_count = md->bytecount / 4;
-    849c:	20800017 	ldw	r2,0(r4)
+    8480:	20800017 	ldw	r2,0(r4)
     md->data[count] = imem_rd(start_address + 4 * count);
   }
 }
 
 //////////////
 void write_memory_data_to_dmem(const MemoryData* md) {
-    84a0:	defffb04 	addi	sp,sp,-20
-    84a4:	dfc00415 	stw	ra,16(sp)
-    84a8:	dcc00315 	stw	r19,12(sp)
-    84ac:	dc800215 	stw	r18,8(sp)
-    84b0:	dc400115 	stw	r17,4(sp)
-    84b4:	dc000015 	stw	r16,0(sp)
+    8484:	defffb04 	addi	sp,sp,-20
+    8488:	dfc00415 	stw	ra,16(sp)
+    848c:	dcc00315 	stw	r19,12(sp)
+    8490:	dc800215 	stw	r18,8(sp)
+    8494:	dc400115 	stw	r17,4(sp)
+    8498:	dc000015 	stw	r16,0(sp)
   const int word_count = md->bytecount / 4;
-    84b8:	1000010e 	bge	r2,zero,84c0 <write_memory_data_to_dmem+0x24>
-    84bc:	108000c4 	addi	r2,r2,3
-    84c0:	1023d0ba 	srai	r17,r2,2
+    849c:	1000010e 	bge	r2,zero,84a4 <write_memory_data_to_dmem+0x24>
+    84a0:	108000c4 	addi	r2,r2,3
+    84a4:	1023d0ba 	srai	r17,r2,2
   const int start_address = md->address;
-    84c4:	24c00117 	ldw	r19,4(r4)
-    84c8:	24000304 	addi	r16,r4,12
+    84a8:	24c00117 	ldw	r19,4(r4)
+    84ac:	24000304 	addi	r16,r4,12
   int count = 0;
 
   for (count = 0; count < word_count; ++count) {
-    84cc:	0025883a 	mov	r18,zero
-    84d0:	9440080e 	bge	r18,r17,84f4 <write_memory_data_to_dmem+0x58>
-    84d4:	9489883a 	add	r4,r18,r18
+    84b0:	0025883a 	mov	r18,zero
+    84b4:	9440080e 	bge	r18,r17,84d8 <write_memory_data_to_dmem+0x58>
+    84b8:	9489883a 	add	r4,r18,r18
     dmem_wd(start_address + 4 * count, md->data[count]);
-    84d8:	81400017 	ldw	r5,0(r16)
-    84dc:	2109883a 	add	r4,r4,r4
-    84e0:	24c9883a 	add	r4,r4,r19
-    84e4:	00089340 	call	8934 <dmem_wd>
+    84bc:	81400017 	ldw	r5,0(r16)
+    84c0:	2109883a 	add	r4,r4,r4
+    84c4:	24c9883a 	add	r4,r4,r19
+    84c8:	00089180 	call	8918 <dmem_wd>
 void write_memory_data_to_dmem(const MemoryData* md) {
   const int word_count = md->bytecount / 4;
   const int start_address = md->address;
   int count = 0;
 
   for (count = 0; count < word_count; ++count) {
-    84e8:	94800044 	addi	r18,r18,1
-    84ec:	84000104 	addi	r16,r16,4
-    84f0:	003ff706 	br	84d0 <_gp+0xffff7050>
+    84cc:	94800044 	addi	r18,r18,1
+    84d0:	84000104 	addi	r16,r16,4
+    84d4:	003ff706 	br	84b4 <_gp+0xffff7094>
     dmem_wd(start_address + 4 * count, md->data[count]);
   }
 }
-    84f4:	dfc00417 	ldw	ra,16(sp)
-    84f8:	dcc00317 	ldw	r19,12(sp)
-    84fc:	dc800217 	ldw	r18,8(sp)
-    8500:	dc400117 	ldw	r17,4(sp)
-    8504:	dc000017 	ldw	r16,0(sp)
-    8508:	dec00504 	addi	sp,sp,20
-    850c:	f800283a 	ret
+    84d8:	dfc00417 	ldw	ra,16(sp)
+    84dc:	dcc00317 	ldw	r19,12(sp)
+    84e0:	dc800217 	ldw	r18,8(sp)
+    84e4:	dc400117 	ldw	r17,4(sp)
+    84e8:	dc000017 	ldw	r16,0(sp)
+    84ec:	dec00504 	addi	sp,sp,20
+    84f0:	f800283a 	ret
 
-00008510 <read_dmem_for_memory_data>:
+000084f4 <read_dmem_for_memory_data>:
 
 void read_dmem_for_memory_data(MemoryData* md) {
   const int word_count = md->bytecount / 4;
-    8510:	20800017 	ldw	r2,0(r4)
+    84f4:	20800017 	ldw	r2,0(r4)
   for (count = 0; count < word_count; ++count) {
     dmem_wd(start_address + 4 * count, md->data[count]);
   }
 }
 
 void read_dmem_for_memory_data(MemoryData* md) {
-    8514:	defffb04 	addi	sp,sp,-20
-    8518:	dfc00415 	stw	ra,16(sp)
-    851c:	dcc00315 	stw	r19,12(sp)
-    8520:	dc800215 	stw	r18,8(sp)
-    8524:	dc400115 	stw	r17,4(sp)
-    8528:	dc000015 	stw	r16,0(sp)
+    84f8:	defffb04 	addi	sp,sp,-20
+    84fc:	dfc00415 	stw	ra,16(sp)
+    8500:	dcc00315 	stw	r19,12(sp)
+    8504:	dc800215 	stw	r18,8(sp)
+    8508:	dc400115 	stw	r17,4(sp)
+    850c:	dc000015 	stw	r16,0(sp)
   const int word_count = md->bytecount / 4;
-    852c:	1000010e 	bge	r2,zero,8534 <read_dmem_for_memory_data+0x24>
-    8530:	108000c4 	addi	r2,r2,3
-    8534:	1023d0ba 	srai	r17,r2,2
+    8510:	1000010e 	bge	r2,zero,8518 <read_dmem_for_memory_data+0x24>
+    8514:	108000c4 	addi	r2,r2,3
+    8518:	1023d0ba 	srai	r17,r2,2
   const int start_address = md->address;
-    8538:	24c00117 	ldw	r19,4(r4)
-    853c:	24000304 	addi	r16,r4,12
+    851c:	24c00117 	ldw	r19,4(r4)
+    8520:	24000304 	addi	r16,r4,12
   int count = 0;
 
   for (count = 0; count < word_count; ++count) {
-    8540:	0025883a 	mov	r18,zero
-    8544:	9440080e 	bge	r18,r17,8568 <read_dmem_for_memory_data+0x58>
-    8548:	9489883a 	add	r4,r18,r18
-    854c:	2109883a 	add	r4,r4,r4
+    8524:	0025883a 	mov	r18,zero
+    8528:	9440080e 	bge	r18,r17,854c <read_dmem_for_memory_data+0x58>
+    852c:	9489883a 	add	r4,r18,r18
+    8530:	2109883a 	add	r4,r4,r4
     md->data[count] = dmem_rd(start_address + 4 * count);
-    8550:	24c9883a 	add	r4,r4,r19
-    8554:	00089680 	call	8968 <dmem_rd>
-    8558:	80800015 	stw	r2,0(r16)
+    8534:	24c9883a 	add	r4,r4,r19
+    8538:	000894c0 	call	894c <dmem_rd>
+    853c:	80800015 	stw	r2,0(r16)
 void read_dmem_for_memory_data(MemoryData* md) {
   const int word_count = md->bytecount / 4;
   const int start_address = md->address;
   int count = 0;
 
   for (count = 0; count < word_count; ++count) {
-    855c:	94800044 	addi	r18,r18,1
-    8560:	84000104 	addi	r16,r16,4
-    8564:	003ff706 	br	8544 <_gp+0xffff70c4>
+    8540:	94800044 	addi	r18,r18,1
+    8544:	84000104 	addi	r16,r16,4
+    8548:	003ff706 	br	8528 <_gp+0xffff7108>
     md->data[count] = dmem_rd(start_address + 4 * count);
   }
 }
-    8568:	dfc00417 	ldw	ra,16(sp)
-    856c:	dcc00317 	ldw	r19,12(sp)
-    8570:	dc800217 	ldw	r18,8(sp)
-    8574:	dc400117 	ldw	r17,4(sp)
-    8578:	dc000017 	ldw	r16,0(sp)
-    857c:	dec00504 	addi	sp,sp,20
-    8580:	f800283a 	ret
+    854c:	dfc00417 	ldw	ra,16(sp)
+    8550:	dcc00317 	ldw	r19,12(sp)
+    8554:	dc800217 	ldw	r18,8(sp)
+    8558:	dc400117 	ldw	r17,4(sp)
+    855c:	dc000017 	ldw	r16,0(sp)
+    8560:	dec00504 	addi	sp,sp,20
+    8564:	f800283a 	ret
 
-00008584 <write_memory_data_to_iport_data>:
+00008568 <write_memory_data_to_iport_data>:
 
 // ioport access
 void write_memory_data_to_iport_data(const MemoryData* md) {
   iport_wd(md->data[0]);
-    8584:	21000317 	ldw	r4,12(r4)
-    8588:	0008a181 	jmpi	8a18 <iport_wd>
+    8568:	21000317 	ldw	r4,12(r4)
+    856c:	00089fc1 	jmpi	89fc <iport_wd>
 
-0000858c <read_oport_data_for_memory_data>:
+00008570 <read_oport_data_for_memory_data>:
 
 void read_oport_data_for_memory_data(MemoryData* md) {
   const int bytecount = 4;
   const int address = 0;
 
   md->bytecount = bytecount;
-    858c:	00800104 	movi	r2,4
+    8570:	00800104 	movi	r2,4
 // ioport access
 void write_memory_data_to_iport_data(const MemoryData* md) {
   iport_wd(md->data[0]);
 }
 
 void read_oport_data_for_memory_data(MemoryData* md) {
-    8590:	defffe04 	addi	sp,sp,-8
+    8574:	defffe04 	addi	sp,sp,-8
   const int bytecount = 4;
   const int address = 0;
 
   md->bytecount = bytecount;
-    8594:	20800015 	stw	r2,0(r4)
+    8578:	20800015 	stw	r2,0(r4)
   md->address = address;
-    8598:	20000115 	stw	zero,4(r4)
+    857c:	20000115 	stw	zero,4(r4)
 // ioport access
 void write_memory_data_to_iport_data(const MemoryData* md) {
   iport_wd(md->data[0]);
 }
 
 void read_oport_data_for_memory_data(MemoryData* md) {
-    859c:	dc000015 	stw	r16,0(sp)
-    85a0:	dfc00115 	stw	ra,4(sp)
-    85a4:	2021883a 	mov	r16,r4
+    8580:	dc000015 	stw	r16,0(sp)
+    8584:	dfc00115 	stw	ra,4(sp)
+    8588:	2021883a 	mov	r16,r4
   const int bytecount = 4;
   const int address = 0;
 
   md->bytecount = bytecount;
   md->address = address;
   md->data[0] = oport_rd();
-    85a8:	0008a240 	call	8a24 <oport_rd>
-    85ac:	80800315 	stw	r2,12(r16)
+    858c:	0008a080 	call	8a08 <oport_rd>
+    8590:	80800315 	stw	r2,12(r16)
 }
-    85b0:	dfc00117 	ldw	ra,4(sp)
-    85b4:	dc000017 	ldw	r16,0(sp)
-    85b8:	dec00204 	addi	sp,sp,8
-    85bc:	f800283a 	ret
+    8594:	dfc00117 	ldw	ra,4(sp)
+    8598:	dc000017 	ldw	r16,0(sp)
+    859c:	dec00204 	addi	sp,sp,8
+    85a0:	f800283a 	ret
 
-000085c0 <checksum_of_memory_data>:
+000085a4 <checksum_of_memory_data>:
 
 
 //////////////
 
 char checksum_of_memory_data(const MemoryData* md) {
   const int word_count = md->bytecount / 4;
-    85c0:	20800017 	ldw	r2,0(r4)
-    85c4:	1007883a 	mov	r3,r2
-    85c8:	1000010e 	bge	r2,zero,85d0 <checksum_of_memory_data+0x10>
-    85cc:	10c000c4 	addi	r3,r2,3
-    85d0:	180dd0ba 	srai	r6,r3,2
+    85a4:	20800017 	ldw	r2,0(r4)
+    85a8:	1007883a 	mov	r3,r2
+    85ac:	1000010e 	bge	r2,zero,85b4 <checksum_of_memory_data+0x10>
+    85b0:	10c000c4 	addi	r3,r2,3
+    85b4:	180dd0ba 	srai	r6,r3,2
   int count = 0;
   char sum = 0;
   sum += (char)(0xff & md->bytecount);
   sum += (char)(0x00ff & md->address);
-    85d4:	20c00117 	ldw	r3,4(r4)
+    85b8:	20c00117 	ldw	r3,4(r4)
   sum += (char)((0xff00 & md->address) >> 8);
   sum += (0xf & md->recordtype);
-    85d8:	21400217 	ldw	r5,8(r4)
+    85bc:	21400217 	ldw	r5,8(r4)
   for (count = 0; count < word_count; ++count) {
-    85dc:	000f883a 	mov	r7,zero
-    85e0:	1885883a 	add	r2,r3,r2
+    85c0:	000f883a 	mov	r7,zero
+    85c4:	1885883a 	add	r2,r3,r2
   const int word_count = md->bytecount / 4;
   int count = 0;
   char sum = 0;
   sum += (char)(0xff & md->bytecount);
   sum += (char)(0x00ff & md->address);
   sum += (char)((0xff00 & md->address) >> 8);
-    85e4:	18ffc00c 	andi	r3,r3,65280
-    85e8:	1807d23a 	srai	r3,r3,8
+    85c8:	18ffc00c 	andi	r3,r3,65280
+    85cc:	1807d23a 	srai	r3,r3,8
   sum += (0xf & md->recordtype);
-    85ec:	294003cc 	andi	r5,r5,15
-    85f0:	1145883a 	add	r2,r2,r5
-    85f4:	10c5883a 	add	r2,r2,r3
-    85f8:	21000304 	addi	r4,r4,12
+    85d0:	294003cc 	andi	r5,r5,15
+    85d4:	1145883a 	add	r2,r2,r5
+    85d8:	10c5883a 	add	r2,r2,r3
+    85dc:	21000304 	addi	r4,r4,12
   for (count = 0; count < word_count; ++count) {
-    85fc:	39800d0e 	bge	r7,r6,8634 <checksum_of_memory_data+0x74>
+    85e0:	39800d0e 	bge	r7,r6,8618 <checksum_of_memory_data+0x74>
     sum += (char)( 0x000000ff & md->data[count]);
-    8600:	21400017 	ldw	r5,0(r4)
+    85e4:	21400017 	ldw	r5,0(r4)
   char sum = 0;
   sum += (char)(0xff & md->bytecount);
   sum += (char)(0x00ff & md->address);
   sum += (char)((0xff00 & md->address) >> 8);
   sum += (0xf & md->recordtype);
   for (count = 0; count < word_count; ++count) {
-    8604:	39c00044 	addi	r7,r7,1
-    8608:	21000104 	addi	r4,r4,4
+    85e8:	39c00044 	addi	r7,r7,1
+    85ec:	21000104 	addi	r4,r4,4
     sum += (char)( 0x000000ff & md->data[count]);
     sum += (char)((0x0000ff00 & md->data[count]) >> 8);
-    860c:	28ffc00c 	andi	r3,r5,65280
-    8610:	1807d23a 	srai	r3,r3,8
+    85f0:	28ffc00c 	andi	r3,r5,65280
+    85f4:	1807d23a 	srai	r3,r3,8
   sum += (char)(0xff & md->bytecount);
   sum += (char)(0x00ff & md->address);
   sum += (char)((0xff00 & md->address) >> 8);
   sum += (0xf & md->recordtype);
   for (count = 0; count < word_count; ++count) {
     sum += (char)( 0x000000ff & md->data[count]);
-    8614:	2885883a 	add	r2,r5,r2
+    85f8:	2885883a 	add	r2,r5,r2
     sum += (char)((0x0000ff00 & md->data[count]) >> 8);
-    8618:	10c5883a 	add	r2,r2,r3
+    85fc:	10c5883a 	add	r2,r2,r3
     sum += (char)((0x00ff0000 & md->data[count]) >> 16);
-    861c:	28c03fec 	andhi	r3,r5,255
-    8620:	1807d43a 	srai	r3,r3,16
-    8624:	10c7883a 	add	r3,r2,r3
+    8600:	28c03fec 	andhi	r3,r5,255
+    8604:	1807d43a 	srai	r3,r3,16
+    8608:	10c7883a 	add	r3,r2,r3
     sum += (char)((0xff000000 & md->data[count]) >> 24);
-    8628:	2804d63a 	srli	r2,r5,24
-    862c:	1885883a 	add	r2,r3,r2
-    8630:	003ff206 	br	85fc <_gp+0xffff717c>
+    860c:	2804d63a 	srli	r2,r5,24
+    8610:	1885883a 	add	r2,r3,r2
+    8614:	003ff206 	br	85e0 <_gp+0xffff71c0>
   }
   return (char)(0xff & (~sum + 1));
 }
-    8634:	0085c83a 	sub	r2,zero,r2
-    8638:	f800283a 	ret
+    8618:	0085c83a 	sub	r2,zero,r2
+    861c:	f800283a 	ret
 
-0000863c <convert_hexformat_to_memory_data>:
+00008620 <convert_hexformat_to_memory_data>:
 
 ///////////////////
 
 void convert_hexformat_to_memory_data(const char* hf, MemoryData* md) {
-    863c:	defffb04 	addi	sp,sp,-20
-    8640:	dfc00415 	stw	ra,16(sp)
-    8644:	dcc00315 	stw	r19,12(sp)
-    8648:	dc800215 	stw	r18,8(sp)
-    864c:	2027883a 	mov	r19,r4
-    8650:	dc400115 	stw	r17,4(sp)
-    8654:	dc000015 	stw	r16,0(sp)
-    8658:	2821883a 	mov	r16,r5
+    8620:	defffb04 	addi	sp,sp,-20
+    8624:	dfc00415 	stw	ra,16(sp)
+    8628:	dcc00315 	stw	r19,12(sp)
+    862c:	dc800215 	stw	r18,8(sp)
+    8630:	2027883a 	mov	r19,r4
+    8634:	dc400115 	stw	r17,4(sp)
+    8638:	dc000015 	stw	r16,0(sp)
+    863c:	2821883a 	mov	r16,r5
   int i;
 
   md->bytecount  = bytecount_of_hexformat(hf);
-    865c:	0008c500 	call	8c50 <bytecount_of_hexformat>
+    8640:	0008c340 	call	8c34 <bytecount_of_hexformat>
   md->address    = address_of_hexformat(hf);
-    8660:	9809883a 	mov	r4,r19
+    8644:	9809883a 	mov	r4,r19
 ///////////////////
 
 void convert_hexformat_to_memory_data(const char* hf, MemoryData* md) {
   int i;
 
   md->bytecount  = bytecount_of_hexformat(hf);
-    8664:	80800015 	stw	r2,0(r16)
+    8648:	80800015 	stw	r2,0(r16)
   md->address    = address_of_hexformat(hf);
-    8668:	0008c600 	call	8c60 <address_of_hexformat>
-    866c:	80800115 	stw	r2,4(r16)
+    864c:	0008c440 	call	8c44 <address_of_hexformat>
+    8650:	80800115 	stw	r2,4(r16)
   md->recordtype = recordtype_of_hexformat(hf);
-    8670:	9809883a 	mov	r4,r19
-    8674:	0008c780 	call	8c78 <recordtype_of_hexformat>
-    8678:	80800215 	stw	r2,8(r16)
-    867c:	84800304 	addi	r18,r16,12
+    8654:	9809883a 	mov	r4,r19
+    8658:	0008c5c0 	call	8c5c <recordtype_of_hexformat>
+    865c:	80800215 	stw	r2,8(r16)
+    8660:	84800304 	addi	r18,r16,12
   for (i = 0; i < md->bytecount / 4; ++i) {
-    8680:	0023883a 	mov	r17,zero
-    8684:	80800017 	ldw	r2,0(r16)
-    8688:	1000010e 	bge	r2,zero,8690 <convert_hexformat_to_memory_data+0x54>
-    868c:	108000c4 	addi	r2,r2,3
-    8690:	1005d0ba 	srai	r2,r2,2
-    8694:	8880070e 	bge	r17,r2,86b4 <convert_hexformat_to_memory_data+0x78>
+    8664:	0023883a 	mov	r17,zero
+    8668:	80800017 	ldw	r2,0(r16)
+    866c:	1000010e 	bge	r2,zero,8674 <convert_hexformat_to_memory_data+0x54>
+    8670:	108000c4 	addi	r2,r2,3
+    8674:	1005d0ba 	srai	r2,r2,2
+    8678:	8880070e 	bge	r17,r2,8698 <convert_hexformat_to_memory_data+0x78>
     md->data[i] = data_of_hexformat(hf, i);
-    8698:	880b883a 	mov	r5,r17
-    869c:	9809883a 	mov	r4,r19
-    86a0:	0008c880 	call	8c88 <data_of_hexformat>
-    86a4:	90800015 	stw	r2,0(r18)
+    867c:	880b883a 	mov	r5,r17
+    8680:	9809883a 	mov	r4,r19
+    8684:	0008c6c0 	call	8c6c <data_of_hexformat>
+    8688:	90800015 	stw	r2,0(r18)
   int i;
 
   md->bytecount  = bytecount_of_hexformat(hf);
   md->address    = address_of_hexformat(hf);
   md->recordtype = recordtype_of_hexformat(hf);
   for (i = 0; i < md->bytecount / 4; ++i) {
-    86a8:	8c400044 	addi	r17,r17,1
-    86ac:	94800104 	addi	r18,r18,4
-    86b0:	003ff406 	br	8684 <_gp+0xffff7204>
+    868c:	8c400044 	addi	r17,r17,1
+    8690:	94800104 	addi	r18,r18,4
+    8694:	003ff406 	br	8668 <_gp+0xffff7248>
     md->data[i] = data_of_hexformat(hf, i);
   }
 }
-    86b4:	dfc00417 	ldw	ra,16(sp)
-    86b8:	dcc00317 	ldw	r19,12(sp)
-    86bc:	dc800217 	ldw	r18,8(sp)
-    86c0:	dc400117 	ldw	r17,4(sp)
-    86c4:	dc000017 	ldw	r16,0(sp)
-    86c8:	dec00504 	addi	sp,sp,20
-    86cc:	f800283a 	ret
+    8698:	dfc00417 	ldw	ra,16(sp)
+    869c:	dcc00317 	ldw	r19,12(sp)
+    86a0:	dc800217 	ldw	r18,8(sp)
+    86a4:	dc400117 	ldw	r17,4(sp)
+    86a8:	dc000017 	ldw	r16,0(sp)
+    86ac:	dec00504 	addi	sp,sp,20
+    86b0:	f800283a 	ret
 
-000086d0 <convert_memory_data_to_hexformat>:
+000086b4 <convert_memory_data_to_hexformat>:
 
 void convert_memory_data_to_hexformat(const MemoryData* md, char* hf) {
-    86d0:	defff704 	addi	sp,sp,-36
-    86d4:	dfc00815 	stw	ra,32(sp)
-    86d8:	ddc00715 	stw	r23,28(sp)
-    86dc:	dd800615 	stw	r22,24(sp)
-    86e0:	dd400515 	stw	r21,20(sp)
-    86e4:	dd000415 	stw	r20,16(sp)
-    86e8:	dcc00315 	stw	r19,12(sp)
-    86ec:	dc800215 	stw	r18,8(sp)
-    86f0:	dc400115 	stw	r17,4(sp)
-    86f4:	dc000015 	stw	r16,0(sp)
-    86f8:	2023883a 	mov	r17,r4
-    86fc:	2821883a 	mov	r16,r5
+    86b4:	defff704 	addi	sp,sp,-36
+    86b8:	dfc00815 	stw	ra,32(sp)
+    86bc:	ddc00715 	stw	r23,28(sp)
+    86c0:	dd800615 	stw	r22,24(sp)
+    86c4:	dd400515 	stw	r21,20(sp)
+    86c8:	dd000415 	stw	r20,16(sp)
+    86cc:	dcc00315 	stw	r19,12(sp)
+    86d0:	dc800215 	stw	r18,8(sp)
+    86d4:	dc400115 	stw	r17,4(sp)
+    86d8:	dc000015 	stw	r16,0(sp)
+    86dc:	2023883a 	mov	r17,r4
+    86e0:	2821883a 	mov	r16,r5
   int i = 0;
   int checksum = (int)checksum_of_memory_data(md);
-    8700:	00085c00 	call	85c0 <checksum_of_memory_data>
-    8704:	14c03fcc 	andi	r19,r2,255
+    86e4:	00085a40 	call	85a4 <checksum_of_memory_data>
+    86e8:	14c03fcc 	andi	r19,r2,255
 
   hf[0] = ':';
-    8708:	00800e84 	movi	r2,58
-    870c:	80800005 	stb	r2,0(r16)
+    86ec:	00800e84 	movi	r2,58
+    86f0:	80800005 	stb	r2,0(r16)
   // bytecount
   hf[1] = hex_nth_digit(md->bytecount, 1);
-    8710:	89000017 	ldw	r4,0(r17)
-    8714:	01400044 	movi	r5,1
+    86f4:	89000017 	ldw	r4,0(r17)
+    86f8:	01400044 	movi	r5,1
   }
 }
 
 void convert_memory_data_to_hexformat(const MemoryData* md, char* hf) {
   int i = 0;
   int checksum = (int)checksum_of_memory_data(md);
-    8718:	9cc0201c 	xori	r19,r19,128
+    86fc:	9cc0201c 	xori	r19,r19,128
 
   hf[0] = ':';
   // bytecount
   hf[1] = hex_nth_digit(md->bytecount, 1);
-    871c:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8720:	80800045 	stb	r2,1(r16)
+    8700:	0008c100 	call	8c10 <hex_nth_digit>
+    8704:	80800045 	stb	r2,1(r16)
   hf[2] = hex_nth_digit(md->bytecount, 0);
-    8724:	89000017 	ldw	r4,0(r17)
-    8728:	000b883a 	mov	r5,zero
+    8708:	89000017 	ldw	r4,0(r17)
+    870c:	000b883a 	mov	r5,zero
   }
 }
 
 void convert_memory_data_to_hexformat(const MemoryData* md, char* hf) {
   int i = 0;
   int checksum = (int)checksum_of_memory_data(md);
-    872c:	9cffe004 	addi	r19,r19,-128
+    8710:	9cffe004 	addi	r19,r19,-128
 
   hf[0] = ':';
   // bytecount
   hf[1] = hex_nth_digit(md->bytecount, 1);
   hf[2] = hex_nth_digit(md->bytecount, 0);
-    8730:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8734:	80800085 	stb	r2,2(r16)
+    8714:	0008c100 	call	8c10 <hex_nth_digit>
+    8718:	80800085 	stb	r2,2(r16)
   // address
   hf[3] = hex_nth_digit(md->address, 3);
-    8738:	89000117 	ldw	r4,4(r17)
-    873c:	014000c4 	movi	r5,3
-    8740:	8c800304 	addi	r18,r17,12
-    8744:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8748:	808000c5 	stb	r2,3(r16)
+    871c:	89000117 	ldw	r4,4(r17)
+    8720:	014000c4 	movi	r5,3
+    8724:	8c800304 	addi	r18,r17,12
+    8728:	0008c100 	call	8c10 <hex_nth_digit>
+    872c:	808000c5 	stb	r2,3(r16)
   hf[4] = hex_nth_digit(md->address, 2);
-    874c:	89000117 	ldw	r4,4(r17)
-    8750:	01400084 	movi	r5,2
-    8754:	85800244 	addi	r22,r16,9
-    8758:	0008c2c0 	call	8c2c <hex_nth_digit>
-    875c:	80800105 	stb	r2,4(r16)
+    8730:	89000117 	ldw	r4,4(r17)
+    8734:	01400084 	movi	r5,2
+    8738:	85800244 	addi	r22,r16,9
+    873c:	0008c100 	call	8c10 <hex_nth_digit>
+    8740:	80800105 	stb	r2,4(r16)
   hf[5] = hex_nth_digit(md->address, 1);
-    8760:	89000117 	ldw	r4,4(r17)
-    8764:	01400044 	movi	r5,1
-    8768:	8029883a 	mov	r20,r16
-    876c:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8770:	80800145 	stb	r2,5(r16)
+    8744:	89000117 	ldw	r4,4(r17)
+    8748:	01400044 	movi	r5,1
+    874c:	8029883a 	mov	r20,r16
+    8750:	0008c100 	call	8c10 <hex_nth_digit>
+    8754:	80800145 	stb	r2,5(r16)
   hf[6] = hex_nth_digit(md->address, 0);
-    8774:	89000117 	ldw	r4,4(r17)
-    8778:	000b883a 	mov	r5,zero
-    877c:	85c00284 	addi	r23,r16,10
-    8780:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8784:	80800185 	stb	r2,6(r16)
+    8758:	89000117 	ldw	r4,4(r17)
+    875c:	000b883a 	mov	r5,zero
+    8760:	85c00284 	addi	r23,r16,10
+    8764:	0008c100 	call	8c10 <hex_nth_digit>
+    8768:	80800185 	stb	r2,6(r16)
   // recordtype
   hf[7] = hex_nth_digit(md->recordtype, 1);
-    8788:	89000217 	ldw	r4,8(r17)
-    878c:	01400044 	movi	r5,1
+    876c:	89000217 	ldw	r4,8(r17)
+    8770:	01400044 	movi	r5,1
   hf[8] = hex_nth_digit(md->recordtype, 0);
   // data
   for (i = 0; i < md->bytecount / 4; ++i) {
-    8790:	002b883a 	mov	r21,zero
+    8774:	002b883a 	mov	r21,zero
   hf[3] = hex_nth_digit(md->address, 3);
   hf[4] = hex_nth_digit(md->address, 2);
   hf[5] = hex_nth_digit(md->address, 1);
   hf[6] = hex_nth_digit(md->address, 0);
   // recordtype
   hf[7] = hex_nth_digit(md->recordtype, 1);
-    8794:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8798:	808001c5 	stb	r2,7(r16)
+    8778:	0008c100 	call	8c10 <hex_nth_digit>
+    877c:	808001c5 	stb	r2,7(r16)
   hf[8] = hex_nth_digit(md->recordtype, 0);
-    879c:	89000217 	ldw	r4,8(r17)
-    87a0:	000b883a 	mov	r5,zero
-    87a4:	0008c2c0 	call	8c2c <hex_nth_digit>
-    87a8:	80800205 	stb	r2,8(r16)
+    8780:	89000217 	ldw	r4,8(r17)
+    8784:	000b883a 	mov	r5,zero
+    8788:	0008c100 	call	8c10 <hex_nth_digit>
+    878c:	80800205 	stb	r2,8(r16)
   // data
   for (i = 0; i < md->bytecount / 4; ++i) {
-    87ac:	88c00017 	ldw	r3,0(r17)
-    87b0:	a5000204 	addi	r20,r20,8
-    87b4:	1805883a 	mov	r2,r3
-    87b8:	1800010e 	bge	r3,zero,87c0 <convert_memory_data_to_hexformat+0xf0>
-    87bc:	188000c4 	addi	r2,r3,3
-    87c0:	1005d0ba 	srai	r2,r2,2
-    87c4:	a880250e 	bge	r21,r2,885c <convert_memory_data_to_hexformat+0x18c>
+    8790:	88c00017 	ldw	r3,0(r17)
+    8794:	a5000204 	addi	r20,r20,8
+    8798:	1805883a 	mov	r2,r3
+    879c:	1800010e 	bge	r3,zero,87a4 <convert_memory_data_to_hexformat+0xf0>
+    87a0:	188000c4 	addi	r2,r3,3
+    87a4:	1005d0ba 	srai	r2,r2,2
+    87a8:	a880250e 	bge	r21,r2,8840 <convert_memory_data_to_hexformat+0x18c>
     hf[9 + 8 * i + 0] = hex_nth_digit(md->data[i], 7);
-    87c8:	91000017 	ldw	r4,0(r18)
-    87cc:	014001c4 	movi	r5,7
+    87ac:	91000017 	ldw	r4,0(r18)
+    87b0:	014001c4 	movi	r5,7
   hf[6] = hex_nth_digit(md->address, 0);
   // recordtype
   hf[7] = hex_nth_digit(md->recordtype, 1);
   hf[8] = hex_nth_digit(md->recordtype, 0);
   // data
   for (i = 0; i < md->bytecount / 4; ++i) {
-    87d0:	ad400044 	addi	r21,r21,1
+    87b4:	ad400044 	addi	r21,r21,1
     hf[9 + 8 * i + 0] = hex_nth_digit(md->data[i], 7);
-    87d4:	0008c2c0 	call	8c2c <hex_nth_digit>
-    87d8:	b0800005 	stb	r2,0(r22)
+    87b8:	0008c100 	call	8c10 <hex_nth_digit>
+    87bc:	b0800005 	stb	r2,0(r22)
     hf[9 + 8 * i + 1] = hex_nth_digit(md->data[i], 6);
-    87dc:	91000017 	ldw	r4,0(r18)
-    87e0:	01400184 	movi	r5,6
-    87e4:	94800104 	addi	r18,r18,4
-    87e8:	0008c2c0 	call	8c2c <hex_nth_digit>
-    87ec:	b8800005 	stb	r2,0(r23)
+    87c0:	91000017 	ldw	r4,0(r18)
+    87c4:	01400184 	movi	r5,6
+    87c8:	94800104 	addi	r18,r18,4
+    87cc:	0008c100 	call	8c10 <hex_nth_digit>
+    87d0:	b8800005 	stb	r2,0(r23)
     hf[9 + 8 * i + 2] = hex_nth_digit(md->data[i], 5);
-    87f0:	913fff17 	ldw	r4,-4(r18)
-    87f4:	01400144 	movi	r5,5
-    87f8:	b5800204 	addi	r22,r22,8
-    87fc:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8800:	a08000c5 	stb	r2,3(r20)
+    87d4:	913fff17 	ldw	r4,-4(r18)
+    87d8:	01400144 	movi	r5,5
+    87dc:	b5800204 	addi	r22,r22,8
+    87e0:	0008c100 	call	8c10 <hex_nth_digit>
+    87e4:	a08000c5 	stb	r2,3(r20)
     hf[9 + 8 * i + 3] = hex_nth_digit(md->data[i], 4);
-    8804:	913fff17 	ldw	r4,-4(r18)
-    8808:	01400104 	movi	r5,4
-    880c:	bdc00204 	addi	r23,r23,8
-    8810:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8814:	a0800105 	stb	r2,4(r20)
+    87e8:	913fff17 	ldw	r4,-4(r18)
+    87ec:	01400104 	movi	r5,4
+    87f0:	bdc00204 	addi	r23,r23,8
+    87f4:	0008c100 	call	8c10 <hex_nth_digit>
+    87f8:	a0800105 	stb	r2,4(r20)
     hf[9 + 8 * i + 4] = hex_nth_digit(md->data[i], 3);
-    8818:	913fff17 	ldw	r4,-4(r18)
-    881c:	014000c4 	movi	r5,3
-    8820:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8824:	a0800145 	stb	r2,5(r20)
+    87fc:	913fff17 	ldw	r4,-4(r18)
+    8800:	014000c4 	movi	r5,3
+    8804:	0008c100 	call	8c10 <hex_nth_digit>
+    8808:	a0800145 	stb	r2,5(r20)
     hf[9 + 8 * i + 5] = hex_nth_digit(md->data[i], 2);
-    8828:	913fff17 	ldw	r4,-4(r18)
-    882c:	01400084 	movi	r5,2
-    8830:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8834:	a0800185 	stb	r2,6(r20)
+    880c:	913fff17 	ldw	r4,-4(r18)
+    8810:	01400084 	movi	r5,2
+    8814:	0008c100 	call	8c10 <hex_nth_digit>
+    8818:	a0800185 	stb	r2,6(r20)
     hf[9 + 8 * i + 6] = hex_nth_digit(md->data[i], 1);
-    8838:	913fff17 	ldw	r4,-4(r18)
-    883c:	01400044 	movi	r5,1
-    8840:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8844:	a08001c5 	stb	r2,7(r20)
+    881c:	913fff17 	ldw	r4,-4(r18)
+    8820:	01400044 	movi	r5,1
+    8824:	0008c100 	call	8c10 <hex_nth_digit>
+    8828:	a08001c5 	stb	r2,7(r20)
     hf[9 + 8 * i + 7] = hex_nth_digit(md->data[i], 0);
-    8848:	913fff17 	ldw	r4,-4(r18)
-    884c:	000b883a 	mov	r5,zero
-    8850:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8854:	a0800205 	stb	r2,8(r20)
-    8858:	003fd406 	br	87ac <_gp+0xffff732c>
+    882c:	913fff17 	ldw	r4,-4(r18)
+    8830:	000b883a 	mov	r5,zero
+    8834:	0008c100 	call	8c10 <hex_nth_digit>
+    8838:	a0800205 	stb	r2,8(r20)
+    883c:	003fd406 	br	8790 <_gp+0xffff7370>
   }
   // checksum
   hf[9 + 2 * md->bytecount + 0] = hex_nth_digit(checksum, 1);
-    885c:	18c7883a 	add	r3,r3,r3
-    8860:	1c800244 	addi	r18,r3,9
-    8864:	9809883a 	mov	r4,r19
-    8868:	01400044 	movi	r5,1
-    886c:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8870:	84a5883a 	add	r18,r16,r18
-    8874:	90800005 	stb	r2,0(r18)
+    8840:	18c7883a 	add	r3,r3,r3
+    8844:	1c800244 	addi	r18,r3,9
+    8848:	9809883a 	mov	r4,r19
+    884c:	01400044 	movi	r5,1
+    8850:	0008c100 	call	8c10 <hex_nth_digit>
+    8854:	84a5883a 	add	r18,r16,r18
+    8858:	90800005 	stb	r2,0(r18)
   hf[9 + 2 * md->bytecount + 1] = hex_nth_digit(checksum, 0);
-    8878:	88c00017 	ldw	r3,0(r17)
-    887c:	9809883a 	mov	r4,r19
-    8880:	000b883a 	mov	r5,zero
-    8884:	18c7883a 	add	r3,r3,r3
-    8888:	1c800284 	addi	r18,r3,10
-    888c:	84a5883a 	add	r18,r16,r18
-    8890:	0008c2c0 	call	8c2c <hex_nth_digit>
-    8894:	90800005 	stb	r2,0(r18)
+    885c:	88c00017 	ldw	r3,0(r17)
+    8860:	9809883a 	mov	r4,r19
+    8864:	000b883a 	mov	r5,zero
+    8868:	18c7883a 	add	r3,r3,r3
+    886c:	1c800284 	addi	r18,r3,10
+    8870:	84a5883a 	add	r18,r16,r18
+    8874:	0008c100 	call	8c10 <hex_nth_digit>
+    8878:	90800005 	stb	r2,0(r18)
   // end
   hf[9 + 2 * md->bytecount + 2] = '\r';
-    8898:	88800017 	ldw	r2,0(r17)
-    889c:	00c00344 	movi	r3,13
-    88a0:	1085883a 	add	r2,r2,r2
-    88a4:	8085883a 	add	r2,r16,r2
-    88a8:	10c002c5 	stb	r3,11(r2)
+    887c:	88800017 	ldw	r2,0(r17)
+    8880:	00c00344 	movi	r3,13
+    8884:	1085883a 	add	r2,r2,r2
+    8888:	8085883a 	add	r2,r16,r2
+    888c:	10c002c5 	stb	r3,11(r2)
   hf[9 + 2 * md->bytecount + 3] = '\n';
-    88ac:	88800017 	ldw	r2,0(r17)
-    88b0:	00c00284 	movi	r3,10
-    88b4:	1085883a 	add	r2,r2,r2
-    88b8:	8085883a 	add	r2,r16,r2
-    88bc:	10c00305 	stb	r3,12(r2)
+    8890:	88800017 	ldw	r2,0(r17)
+    8894:	00c00284 	movi	r3,10
+    8898:	1085883a 	add	r2,r2,r2
+    889c:	8085883a 	add	r2,r16,r2
+    88a0:	10c00305 	stb	r3,12(r2)
   hf[9 + 2 * md->bytecount + 4] = '\0';
-    88c0:	88800017 	ldw	r2,0(r17)
-    88c4:	1085883a 	add	r2,r2,r2
-    88c8:	80a1883a 	add	r16,r16,r2
-    88cc:	80000345 	stb	zero,13(r16)
+    88a4:	88800017 	ldw	r2,0(r17)
+    88a8:	1085883a 	add	r2,r2,r2
+    88ac:	80a1883a 	add	r16,r16,r2
+    88b0:	80000345 	stb	zero,13(r16)
 }
-    88d0:	dfc00817 	ldw	ra,32(sp)
-    88d4:	ddc00717 	ldw	r23,28(sp)
-    88d8:	dd800617 	ldw	r22,24(sp)
-    88dc:	dd400517 	ldw	r21,20(sp)
-    88e0:	dd000417 	ldw	r20,16(sp)
-    88e4:	dcc00317 	ldw	r19,12(sp)
-    88e8:	dc800217 	ldw	r18,8(sp)
-    88ec:	dc400117 	ldw	r17,4(sp)
-    88f0:	dc000017 	ldw	r16,0(sp)
-    88f4:	dec00904 	addi	sp,sp,36
-    88f8:	f800283a 	ret
+    88b4:	dfc00817 	ldw	ra,32(sp)
+    88b8:	ddc00717 	ldw	r23,28(sp)
+    88bc:	dd800617 	ldw	r22,24(sp)
+    88c0:	dd400517 	ldw	r21,20(sp)
+    88c4:	dd000417 	ldw	r20,16(sp)
+    88c8:	dcc00317 	ldw	r19,12(sp)
+    88cc:	dc800217 	ldw	r18,8(sp)
+    88d0:	dc400117 	ldw	r17,4(sp)
+    88d4:	dc000017 	ldw	r16,0(sp)
+    88d8:	dec00904 	addi	sp,sp,36
+    88dc:	f800283a 	ret
 
-000088fc <assert_dmem_we>:
+000088e0 <assert_dmem_we>:
 #include "altera_avalon_pio_regs.h"
 
 #include "dmem.h"
 
 void assert_dmem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_WE_BASE, 1);
-    88fc:	00804004 	movi	r2,256
-    8900:	00c00044 	movi	r3,1
-    8904:	10c00035 	stwio	r3,0(r2)
-    8908:	f800283a 	ret
+    88e0:	00804004 	movi	r2,256
+    88e4:	00c00044 	movi	r3,1
+    88e8:	10c00035 	stwio	r3,0(r2)
+    88ec:	f800283a 	ret
 
-0000890c <negate_dmem_we>:
+000088f0 <negate_dmem_we>:
 };
 
 void negate_dmem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_WE_BASE, 0);
-    890c:	00804004 	movi	r2,256
-    8910:	10000035 	stwio	zero,0(r2)
-    8914:	f800283a 	ret
+    88f0:	00804004 	movi	r2,256
+    88f4:	10000035 	stwio	zero,0(r2)
+    88f8:	f800283a 	ret
 
-00008918 <assert_dmem_clk>:
+000088fc <assert_dmem_clk>:
 };
 
 void assert_dmem_clk() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_CLK_BASE, 1);
-    8918:	00804404 	movi	r2,272
-    891c:	00c00044 	movi	r3,1
-    8920:	10c00035 	stwio	r3,0(r2)
-    8924:	f800283a 	ret
+    88fc:	00804404 	movi	r2,272
+    8900:	00c00044 	movi	r3,1
+    8904:	10c00035 	stwio	r3,0(r2)
+    8908:	f800283a 	ret
 
-00008928 <negate_dmem_clk>:
+0000890c <negate_dmem_clk>:
 };
 
 void negate_dmem_clk() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_CLK_BASE, 0);
-    8928:	00804404 	movi	r2,272
-    892c:	10000035 	stwio	zero,0(r2)
-    8930:	f800283a 	ret
+    890c:	00804404 	movi	r2,272
+    8910:	10000035 	stwio	zero,0(r2)
+    8914:	f800283a 	ret
 
-00008934 <dmem_wd>:
+00008918 <dmem_wd>:
 };
 
 ////////
 void dmem_wd(int addr, int data) {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_ADDR_BASE, addr);
-    8934:	00804804 	movi	r2,288
-    8938:	11000035 	stwio	r4,0(r2)
+    8918:	00804804 	movi	r2,288
+    891c:	11000035 	stwio	r4,0(r2)
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_WD_BASE, data);
-    893c:	00805004 	movi	r2,320
-    8940:	11400035 	stwio	r5,0(r2)
+    8920:	00805004 	movi	r2,320
+    8924:	11400035 	stwio	r5,0(r2)
 #include "altera_avalon_pio_regs.h"
 
 #include "dmem.h"
 
 void assert_dmem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_WE_BASE, 1);
-    8944:	00c00044 	movi	r3,1
-    8948:	00804004 	movi	r2,256
-    894c:	10c00035 	stwio	r3,0(r2)
+    8928:	00c00044 	movi	r3,1
+    892c:	00804004 	movi	r2,256
+    8930:	10c00035 	stwio	r3,0(r2)
 void negate_dmem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_WE_BASE, 0);
 };
 
 void assert_dmem_clk() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_CLK_BASE, 1);
-    8950:	01004404 	movi	r4,272
-    8954:	20c00035 	stwio	r3,0(r4)
+    8934:	01004404 	movi	r4,272
+    8938:	20c00035 	stwio	r3,0(r4)
 };
 
 void negate_dmem_clk() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_CLK_BASE, 0);
-    8958:	0007883a 	mov	r3,zero
-    895c:	20c00035 	stwio	r3,0(r4)
+    893c:	0007883a 	mov	r3,zero
+    8940:	20c00035 	stwio	r3,0(r4)
 void assert_dmem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_WE_BASE, 1);
 };
 
 void negate_dmem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_WE_BASE, 0);
-    8960:	10c00035 	stwio	r3,0(r2)
-    8964:	f800283a 	ret
+    8944:	10c00035 	stwio	r3,0(r2)
+    8948:	f800283a 	ret
 
-00008968 <dmem_rd>:
+0000894c <dmem_rd>:
   negate_dmem_clk();
   negate_dmem_we();
 }
 
 int dmem_rd(int addr) {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_ADDR_BASE, addr);
-    8968:	00804804 	movi	r2,288
-    896c:	11000035 	stwio	r4,0(r2)
+    894c:	00804804 	movi	r2,288
+    8950:	11000035 	stwio	r4,0(r2)
 void negate_dmem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_WE_BASE, 0);
 };
 
 void assert_dmem_clk() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_CLK_BASE, 1);
-    8970:	00804404 	movi	r2,272
-    8974:	00c00044 	movi	r3,1
-    8978:	10c00035 	stwio	r3,0(r2)
+    8954:	00804404 	movi	r2,272
+    8958:	00c00044 	movi	r3,1
+    895c:	10c00035 	stwio	r3,0(r2)
 };
 
 void negate_dmem_clk() {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_CLK_BASE, 0);
-    897c:	10000035 	stwio	zero,0(r2)
+    8960:	10000035 	stwio	zero,0(r2)
 int dmem_rd(int addr) {
   IOWR_ALTERA_AVALON_PIO_DATA(DMEM_ADDR_BASE, addr);
   assert_dmem_clk();
   negate_dmem_clk();
   return IORD_ALTERA_AVALON_PIO_DATA(DMEM_RD_BASE);
 }
-    8980:	00804c04 	movi	r2,304
-    8984:	10800037 	ldwio	r2,0(r2)
-    8988:	f800283a 	ret
+    8964:	00804c04 	movi	r2,304
+    8968:	10800037 	ldwio	r2,0(r2)
+    896c:	f800283a 	ret
 
-0000898c <assert_imem_we>:
+00008970 <assert_imem_we>:
 #include "altera_avalon_pio_regs.h"
 
 #include "imem.h"
 
 void assert_imem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WE_BASE, 1);
-    898c:	0005883a 	mov	r2,zero
-    8990:	00c00044 	movi	r3,1
-    8994:	10c00035 	stwio	r3,0(r2)
-    8998:	f800283a 	ret
+    8970:	0005883a 	mov	r2,zero
+    8974:	00c00044 	movi	r3,1
+    8978:	10c00035 	stwio	r3,0(r2)
+    897c:	f800283a 	ret
 
-0000899c <negate_imem_we>:
+00008980 <negate_imem_we>:
 };
 
 void negate_imem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WE_BASE, 0);
-    899c:	0005883a 	mov	r2,zero
-    89a0:	10800035 	stwio	r2,0(r2)
-    89a4:	f800283a 	ret
+    8980:	0005883a 	mov	r2,zero
+    8984:	10800035 	stwio	r2,0(r2)
+    8988:	f800283a 	ret
 
-000089a8 <assert_imem_clk>:
+0000898c <assert_imem_clk>:
 };
 
 void assert_imem_clk() {
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_CLK_BASE, 1);
-    89a8:	00800404 	movi	r2,16
-    89ac:	00c00044 	movi	r3,1
-    89b0:	10c00035 	stwio	r3,0(r2)
-    89b4:	f800283a 	ret
+    898c:	00800404 	movi	r2,16
+    8990:	00c00044 	movi	r3,1
+    8994:	10c00035 	stwio	r3,0(r2)
+    8998:	f800283a 	ret
 
-000089b8 <negate_imem_clk>:
+0000899c <negate_imem_clk>:
 };
 
 void negate_imem_clk() {
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_CLK_BASE, 0);
-    89b8:	00800404 	movi	r2,16
-    89bc:	10000035 	stwio	zero,0(r2)
-    89c0:	f800283a 	ret
+    899c:	00800404 	movi	r2,16
+    89a0:	10000035 	stwio	zero,0(r2)
+    89a4:	f800283a 	ret
 
-000089c4 <imem_wd>:
+000089a8 <imem_wd>:
 };
 
 ////////
 void imem_wd(int addr, int data) {
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_ADDR_BASE, addr);
-    89c4:	00800804 	movi	r2,32
-    89c8:	11000035 	stwio	r4,0(r2)
+    89a8:	00800804 	movi	r2,32
+    89ac:	11000035 	stwio	r4,0(r2)
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WD_BASE, data);
-    89cc:	00801004 	movi	r2,64
-    89d0:	11400035 	stwio	r5,0(r2)
+    89b0:	00801004 	movi	r2,64
+    89b4:	11400035 	stwio	r5,0(r2)
 #include "altera_avalon_pio_regs.h"
 
 #include "imem.h"
 
 void assert_imem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WE_BASE, 1);
-    89d4:	01000044 	movi	r4,1
-    89d8:	0005883a 	mov	r2,zero
+    89b8:	01000044 	movi	r4,1
+    89bc:	0005883a 	mov	r2,zero
+    89c0:	11000035 	stwio	r4,0(r2)
+void negate_imem_we() {
+  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WE_BASE, 0);
+};
+
+void assert_imem_clk() {
+  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_CLK_BASE, 1);
+    89c4:	00c00404 	movi	r3,16
+    89c8:	19000035 	stwio	r4,0(r3)
+};
+
+void negate_imem_clk() {
+  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_CLK_BASE, 0);
+    89cc:	18800035 	stwio	r2,0(r3)
+void assert_imem_we() {
+  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WE_BASE, 1);
+};
+
+void negate_imem_we() {
+  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WE_BASE, 0);
+    89d0:	10800035 	stwio	r2,0(r2)
+    89d4:	f800283a 	ret
+
+000089d8 <imem_rd>:
+  negate_imem_clk();
+  negate_imem_we();
+}
+
+int imem_rd(int addr) {
+  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_ADDR_BASE, addr);
+    89d8:	00800804 	movi	r2,32
     89dc:	11000035 	stwio	r4,0(r2)
 void negate_imem_we() {
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WE_BASE, 0);
@@ -1638,1574 +1638,1543 @@ void negate_imem_we() {
 
 void assert_imem_clk() {
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_CLK_BASE, 1);
-    89e0:	00c00404 	movi	r3,16
-    89e4:	19000035 	stwio	r4,0(r3)
+    89e0:	00800404 	movi	r2,16
+    89e4:	00c00044 	movi	r3,1
+    89e8:	10c00035 	stwio	r3,0(r2)
 };
 
 void negate_imem_clk() {
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_CLK_BASE, 0);
-    89e8:	18800035 	stwio	r2,0(r3)
-void assert_imem_we() {
-  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WE_BASE, 1);
-};
-
-void negate_imem_we() {
-  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WE_BASE, 0);
-    89ec:	10800035 	stwio	r2,0(r2)
-    89f0:	f800283a 	ret
-
-000089f4 <imem_rd>:
-  negate_imem_clk();
-  negate_imem_we();
-}
-
-int imem_rd(int addr) {
-  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_ADDR_BASE, addr);
-    89f4:	00800804 	movi	r2,32
-    89f8:	11000035 	stwio	r4,0(r2)
-void negate_imem_we() {
-  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_WE_BASE, 0);
-};
-
-void assert_imem_clk() {
-  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_CLK_BASE, 1);
-    89fc:	00800404 	movi	r2,16
-    8a00:	00c00044 	movi	r3,1
-    8a04:	10c00035 	stwio	r3,0(r2)
-};
-
-void negate_imem_clk() {
-  IOWR_ALTERA_AVALON_PIO_DATA(IMEM_CLK_BASE, 0);
-    8a08:	10000035 	stwio	zero,0(r2)
+    89ec:	10000035 	stwio	zero,0(r2)
 int imem_rd(int addr) {
   IOWR_ALTERA_AVALON_PIO_DATA(IMEM_ADDR_BASE, addr);
   assert_imem_clk();
   negate_imem_clk();
   return IORD_ALTERA_AVALON_PIO_DATA(IMEM_RD_BASE);
 }
-    8a0c:	00800c04 	movi	r2,48
-    8a10:	10800037 	ldwio	r2,0(r2)
-    8a14:	f800283a 	ret
+    89f0:	00800c04 	movi	r2,48
+    89f4:	10800037 	ldwio	r2,0(r2)
+    89f8:	f800283a 	ret
 
-00008a18 <iport_wd>:
+000089fc <iport_wd>:
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
 #include "ioport.h"
 
 void iport_wd(int data) {
   IOWR_ALTERA_AVALON_PIO_DATA(IPORT3_DATA_BASE, data);
-    8a18:	0080c004 	movi	r2,768
-    8a1c:	11000035 	stwio	r4,0(r2)
-    8a20:	f800283a 	ret
+    89fc:	0080c004 	movi	r2,768
+    8a00:	11000035 	stwio	r4,0(r2)
+    8a04:	f800283a 	ret
 
-00008a24 <oport_rd>:
+00008a08 <oport_rd>:
 }
 
 int oport_rd() {
   return IORD_ALTERA_AVALON_PIO_DATA(OPORT3_DATA_BASE);
 }
-    8a24:	0080c404 	movi	r2,784
-    8a28:	10800037 	ldwio	r2,0(r2)
-    8a2c:	f800283a 	ret
+    8a08:	0080c404 	movi	r2,784
+    8a0c:	10800037 	ldwio	r2,0(r2)
+    8a10:	f800283a 	ret
 
-00008a30 <assert_prg_mode>:
+00008a14 <assert_prg_mode>:
 #include "altera_avalon_pio_regs.h"
 
 #include "prg_mode.h"
 
 void assert_prg_mode() {
   IOWR_ALTERA_AVALON_PIO_DATA(PRG_MODE_BASE, 1);
-    8a30:	00808004 	movi	r2,512
-    8a34:	00c00044 	movi	r3,1
-    8a38:	10c00035 	stwio	r3,0(r2)
-    8a3c:	f800283a 	ret
+    8a14:	00808004 	movi	r2,512
+    8a18:	00c00044 	movi	r3,1
+    8a1c:	10c00035 	stwio	r3,0(r2)
+    8a20:	f800283a 	ret
 
-00008a40 <negate_prg_mode>:
+00008a24 <negate_prg_mode>:
 }
 
 void negate_prg_mode() {
   IOWR_ALTERA_AVALON_PIO_DATA(PRG_MODE_BASE, 0);
-    8a40:	00808004 	movi	r2,512
-    8a44:	10000035 	stwio	zero,0(r2)
-    8a48:	f800283a 	ret
+    8a24:	00808004 	movi	r2,512
+    8a28:	10000035 	stwio	zero,0(r2)
+    8a2c:	f800283a 	ret
 
-00008a4c <assert_rst>:
+00008a30 <assert_rst>:
 #include "altera_avalon_pio_regs.h"
 
 #include "rst.h"
 
 void assert_rst() {
   IOWR_ALTERA_AVALON_PIO_DATA(RST_BASE, 1);
-    8a4c:	00808404 	movi	r2,528
-    8a50:	00c00044 	movi	r3,1
-    8a54:	10c00035 	stwio	r3,0(r2)
-    8a58:	f800283a 	ret
+    8a30:	00808404 	movi	r2,528
+    8a34:	00c00044 	movi	r3,1
+    8a38:	10c00035 	stwio	r3,0(r2)
+    8a3c:	f800283a 	ret
 
-00008a5c <negate_rst>:
+00008a40 <negate_rst>:
 }
 void negate_rst() {
   IOWR_ALTERA_AVALON_PIO_DATA(RST_BASE, 0);
-    8a5c:	00808404 	movi	r2,528
-    8a60:	10000035 	stwio	zero,0(r2)
-    8a64:	f800283a 	ret
+    8a40:	00808404 	movi	r2,528
+    8a44:	10000035 	stwio	zero,0(r2)
+    8a48:	f800283a 	ret
 
-00008a68 <getchar>:
+00008a4c <getchar>:
 #include "system.h"
 #include "uart.h"
 
 int getchar() {
   int c;
   c = alt_getchar();
-    8a68:	0008e901 	jmpi	8e90 <alt_getchar>
+    8a4c:	0008e741 	jmpi	8e74 <alt_getchar>
 
-00008a6c <getstr>:
+00008a50 <getstr>:
   //alt_putchar(c); // echo back (remove if not needed)
   return c;
 }
 
 void getstr(char* str) { // read one line, skip '_'
-    8a6c:	defffa04 	addi	sp,sp,-24
-    8a70:	dd000415 	stw	r20,16(sp)
-    8a74:	dcc00315 	stw	r19,12(sp)
-    8a78:	dc800215 	stw	r18,8(sp)
-    8a7c:	dc400115 	stw	r17,4(sp)
-    8a80:	dc000015 	stw	r16,0(sp)
-    8a84:	dfc00515 	stw	ra,20(sp)
-    8a88:	2023883a 	mov	r17,r4
+    8a50:	defffa04 	addi	sp,sp,-24
+    8a54:	dd000415 	stw	r20,16(sp)
+    8a58:	dcc00315 	stw	r19,12(sp)
+    8a5c:	dc800215 	stw	r18,8(sp)
+    8a60:	dc400115 	stw	r17,4(sp)
+    8a64:	dc000015 	stw	r16,0(sp)
+    8a68:	dfc00515 	stw	ra,20(sp)
+    8a6c:	2023883a 	mov	r17,r4
   int c;
   int index;
 
   index = 0;
-    8a8c:	0021883a 	mov	r16,zero
+    8a70:	0021883a 	mov	r16,zero
 #include "system.h"
 #include "uart.h"
 
 int getchar() {
   int c;
   c = alt_getchar();
-    8a90:	0008e900 	call	8e90 <alt_getchar>
+    8a74:	0008e740 	call	8e74 <alt_getchar>
   int c;
   int index;
 
   index = 0;
   c = getchar();
   while(!(c == '\r' || c == '\n')) {
-    8a94:	04c00344 	movi	r19,13
-    8a98:	04800284 	movi	r18,10
+    8a78:	04c00344 	movi	r19,13
+    8a7c:	04800284 	movi	r18,10
     if (c != '_') {
-    8a9c:	050017c4 	movi	r20,95
+    8a80:	050017c4 	movi	r20,95
   int c;
   int index;
 
   index = 0;
   c = getchar();
   while(!(c == '\r' || c == '\n')) {
-    8aa0:	14c00a1e 	bne	r2,r19,8acc <getstr+0x60>
+    8a84:	14c00a1e 	bne	r2,r19,8ab0 <getstr+0x60>
       str[index] = (char)c;
       index++;
     }
     c = getchar();
   }
   str[index] = '\0';
-    8aa4:	8c21883a 	add	r16,r17,r16
-    8aa8:	80000005 	stb	zero,0(r16)
+    8a88:	8c21883a 	add	r16,r17,r16
+    8a8c:	80000005 	stb	zero,0(r16)
   return;
 }
-    8aac:	dfc00517 	ldw	ra,20(sp)
-    8ab0:	dd000417 	ldw	r20,16(sp)
-    8ab4:	dcc00317 	ldw	r19,12(sp)
-    8ab8:	dc800217 	ldw	r18,8(sp)
-    8abc:	dc400117 	ldw	r17,4(sp)
-    8ac0:	dc000017 	ldw	r16,0(sp)
-    8ac4:	dec00604 	addi	sp,sp,24
-    8ac8:	f800283a 	ret
+    8a90:	dfc00517 	ldw	ra,20(sp)
+    8a94:	dd000417 	ldw	r20,16(sp)
+    8a98:	dcc00317 	ldw	r19,12(sp)
+    8a9c:	dc800217 	ldw	r18,8(sp)
+    8aa0:	dc400117 	ldw	r17,4(sp)
+    8aa4:	dc000017 	ldw	r16,0(sp)
+    8aa8:	dec00604 	addi	sp,sp,24
+    8aac:	f800283a 	ret
   int c;
   int index;
 
   index = 0;
   c = getchar();
   while(!(c == '\r' || c == '\n')) {
-    8acc:	14bff526 	beq	r2,r18,8aa4 <_gp+0xffff7624>
+    8ab0:	14bff526 	beq	r2,r18,8a88 <_gp+0xffff7668>
     if (c != '_') {
-    8ad0:	15000326 	beq	r2,r20,8ae0 <getstr+0x74>
+    8ab4:	15000326 	beq	r2,r20,8ac4 <getstr+0x74>
       str[index] = (char)c;
-    8ad4:	8c07883a 	add	r3,r17,r16
-    8ad8:	18800005 	stb	r2,0(r3)
+    8ab8:	8c07883a 	add	r3,r17,r16
+    8abc:	18800005 	stb	r2,0(r3)
       index++;
-    8adc:	84000044 	addi	r16,r16,1
+    8ac0:	84000044 	addi	r16,r16,1
 #include "system.h"
 #include "uart.h"
 
 int getchar() {
   int c;
   c = alt_getchar();
-    8ae0:	0008e900 	call	8e90 <alt_getchar>
-    8ae4:	003fee06 	br	8aa0 <_gp+0xffff7620>
+    8ac4:	0008e740 	call	8e74 <alt_getchar>
+    8ac8:	003fee06 	br	8a84 <_gp+0xffff7664>
 
-00008ae8 <putstr>:
+00008acc <putstr>:
   str[index] = '\0';
   return;
 }
 
 void putstr(const char* str) {
 	alt_putstr(str);
-    8ae8:	00091ac1 	jmpi	91ac <alt_putstr>
+    8acc:	00091901 	jmpi	9190 <alt_putstr>
 
-00008aec <tx_str>:
+00008ad0 <tx_str>:
 }
 
 void tx_str(const char* str) {
   alt_putstr(str);
-    8aec:	00091ac1 	jmpi	91ac <alt_putstr>
+    8ad0:	00091901 	jmpi	9190 <alt_putstr>
 
-00008af0 <rx_str>:
+00008ad4 <rx_str>:
 }
 
 void rx_str(char* str) {
   getstr(str);
-    8af0:	0008a6c1 	jmpi	8a6c <getstr>
+    8ad4:	0008a501 	jmpi	8a50 <getstr>
 
-00008af4 <hexchar_to_int>:
+00008ad8 <hexchar_to_int>:
  *      Author: yoshiaki
  */
 
 #include "hexchar_int.h"
 
 int hexchar_to_int(const char c) {
-    8af4:	213ff404 	addi	r4,r4,-48
-    8af8:	21003fcc 	andi	r4,r4,255
-    8afc:	00800584 	movi	r2,22
-    8b00:	11000536 	bltu	r2,r4,8b18 <hexchar_to_int+0x24>
-    8b04:	00800074 	movhi	r2,1
-    8b08:	10a50084 	addi	r2,r2,-27646
-    8b0c:	1109883a 	add	r4,r2,r4
-    8b10:	20800007 	ldb	r2,0(r4)
-    8b14:	f800283a 	ret
+    8ad8:	213ff404 	addi	r4,r4,-48
+    8adc:	21003fcc 	andi	r4,r4,255
+    8ae0:	00800584 	movi	r2,22
+    8ae4:	11000536 	bltu	r2,r4,8afc <hexchar_to_int+0x24>
+    8ae8:	00800074 	movhi	r2,1
+    8aec:	10a4e884 	addi	r2,r2,-27742
+    8af0:	1109883a 	add	r4,r2,r4
+    8af4:	20800007 	ldb	r2,0(r4)
+    8af8:	f800283a 	ret
   int value;
   switch (c) {
-    8b18:	00bfffc4 	movi	r2,-1
+    8afc:	00bfffc4 	movi	r2,-1
     case 'E': value = 0x0E; break;
     case 'F': value = 0x0F; break;
     default : value = HEX_CONVERTING_ERR; break;
   }
   return value;
 }
-    8b1c:	f800283a 	ret
+    8b00:	f800283a 	ret
 
-00008b20 <hex2chars_to_int>:
+00008b04 <hex2chars_to_int>:
 
 int hex2chars_to_int(const char c0, const char c1) {
   const int v0 = hexchar_to_int(c0);
-    8b20:	21003fcc 	andi	r4,r4,255
-    8b24:	2100201c 	xori	r4,r4,128
+    8b04:	21003fcc 	andi	r4,r4,255
+    8b08:	2100201c 	xori	r4,r4,128
     default : value = HEX_CONVERTING_ERR; break;
   }
   return value;
 }
 
 int hex2chars_to_int(const char c0, const char c1) {
-    8b28:	defffd04 	addi	sp,sp,-12
+    8b0c:	defffd04 	addi	sp,sp,-12
   const int v0 = hexchar_to_int(c0);
-    8b2c:	213fe004 	addi	r4,r4,-128
+    8b10:	213fe004 	addi	r4,r4,-128
     default : value = HEX_CONVERTING_ERR; break;
   }
   return value;
 }
 
 int hex2chars_to_int(const char c0, const char c1) {
-    8b30:	dfc00215 	stw	ra,8(sp)
-    8b34:	dc400115 	stw	r17,4(sp)
-    8b38:	dc000015 	stw	r16,0(sp)
-    8b3c:	2823883a 	mov	r17,r5
+    8b14:	dfc00215 	stw	ra,8(sp)
+    8b18:	dc400115 	stw	r17,4(sp)
+    8b1c:	dc000015 	stw	r16,0(sp)
+    8b20:	2823883a 	mov	r17,r5
   const int v0 = hexchar_to_int(c0);
-    8b40:	0008af40 	call	8af4 <hexchar_to_int>
+    8b24:	0008ad80 	call	8ad8 <hexchar_to_int>
   const int v1 = hexchar_to_int(c1);
-    8b44:	89003fcc 	andi	r4,r17,255
-    8b48:	2100201c 	xori	r4,r4,128
-    8b4c:	213fe004 	addi	r4,r4,-128
+    8b28:	89003fcc 	andi	r4,r17,255
+    8b2c:	2100201c 	xori	r4,r4,128
+    8b30:	213fe004 	addi	r4,r4,-128
   }
   return value;
 }
 
 int hex2chars_to_int(const char c0, const char c1) {
   const int v0 = hexchar_to_int(c0);
-    8b50:	1021883a 	mov	r16,r2
+    8b34:	1021883a 	mov	r16,r2
   const int v1 = hexchar_to_int(c1);
-    8b54:	0008af40 	call	8af4 <hexchar_to_int>
-    8b58:	1007883a 	mov	r3,r2
+    8b38:	0008ad80 	call	8ad8 <hexchar_to_int>
+    8b3c:	1007883a 	mov	r3,r2
 
   if (v0 == HEX_CONVERTING_ERR || v1 == HEX_CONVERTING_ERR) {
-    8b5c:	00bfffc4 	movi	r2,-1
-    8b60:	80800426 	beq	r16,r2,8b74 <hex2chars_to_int+0x54>
-    8b64:	18800526 	beq	r3,r2,8b7c <hex2chars_to_int+0x5c>
+    8b40:	00bfffc4 	movi	r2,-1
+    8b44:	80800426 	beq	r16,r2,8b58 <hex2chars_to_int+0x54>
+    8b48:	18800526 	beq	r3,r2,8b60 <hex2chars_to_int+0x5c>
     return HEX_CONVERTING_ERR;
   }
 
   return (v0 << 4) + v1;
-    8b68:	8004913a 	slli	r2,r16,4
-    8b6c:	10c5883a 	add	r2,r2,r3
-    8b70:	00000306 	br	8b80 <hex2chars_to_int+0x60>
+    8b4c:	8004913a 	slli	r2,r16,4
+    8b50:	10c5883a 	add	r2,r2,r3
+    8b54:	00000306 	br	8b64 <hex2chars_to_int+0x60>
 int hex2chars_to_int(const char c0, const char c1) {
   const int v0 = hexchar_to_int(c0);
   const int v1 = hexchar_to_int(c1);
 
   if (v0 == HEX_CONVERTING_ERR || v1 == HEX_CONVERTING_ERR) {
     return HEX_CONVERTING_ERR;
-    8b74:	8005883a 	mov	r2,r16
-    8b78:	00000106 	br	8b80 <hex2chars_to_int+0x60>
-    8b7c:	1805883a 	mov	r2,r3
+    8b58:	8005883a 	mov	r2,r16
+    8b5c:	00000106 	br	8b64 <hex2chars_to_int+0x60>
+    8b60:	1805883a 	mov	r2,r3
   }
 
   return (v0 << 4) + v1;
 }
-    8b80:	dfc00217 	ldw	ra,8(sp)
-    8b84:	dc400117 	ldw	r17,4(sp)
-    8b88:	dc000017 	ldw	r16,0(sp)
-    8b8c:	dec00304 	addi	sp,sp,12
-    8b90:	f800283a 	ret
+    8b64:	dfc00217 	ldw	ra,8(sp)
+    8b68:	dc400117 	ldw	r17,4(sp)
+    8b6c:	dc000017 	ldw	r16,0(sp)
+    8b70:	dec00304 	addi	sp,sp,12
+    8b74:	f800283a 	ret
 
-00008b94 <hex4chars_to_int>:
+00008b78 <hex4chars_to_int>:
 
 int hex4chars_to_int(const char c0, const char c1, const char c2, const char c3) {
   const int v0 = hex2chars_to_int(c0, c1);
-    8b94:	21003fcc 	andi	r4,r4,255
-    8b98:	29403fcc 	andi	r5,r5,255
-    8b9c:	2100201c 	xori	r4,r4,128
-    8ba0:	2940201c 	xori	r5,r5,128
-  }
-
-  return (v0 << 4) + v1;
-}
-
-int hex4chars_to_int(const char c0, const char c1, const char c2, const char c3) {
-    8ba4:	defffc04 	addi	sp,sp,-16
-  const int v0 = hex2chars_to_int(c0, c1);
-    8ba8:	213fe004 	addi	r4,r4,-128
-    8bac:	297fe004 	addi	r5,r5,-128
+    8b78:	21003fcc 	andi	r4,r4,255
+    8b7c:	29403fcc 	andi	r5,r5,255
+    8b80:	2100201c 	xori	r4,r4,128
+    8b84:	2940201c 	xori	r5,r5,128
   }
 
   return (v0 << 4) + v1;
 }
 
 int hex4chars_to_int(const char c0, const char c1, const char c2, const char c3) {
-    8bb0:	dfc00315 	stw	ra,12(sp)
-    8bb4:	dc800215 	stw	r18,8(sp)
-    8bb8:	dc400115 	stw	r17,4(sp)
-    8bbc:	3025883a 	mov	r18,r6
-    8bc0:	3823883a 	mov	r17,r7
-    8bc4:	dc000015 	stw	r16,0(sp)
+    8b88:	defffc04 	addi	sp,sp,-16
   const int v0 = hex2chars_to_int(c0, c1);
-    8bc8:	0008b200 	call	8b20 <hex2chars_to_int>
+    8b8c:	213fe004 	addi	r4,r4,-128
+    8b90:	297fe004 	addi	r5,r5,-128
+  }
+
+  return (v0 << 4) + v1;
+}
+
+int hex4chars_to_int(const char c0, const char c1, const char c2, const char c3) {
+    8b94:	dfc00315 	stw	ra,12(sp)
+    8b98:	dc800215 	stw	r18,8(sp)
+    8b9c:	dc400115 	stw	r17,4(sp)
+    8ba0:	3025883a 	mov	r18,r6
+    8ba4:	3823883a 	mov	r17,r7
+    8ba8:	dc000015 	stw	r16,0(sp)
+  const int v0 = hex2chars_to_int(c0, c1);
+    8bac:	0008b040 	call	8b04 <hex2chars_to_int>
   const int v1 = hex2chars_to_int(c2, c3);
-    8bcc:	91003fcc 	andi	r4,r18,255
-    8bd0:	89403fcc 	andi	r5,r17,255
-    8bd4:	2100201c 	xori	r4,r4,128
-    8bd8:	2940201c 	xori	r5,r5,128
-    8bdc:	213fe004 	addi	r4,r4,-128
-    8be0:	297fe004 	addi	r5,r5,-128
+    8bb0:	91003fcc 	andi	r4,r18,255
+    8bb4:	89403fcc 	andi	r5,r17,255
+    8bb8:	2100201c 	xori	r4,r4,128
+    8bbc:	2940201c 	xori	r5,r5,128
+    8bc0:	213fe004 	addi	r4,r4,-128
+    8bc4:	297fe004 	addi	r5,r5,-128
 
   return (v0 << 4) + v1;
 }
 
 int hex4chars_to_int(const char c0, const char c1, const char c2, const char c3) {
   const int v0 = hex2chars_to_int(c0, c1);
-    8be4:	1021883a 	mov	r16,r2
+    8bc8:	1021883a 	mov	r16,r2
   const int v1 = hex2chars_to_int(c2, c3);
-    8be8:	0008b200 	call	8b20 <hex2chars_to_int>
-    8bec:	1007883a 	mov	r3,r2
+    8bcc:	0008b040 	call	8b04 <hex2chars_to_int>
+    8bd0:	1007883a 	mov	r3,r2
 
   if (v0 == HEX_CONVERTING_ERR || v1 == HEX_CONVERTING_ERR) {
-    8bf0:	00bfffc4 	movi	r2,-1
-    8bf4:	80800426 	beq	r16,r2,8c08 <hex4chars_to_int+0x74>
-    8bf8:	18800526 	beq	r3,r2,8c10 <hex4chars_to_int+0x7c>
+    8bd4:	00bfffc4 	movi	r2,-1
+    8bd8:	80800426 	beq	r16,r2,8bec <hex4chars_to_int+0x74>
+    8bdc:	18800526 	beq	r3,r2,8bf4 <hex4chars_to_int+0x7c>
     return HEX_CONVERTING_ERR;
   }
 
   return (v0 << 8) + v1;
-    8bfc:	8004923a 	slli	r2,r16,8
-    8c00:	10c5883a 	add	r2,r2,r3
-    8c04:	00000306 	br	8c14 <hex4chars_to_int+0x80>
+    8be0:	8004923a 	slli	r2,r16,8
+    8be4:	10c5883a 	add	r2,r2,r3
+    8be8:	00000306 	br	8bf8 <hex4chars_to_int+0x80>
 int hex4chars_to_int(const char c0, const char c1, const char c2, const char c3) {
   const int v0 = hex2chars_to_int(c0, c1);
   const int v1 = hex2chars_to_int(c2, c3);
 
   if (v0 == HEX_CONVERTING_ERR || v1 == HEX_CONVERTING_ERR) {
     return HEX_CONVERTING_ERR;
-    8c08:	8005883a 	mov	r2,r16
-    8c0c:	00000106 	br	8c14 <hex4chars_to_int+0x80>
-    8c10:	1805883a 	mov	r2,r3
+    8bec:	8005883a 	mov	r2,r16
+    8bf0:	00000106 	br	8bf8 <hex4chars_to_int+0x80>
+    8bf4:	1805883a 	mov	r2,r3
   }
 
   return (v0 << 8) + v1;
 }
-    8c14:	dfc00317 	ldw	ra,12(sp)
-    8c18:	dc800217 	ldw	r18,8(sp)
-    8c1c:	dc400117 	ldw	r17,4(sp)
-    8c20:	dc000017 	ldw	r16,0(sp)
-    8c24:	dec00404 	addi	sp,sp,16
-    8c28:	f800283a 	ret
+    8bf8:	dfc00317 	ldw	ra,12(sp)
+    8bfc:	dc800217 	ldw	r18,8(sp)
+    8c00:	dc400117 	ldw	r17,4(sp)
+    8c04:	dc000017 	ldw	r16,0(sp)
+    8c08:	dec00404 	addi	sp,sp,16
+    8c0c:	f800283a 	ret
 
-00008c2c <hex_nth_digit>:
+00008c10 <hex_nth_digit>:
 
 char hex_nth_digit(const int number, const int nth) {
   const char nth_digit = (char)((number >> (nth * 4)) & 0xF);
-    8c2c:	294b883a 	add	r5,r5,r5
-    8c30:	294b883a 	add	r5,r5,r5
-    8c34:	2149d83a 	sra	r4,r4,r5
-    8c38:	214003cc 	andi	r5,r4,15
-    8c3c:	01000074 	movhi	r4,1
-    8c40:	2124fc84 	addi	r4,r4,-27662
-    8c44:	214b883a 	add	r5,r4,r5
+    8c10:	294b883a 	add	r5,r5,r5
+    8c14:	294b883a 	add	r5,r5,r5
+    8c18:	2149d83a 	sra	r4,r4,r5
+    8c1c:	214003cc 	andi	r5,r4,15
+    8c20:	01000074 	movhi	r4,1
+    8c24:	2124e484 	addi	r4,r4,-27758
+    8c28:	214b883a 	add	r5,r4,r5
     case 0xF: hex = 'F'; break;
     default:  hex = 'x'; break;
   }
 
   return hex;
 }
-    8c48:	28800003 	ldbu	r2,0(r5)
-    8c4c:	f800283a 	ret
+    8c2c:	28800003 	ldbu	r2,0(r5)
+    8c30:	f800283a 	ret
 
-00008c50 <bytecount_of_hexformat>:
+00008c34 <bytecount_of_hexformat>:
 
 #include "hexchar_int.h"
 
 #include "hexformat.h"
 
 int bytecount_of_hexformat(const char* hf){
-    8c50:	2005883a 	mov	r2,r4
+    8c34:	2005883a 	mov	r2,r4
   const int offset = 1;
   return hex2chars_to_int(hf[offset+0], hf[offset+1]);
-    8c54:	11400087 	ldb	r5,2(r2)
-    8c58:	21000047 	ldb	r4,1(r4)
-    8c5c:	0008b201 	jmpi	8b20 <hex2chars_to_int>
+    8c38:	11400087 	ldb	r5,2(r2)
+    8c3c:	21000047 	ldb	r4,1(r4)
+    8c40:	0008b041 	jmpi	8b04 <hex2chars_to_int>
 
-00008c60 <address_of_hexformat>:
+00008c44 <address_of_hexformat>:
 }
 int address_of_hexformat(const char* hf) {
-    8c60:	2005883a 	mov	r2,r4
+    8c44:	2005883a 	mov	r2,r4
   const int offset = 3;
   return hex4chars_to_int(hf[offset+0], hf[offset+1], hf[offset+2], hf[offset+3]);
-    8c64:	11400107 	ldb	r5,4(r2)
-    8c68:	210000c7 	ldb	r4,3(r4)
-    8c6c:	11800147 	ldb	r6,5(r2)
-    8c70:	11c00187 	ldb	r7,6(r2)
-    8c74:	0008b941 	jmpi	8b94 <hex4chars_to_int>
+    8c48:	11400107 	ldb	r5,4(r2)
+    8c4c:	210000c7 	ldb	r4,3(r4)
+    8c50:	11800147 	ldb	r6,5(r2)
+    8c54:	11c00187 	ldb	r7,6(r2)
+    8c58:	0008b781 	jmpi	8b78 <hex4chars_to_int>
 
-00008c78 <recordtype_of_hexformat>:
+00008c5c <recordtype_of_hexformat>:
 }
 
 int recordtype_of_hexformat(const char* hf) {
-    8c78:	2005883a 	mov	r2,r4
+    8c5c:	2005883a 	mov	r2,r4
   const int offset = 7;
   return hex2chars_to_int(hf[offset+0], hf[offset+1]);
-    8c7c:	11400207 	ldb	r5,8(r2)
-    8c80:	210001c7 	ldb	r4,7(r4)
-    8c84:	0008b201 	jmpi	8b20 <hex2chars_to_int>
+    8c60:	11400207 	ldb	r5,8(r2)
+    8c64:	210001c7 	ldb	r4,7(r4)
+    8c68:	0008b041 	jmpi	8b04 <hex2chars_to_int>
 
-00008c88 <data_of_hexformat>:
+00008c6c <data_of_hexformat>:
 }
 
 int data_of_hexformat(const char* hf, const int n) {
   const int offset = 9 + 8 * n;
-    8c88:	280a90fa 	slli	r5,r5,3
-int recordtype_of_hexformat(const char* hf) {
-  const int offset = 7;
-  return hex2chars_to_int(hf[offset+0], hf[offset+1]);
-}
-
-int data_of_hexformat(const char* hf, const int n) {
-    8c8c:	defffb04 	addi	sp,sp,-20
-    8c90:	dc000015 	stw	r16,0(sp)
-  const int offset = 9 + 8 * n;
-    8c94:	2c000244 	addi	r16,r5,9
-  const int d3 = hex2chars_to_int(hf[offset+0], hf[offset+1]);
-    8c98:	2421883a 	add	r16,r4,r16
+    8c6c:	280a90fa 	slli	r5,r5,3
 int recordtype_of_hexformat(const char* hf) {
   const int offset = 7;
   return hex2chars_to_int(hf[offset+0], hf[offset+1]);
 }
 
 int data_of_hexformat(const char* hf, const int n) {
-    8c9c:	dfc00415 	stw	ra,16(sp)
-    8ca0:	dcc00315 	stw	r19,12(sp)
-    8ca4:	dc800215 	stw	r18,8(sp)
-    8ca8:	dc400115 	stw	r17,4(sp)
+    8c70:	defffb04 	addi	sp,sp,-20
+    8c74:	dc000015 	stw	r16,0(sp)
+  const int offset = 9 + 8 * n;
+    8c78:	2c000244 	addi	r16,r5,9
+  const int d3 = hex2chars_to_int(hf[offset+0], hf[offset+1]);
+    8c7c:	2421883a 	add	r16,r4,r16
+int recordtype_of_hexformat(const char* hf) {
+  const int offset = 7;
+  return hex2chars_to_int(hf[offset+0], hf[offset+1]);
+}
+
+int data_of_hexformat(const char* hf, const int n) {
+    8c80:	dfc00415 	stw	ra,16(sp)
+    8c84:	dcc00315 	stw	r19,12(sp)
+    8c88:	dc800215 	stw	r18,8(sp)
+    8c8c:	dc400115 	stw	r17,4(sp)
   const int offset = 9 + 8 * n;
   const int d3 = hex2chars_to_int(hf[offset+0], hf[offset+1]);
-    8cac:	81000007 	ldb	r4,0(r16)
-    8cb0:	81400047 	ldb	r5,1(r16)
-    8cb4:	0008b200 	call	8b20 <hex2chars_to_int>
+    8c90:	81000007 	ldb	r4,0(r16)
+    8c94:	81400047 	ldb	r5,1(r16)
+    8c98:	0008b040 	call	8b04 <hex2chars_to_int>
   const int d2 = hex2chars_to_int(hf[offset+2], hf[offset+3]);
-    8cb8:	81000087 	ldb	r4,2(r16)
-    8cbc:	814000c7 	ldb	r5,3(r16)
+    8c9c:	81000087 	ldb	r4,2(r16)
+    8ca0:	814000c7 	ldb	r5,3(r16)
   return hex2chars_to_int(hf[offset+0], hf[offset+1]);
 }
 
 int data_of_hexformat(const char* hf, const int n) {
   const int offset = 9 + 8 * n;
   const int d3 = hex2chars_to_int(hf[offset+0], hf[offset+1]);
-    8cc0:	1027883a 	mov	r19,r2
+    8ca4:	1027883a 	mov	r19,r2
   const int d2 = hex2chars_to_int(hf[offset+2], hf[offset+3]);
   const int d1 = hex2chars_to_int(hf[offset+4], hf[offset+5]);
   const int d0 = hex2chars_to_int(hf[offset+6], hf[offset+7]);
   return (d3 << 24) + (d2 << 16) + (d1 << 8) + d0;
-    8cc4:	9826963a 	slli	r19,r19,24
+    8ca8:	9826963a 	slli	r19,r19,24
 }
 
 int data_of_hexformat(const char* hf, const int n) {
   const int offset = 9 + 8 * n;
   const int d3 = hex2chars_to_int(hf[offset+0], hf[offset+1]);
   const int d2 = hex2chars_to_int(hf[offset+2], hf[offset+3]);
-    8cc8:	0008b200 	call	8b20 <hex2chars_to_int>
+    8cac:	0008b040 	call	8b04 <hex2chars_to_int>
   const int d1 = hex2chars_to_int(hf[offset+4], hf[offset+5]);
-    8ccc:	81000107 	ldb	r4,4(r16)
-    8cd0:	81400147 	ldb	r5,5(r16)
+    8cb0:	81000107 	ldb	r4,4(r16)
+    8cb4:	81400147 	ldb	r5,5(r16)
 }
 
 int data_of_hexformat(const char* hf, const int n) {
   const int offset = 9 + 8 * n;
   const int d3 = hex2chars_to_int(hf[offset+0], hf[offset+1]);
   const int d2 = hex2chars_to_int(hf[offset+2], hf[offset+3]);
-    8cd4:	1025883a 	mov	r18,r2
+    8cb8:	1025883a 	mov	r18,r2
   const int d1 = hex2chars_to_int(hf[offset+4], hf[offset+5]);
   const int d0 = hex2chars_to_int(hf[offset+6], hf[offset+7]);
   return (d3 << 24) + (d2 << 16) + (d1 << 8) + d0;
-    8cd8:	9024943a 	slli	r18,r18,16
+    8cbc:	9024943a 	slli	r18,r18,16
 
 int data_of_hexformat(const char* hf, const int n) {
   const int offset = 9 + 8 * n;
   const int d3 = hex2chars_to_int(hf[offset+0], hf[offset+1]);
   const int d2 = hex2chars_to_int(hf[offset+2], hf[offset+3]);
   const int d1 = hex2chars_to_int(hf[offset+4], hf[offset+5]);
-    8cdc:	0008b200 	call	8b20 <hex2chars_to_int>
-    8ce0:	1023883a 	mov	r17,r2
+    8cc0:	0008b040 	call	8b04 <hex2chars_to_int>
+    8cc4:	1023883a 	mov	r17,r2
   const int d0 = hex2chars_to_int(hf[offset+6], hf[offset+7]);
-    8ce4:	81000187 	ldb	r4,6(r16)
-    8ce8:	814001c7 	ldb	r5,7(r16)
+    8cc8:	81000187 	ldb	r4,6(r16)
+    8ccc:	814001c7 	ldb	r5,7(r16)
   return (d3 << 24) + (d2 << 16) + (d1 << 8) + d0;
-    8cec:	8822923a 	slli	r17,r17,8
-    8cf0:	9ca5883a 	add	r18,r19,r18
+    8cd0:	8822923a 	slli	r17,r17,8
+    8cd4:	9ca5883a 	add	r18,r19,r18
 int data_of_hexformat(const char* hf, const int n) {
   const int offset = 9 + 8 * n;
   const int d3 = hex2chars_to_int(hf[offset+0], hf[offset+1]);
   const int d2 = hex2chars_to_int(hf[offset+2], hf[offset+3]);
   const int d1 = hex2chars_to_int(hf[offset+4], hf[offset+5]);
   const int d0 = hex2chars_to_int(hf[offset+6], hf[offset+7]);
-    8cf4:	0008b200 	call	8b20 <hex2chars_to_int>
+    8cd8:	0008b040 	call	8b04 <hex2chars_to_int>
   return (d3 << 24) + (d2 << 16) + (d1 << 8) + d0;
-    8cf8:	9463883a 	add	r17,r18,r17
+    8cdc:	9463883a 	add	r17,r18,r17
 }
-    8cfc:	8885883a 	add	r2,r17,r2
-    8d00:	dfc00417 	ldw	ra,16(sp)
-    8d04:	dcc00317 	ldw	r19,12(sp)
-    8d08:	dc800217 	ldw	r18,8(sp)
-    8d0c:	dc400117 	ldw	r17,4(sp)
-    8d10:	dc000017 	ldw	r16,0(sp)
-    8d14:	dec00504 	addi	sp,sp,20
-    8d18:	f800283a 	ret
+    8ce0:	8885883a 	add	r2,r17,r2
+    8ce4:	dfc00417 	ldw	ra,16(sp)
+    8ce8:	dcc00317 	ldw	r19,12(sp)
+    8cec:	dc800217 	ldw	r18,8(sp)
+    8cf0:	dc400117 	ldw	r17,4(sp)
+    8cf4:	dc000017 	ldw	r16,0(sp)
+    8cf8:	dec00504 	addi	sp,sp,20
+    8cfc:	f800283a 	ret
 
-00008d1c <checksum_of_hexformat>:
+00008d00 <checksum_of_hexformat>:
 
 char checksum_of_hexformat(const char* hf) {
-    8d1c:	defffe04 	addi	sp,sp,-8
-    8d20:	dfc00115 	stw	ra,4(sp)
-    8d24:	dc000015 	stw	r16,0(sp)
-    8d28:	2021883a 	mov	r16,r4
+    8d00:	defffe04 	addi	sp,sp,-8
+    8d04:	dfc00115 	stw	ra,4(sp)
+    8d08:	dc000015 	stw	r16,0(sp)
+    8d0c:	2021883a 	mov	r16,r4
   const int offset = 9 + 2 * bytecount_of_hexformat(hf);
-    8d2c:	0008c500 	call	8c50 <bytecount_of_hexformat>
-    8d30:	1085883a 	add	r2,r2,r2
-    8d34:	10800244 	addi	r2,r2,9
+    8d10:	0008c340 	call	8c34 <bytecount_of_hexformat>
+    8d14:	1085883a 	add	r2,r2,r2
+    8d18:	10800244 	addi	r2,r2,9
   return (char)(hex2chars_to_int(hf[offset+0], hf[offset+1]));
-    8d38:	8085883a 	add	r2,r16,r2
-    8d3c:	11000007 	ldb	r4,0(r2)
-    8d40:	11400047 	ldb	r5,1(r2)
-    8d44:	0008b200 	call	8b20 <hex2chars_to_int>
+    8d1c:	8085883a 	add	r2,r16,r2
+    8d20:	11000007 	ldb	r4,0(r2)
+    8d24:	11400047 	ldb	r5,1(r2)
+    8d28:	0008b040 	call	8b04 <hex2chars_to_int>
 }
-    8d48:	dfc00117 	ldw	ra,4(sp)
-    8d4c:	dc000017 	ldw	r16,0(sp)
-    8d50:	dec00204 	addi	sp,sp,8
-    8d54:	f800283a 	ret
+    8d2c:	dfc00117 	ldw	ra,4(sp)
+    8d30:	dc000017 	ldw	r16,0(sp)
+    8d34:	dec00204 	addi	sp,sp,8
+    8d38:	f800283a 	ret
 
-00008d58 <monitor_command>:
+00008d3c <monitor_command>:
     return MONITOR_COMMAND_ERR;
   }
 }
 
 int unique(const char c0, const char c1, const char c2, const char c3) {
   return (c0 << 24) + (c1 << 16) + (c2 << 8) + c3;
-    8d58:	20c00007 	ldb	r3,0(r4)
-    8d5c:	20800047 	ldb	r2,1(r4)
-    8d60:	1806963a 	slli	r3,r3,24
-    8d64:	1004943a 	slli	r2,r2,16
-    8d68:	1885883a 	add	r2,r3,r2
-    8d6c:	20c00087 	ldb	r3,2(r4)
-    8d70:	1806923a 	slli	r3,r3,8
-    8d74:	10c7883a 	add	r3,r2,r3
-    8d78:	208000c7 	ldb	r2,3(r4)
-    8d7c:	1885883a 	add	r2,r3,r2
+    8d3c:	20c00007 	ldb	r3,0(r4)
+    8d40:	20800047 	ldb	r2,1(r4)
+    8d44:	1806963a 	slli	r3,r3,24
+    8d48:	1004943a 	slli	r2,r2,16
+    8d4c:	1885883a 	add	r2,r3,r2
+    8d50:	20c00087 	ldb	r3,2(r4)
+    8d54:	1806923a 	slli	r3,r3,8
+    8d58:	10c7883a 	add	r3,r2,r3
+    8d5c:	208000c7 	ldb	r2,3(r4)
+    8d60:	1885883a 	add	r2,r3,r2
   const int WRDM = unique('W','R','D','M');
   const int STIP = unique('S','T','I','P');
   const int GTOP = unique('G','T','O','P');
   //
   const int command = unique(str[0], str[1], str[2], str[3]);
   if (command == ASRS) {
-    8d80:	00d054f4 	movhi	r3,16723
-    8d84:	18d494c4 	addi	r3,r3,21075
-    8d88:	10c01d26 	beq	r2,r3,8e00 <monitor_command+0xa8>
+    8d64:	00d054f4 	movhi	r3,16723
+    8d68:	18d494c4 	addi	r3,r3,21075
+    8d6c:	10c01d26 	beq	r2,r3,8de4 <monitor_command+0xa8>
     return MONITOR_COMMAND_ASRS;
   } else if (command == NGRS) {
-    8d8c:	00d391f4 	movhi	r3,20039
-    8d90:	18d494c4 	addi	r3,r3,21075
-    8d94:	10c01c26 	beq	r2,r3,8e08 <monitor_command+0xb0>
+    8d70:	00d391f4 	movhi	r3,20039
+    8d74:	18d494c4 	addi	r3,r3,21075
+    8d78:	10c01c26 	beq	r2,r3,8dec <monitor_command+0xb0>
     return MONITOR_COMMAND_NGRS;
   } else if (command == ASPM) {
-    8d98:	00d054f4 	movhi	r3,16723
-    8d9c:	18d41344 	addi	r3,r3,20557
-    8da0:	10c01b26 	beq	r2,r3,8e10 <monitor_command+0xb8>
+    8d7c:	00d054f4 	movhi	r3,16723
+    8d80:	18d41344 	addi	r3,r3,20557
+    8d84:	10c01b26 	beq	r2,r3,8df4 <monitor_command+0xb8>
     return MONITOR_COMMAND_ASPM;
   } else if (command == NGPM) {
-    8da4:	00d391f4 	movhi	r3,20039
-    8da8:	18d41344 	addi	r3,r3,20557
-    8dac:	10c01a26 	beq	r2,r3,8e18 <monitor_command+0xc0>
+    8d88:	00d391f4 	movhi	r3,20039
+    8d8c:	18d41344 	addi	r3,r3,20557
+    8d90:	10c01a26 	beq	r2,r3,8dfc <monitor_command+0xc0>
     return MONITOR_COMMAND_NGPM;
   } else if (command == RDIM) {
-    8db0:	00d49134 	movhi	r3,21060
-    8db4:	18d25344 	addi	r3,r3,18765
-    8db8:	10c01926 	beq	r2,r3,8e20 <monitor_command+0xc8>
+    8d94:	00d49134 	movhi	r3,21060
+    8d98:	18d25344 	addi	r3,r3,18765
+    8d9c:	10c01926 	beq	r2,r3,8e04 <monitor_command+0xc8>
     return MONITOR_COMMAND_RDIM;
   } else if (command == WRIM) {
-    8dbc:	00d5d4b4 	movhi	r3,22354
-    8dc0:	18d25344 	addi	r3,r3,18765
-    8dc4:	10c01826 	beq	r2,r3,8e28 <monitor_command+0xd0>
+    8da0:	00d5d4b4 	movhi	r3,22354
+    8da4:	18d25344 	addi	r3,r3,18765
+    8da8:	10c01826 	beq	r2,r3,8e0c <monitor_command+0xd0>
     return MONITOR_COMMAND_WRIM;
   } else if (command == RDDM) {
-    8dc8:	00d49134 	movhi	r3,21060
-    8dcc:	18d11344 	addi	r3,r3,17485
-    8dd0:	10c01726 	beq	r2,r3,8e30 <monitor_command+0xd8>
+    8dac:	00d49134 	movhi	r3,21060
+    8db0:	18d11344 	addi	r3,r3,17485
+    8db4:	10c01726 	beq	r2,r3,8e14 <monitor_command+0xd8>
     return MONITOR_COMMAND_RDDM;
   } else if (command == WRDM) {
-    8dd4:	00d5d4b4 	movhi	r3,22354
-    8dd8:	18d11344 	addi	r3,r3,17485
-    8ddc:	10c01626 	beq	r2,r3,8e38 <monitor_command+0xe0>
+    8db8:	00d5d4b4 	movhi	r3,22354
+    8dbc:	18d11344 	addi	r3,r3,17485
+    8dc0:	10c01626 	beq	r2,r3,8e1c <monitor_command+0xe0>
     return MONITOR_COMMAND_WRDM;
   } else if (command == STIP) {
-    8de0:	00d4d534 	movhi	r3,21332
-    8de4:	18d25404 	addi	r3,r3,18768
-    8de8:	10c01526 	beq	r2,r3,8e40 <monitor_command+0xe8>
+    8dc4:	00d4d534 	movhi	r3,21332
+    8dc8:	18d25404 	addi	r3,r3,18768
+    8dcc:	10c01526 	beq	r2,r3,8e24 <monitor_command+0xe8>
     return MONITOR_COMMAND_STIP;
   } else if (command == GTOP) {
-    8dec:	00d1d534 	movhi	r3,18260
-    8df0:	18d3d404 	addi	r3,r3,20304
-    8df4:	10c01426 	beq	r2,r3,8e48 <monitor_command+0xf0>
+    8dd0:	00d1d534 	movhi	r3,18260
+    8dd4:	18d3d404 	addi	r3,r3,20304
+    8dd8:	10c01426 	beq	r2,r3,8e2c <monitor_command+0xf0>
     return MONITOR_COMMAND_GTOP;
   } else {
     return MONITOR_COMMAND_ERR;
-    8df8:	00bfffc4 	movi	r2,-1
-    8dfc:	f800283a 	ret
+    8ddc:	00bfffc4 	movi	r2,-1
+    8de0:	f800283a 	ret
   const int STIP = unique('S','T','I','P');
   const int GTOP = unique('G','T','O','P');
   //
   const int command = unique(str[0], str[1], str[2], str[3]);
   if (command == ASRS) {
     return MONITOR_COMMAND_ASRS;
-    8e00:	00800044 	movi	r2,1
-    8e04:	f800283a 	ret
+    8de4:	00800044 	movi	r2,1
+    8de8:	f800283a 	ret
   } else if (command == NGRS) {
     return MONITOR_COMMAND_NGRS;
-    8e08:	00800084 	movi	r2,2
-    8e0c:	f800283a 	ret
+    8dec:	00800084 	movi	r2,2
+    8df0:	f800283a 	ret
   } else if (command == ASPM) {
     return MONITOR_COMMAND_ASPM;
-    8e10:	008000c4 	movi	r2,3
-    8e14:	f800283a 	ret
+    8df4:	008000c4 	movi	r2,3
+    8df8:	f800283a 	ret
   } else if (command == NGPM) {
     return MONITOR_COMMAND_NGPM;
-    8e18:	00800104 	movi	r2,4
-    8e1c:	f800283a 	ret
+    8dfc:	00800104 	movi	r2,4
+    8e00:	f800283a 	ret
   } else if (command == RDIM) {
     return MONITOR_COMMAND_RDIM;
-    8e20:	00800144 	movi	r2,5
-    8e24:	f800283a 	ret
+    8e04:	00800144 	movi	r2,5
+    8e08:	f800283a 	ret
   } else if (command == WRIM) {
     return MONITOR_COMMAND_WRIM;
-    8e28:	00800184 	movi	r2,6
-    8e2c:	f800283a 	ret
+    8e0c:	00800184 	movi	r2,6
+    8e10:	f800283a 	ret
   } else if (command == RDDM) {
     return MONITOR_COMMAND_RDDM;
-    8e30:	008001c4 	movi	r2,7
-    8e34:	f800283a 	ret
+    8e14:	008001c4 	movi	r2,7
+    8e18:	f800283a 	ret
   } else if (command == WRDM) {
     return MONITOR_COMMAND_WRDM;
-    8e38:	00800204 	movi	r2,8
-    8e3c:	f800283a 	ret
+    8e1c:	00800204 	movi	r2,8
+    8e20:	f800283a 	ret
   } else if (command == STIP) {
     return MONITOR_COMMAND_STIP;
-    8e40:	00800244 	movi	r2,9
-    8e44:	f800283a 	ret
+    8e24:	00800244 	movi	r2,9
+    8e28:	f800283a 	ret
   } else if (command == GTOP) {
     return MONITOR_COMMAND_GTOP;
-    8e48:	00800284 	movi	r2,10
+    8e2c:	00800284 	movi	r2,10
   } else {
     return MONITOR_COMMAND_ERR;
   }
 }
-    8e4c:	f800283a 	ret
+    8e30:	f800283a 	ret
 
-00008e50 <unique>:
+00008e34 <unique>:
 
 int unique(const char c0, const char c1, const char c2, const char c3) {
   return (c0 << 24) + (c1 << 16) + (c2 << 8) + c3;
-    8e50:	29403fcc 	andi	r5,r5,255
-    8e54:	2940201c 	xori	r5,r5,128
-    8e58:	31803fcc 	andi	r6,r6,255
-    8e5c:	297fe004 	addi	r5,r5,-128
-    8e60:	3180201c 	xori	r6,r6,128
-    8e64:	280a943a 	slli	r5,r5,16
-    8e68:	2008963a 	slli	r4,r4,24
-    8e6c:	31bfe004 	addi	r6,r6,-128
-    8e70:	300c923a 	slli	r6,r6,8
-    8e74:	38803fcc 	andi	r2,r7,255
-    8e78:	2149883a 	add	r4,r4,r5
-    8e7c:	1080201c 	xori	r2,r2,128
-    8e80:	2189883a 	add	r4,r4,r6
-    8e84:	10bfe004 	addi	r2,r2,-128
+    8e34:	29403fcc 	andi	r5,r5,255
+    8e38:	2940201c 	xori	r5,r5,128
+    8e3c:	31803fcc 	andi	r6,r6,255
+    8e40:	297fe004 	addi	r5,r5,-128
+    8e44:	3180201c 	xori	r6,r6,128
+    8e48:	280a943a 	slli	r5,r5,16
+    8e4c:	2008963a 	slli	r4,r4,24
+    8e50:	31bfe004 	addi	r6,r6,-128
+    8e54:	300c923a 	slli	r6,r6,8
+    8e58:	38803fcc 	andi	r2,r7,255
+    8e5c:	2149883a 	add	r4,r4,r5
+    8e60:	1080201c 	xori	r2,r2,128
+    8e64:	2189883a 	add	r4,r4,r6
+    8e68:	10bfe004 	addi	r2,r2,-128
 }
-    8e88:	2085883a 	add	r2,r4,r2
-    8e8c:	f800283a 	ret
+    8e6c:	2085883a 	add	r2,r4,r2
+    8e70:	f800283a 	ret
 
-00008e90 <alt_getchar>:
+00008e74 <alt_getchar>:
 #else
 #ifdef ALT_USE_DIRECT_DRIVERS
     ALT_DRIVER_READ_EXTERNS(ALT_STDIN_DEV);
     char c;
 
     if (ALT_DRIVER_READ(ALT_STDIN_DEV, &c, 1, alt_fd_list[STDIN_FILENO].fd_flags) <= 0) {
-    8e90:	00800074 	movhi	r2,1
-    8e94:	10a50a04 	addi	r2,r2,-27608
-    8e98:	11c00217 	ldw	r7,8(r2)
+    8e74:	00800074 	movhi	r2,1
+    8e78:	10a4f204 	addi	r2,r2,-27704
+    8e7c:	11c00217 	ldw	r7,8(r2)
  * Uses the ALT_DRIVER_READ() macro to call directly to driver if available.
  * Otherwise, uses newlib provided getchar() routine.
  */
 int 
 alt_getchar(void)
 {
-    8e9c:	defffe04 	addi	sp,sp,-8
+    8e80:	defffe04 	addi	sp,sp,-8
 #else
 #ifdef ALT_USE_DIRECT_DRIVERS
     ALT_DRIVER_READ_EXTERNS(ALT_STDIN_DEV);
     char c;
 
     if (ALT_DRIVER_READ(ALT_STDIN_DEV, &c, 1, alt_fd_list[STDIN_FILENO].fd_flags) <= 0) {
-    8ea0:	01000074 	movhi	r4,1
-    8ea4:	21252104 	addi	r4,r4,-27516
-    8ea8:	d80b883a 	mov	r5,sp
-    8eac:	01800044 	movi	r6,1
+    8e84:	01000074 	movhi	r4,1
+    8e88:	21250904 	addi	r4,r4,-27612
+    8e8c:	d80b883a 	mov	r5,sp
+    8e90:	01800044 	movi	r6,1
  * Uses the ALT_DRIVER_READ() macro to call directly to driver if available.
  * Otherwise, uses newlib provided getchar() routine.
  */
 int 
 alt_getchar(void)
 {
-    8eb0:	dfc00115 	stw	ra,4(sp)
+    8e94:	dfc00115 	stw	ra,4(sp)
 #else
 #ifdef ALT_USE_DIRECT_DRIVERS
     ALT_DRIVER_READ_EXTERNS(ALT_STDIN_DEV);
     char c;
 
     if (ALT_DRIVER_READ(ALT_STDIN_DEV, &c, 1, alt_fd_list[STDIN_FILENO].fd_flags) <= 0) {
-    8eb4:	00092080 	call	9208 <altera_avalon_uart_read>
-    8eb8:	0080020e 	bge	zero,r2,8ec4 <alt_getchar+0x34>
+    8e98:	00091ec0 	call	91ec <altera_avalon_uart_read>
+    8e9c:	0080020e 	bge	zero,r2,8ea8 <alt_getchar+0x34>
         return -1;
     }
     return c;
-    8ebc:	d8800007 	ldb	r2,0(sp)
-    8ec0:	00000106 	br	8ec8 <alt_getchar+0x38>
+    8ea0:	d8800007 	ldb	r2,0(sp)
+    8ea4:	00000106 	br	8eac <alt_getchar+0x38>
 #ifdef ALT_USE_DIRECT_DRIVERS
     ALT_DRIVER_READ_EXTERNS(ALT_STDIN_DEV);
     char c;
 
     if (ALT_DRIVER_READ(ALT_STDIN_DEV, &c, 1, alt_fd_list[STDIN_FILENO].fd_flags) <= 0) {
         return -1;
-    8ec4:	00bfffc4 	movi	r2,-1
+    8ea8:	00bfffc4 	movi	r2,-1
     return c;
 #else
     return getchar();
 #endif
 #endif
 }
-    8ec8:	dfc00117 	ldw	ra,4(sp)
-    8ecc:	dec00204 	addi	sp,sp,8
-    8ed0:	f800283a 	ret
+    8eac:	dfc00117 	ldw	ra,4(sp)
+    8eb0:	dec00204 	addi	sp,sp,8
+    8eb4:	f800283a 	ret
 
-00008ed4 <alt_load>:
+00008eb8 <alt_load>:
  * there is no bootloader, so this application is responsible for loading to
  * RAM any sections that are required.
  */  
 
 void alt_load (void)
 {
-    8ed4:	deffff04 	addi	sp,sp,-4
-    8ed8:	01000074 	movhi	r4,1
-    8edc:	01400074 	movhi	r5,1
-    8ee0:	dfc00015 	stw	ra,0(sp)
-    8ee4:	21250a04 	addi	r4,r4,-27608
-    8ee8:	29652904 	addi	r5,r5,-27484
+    8eb8:	deffff04 	addi	sp,sp,-4
+    8ebc:	01000074 	movhi	r4,1
+    8ec0:	01400074 	movhi	r5,1
+    8ec4:	dfc00015 	stw	ra,0(sp)
+    8ec8:	2124f204 	addi	r4,r4,-27704
+    8ecc:	29651104 	addi	r5,r5,-27580
 
 static void ALT_INLINE alt_load_section (alt_u32* from, 
                                          alt_u32* to, 
                                          alt_u32* end)
 {
   if (to != from)
-    8eec:	2140061e 	bne	r4,r5,8f08 <alt_load+0x34>
-    8ef0:	01000074 	movhi	r4,1
-    8ef4:	01400074 	movhi	r5,1
-    8ef8:	21200804 	addi	r4,r4,-32736
-    8efc:	29600804 	addi	r5,r5,-32736
-    8f00:	2140141e 	bne	r4,r5,8f54 <alt_load+0x80>
-    8f04:	00000d06 	br	8f3c <alt_load+0x68>
-    8f08:	00c00074 	movhi	r3,1
-    8f0c:	18e52904 	addi	r3,r3,-27484
-    8f10:	00bfff04 	movi	r2,-4
-    8f14:	1907c83a 	sub	r3,r3,r4
-    8f18:	1886703a 	and	r3,r3,r2
-    8f1c:	0005883a 	mov	r2,zero
+    8ed0:	2140061e 	bne	r4,r5,8eec <alt_load+0x34>
+    8ed4:	01000074 	movhi	r4,1
+    8ed8:	01400074 	movhi	r5,1
+    8edc:	21200804 	addi	r4,r4,-32736
+    8ee0:	29600804 	addi	r5,r5,-32736
+    8ee4:	2140141e 	bne	r4,r5,8f38 <alt_load+0x80>
+    8ee8:	00000d06 	br	8f20 <alt_load+0x68>
+    8eec:	00c00074 	movhi	r3,1
+    8ef0:	18e51104 	addi	r3,r3,-27580
+    8ef4:	00bfff04 	movi	r2,-4
+    8ef8:	1907c83a 	sub	r3,r3,r4
+    8efc:	1886703a 	and	r3,r3,r2
+    8f00:	0005883a 	mov	r2,zero
   {
     while( to != end )
-    8f20:	10fff326 	beq	r2,r3,8ef0 <_gp+0xffff7a70>
-    8f24:	114f883a 	add	r7,r2,r5
+    8f04:	10fff326 	beq	r2,r3,8ed4 <_gp+0xffff7ab4>
+    8f08:	114f883a 	add	r7,r2,r5
     {
       *to++ = *from++;
-    8f28:	39c00017 	ldw	r7,0(r7)
-    8f2c:	110d883a 	add	r6,r2,r4
-    8f30:	10800104 	addi	r2,r2,4
-    8f34:	31c00015 	stw	r7,0(r6)
-    8f38:	003ff906 	br	8f20 <_gp+0xffff7aa0>
-    8f3c:	01000074 	movhi	r4,1
-    8f40:	01400074 	movhi	r5,1
-    8f44:	2124d604 	addi	r4,r4,-27816
-    8f48:	2964d604 	addi	r5,r5,-27816
+    8f0c:	39c00017 	ldw	r7,0(r7)
+    8f10:	110d883a 	add	r6,r2,r4
+    8f14:	10800104 	addi	r2,r2,4
+    8f18:	31c00015 	stw	r7,0(r6)
+    8f1c:	003ff906 	br	8f04 <_gp+0xffff7ae4>
+    8f20:	01000074 	movhi	r4,1
+    8f24:	01400074 	movhi	r5,1
+    8f28:	2124cf04 	addi	r4,r4,-27844
+    8f2c:	2964cf04 	addi	r5,r5,-27844
 
 static void ALT_INLINE alt_load_section (alt_u32* from, 
                                          alt_u32* to, 
                                          alt_u32* end)
 {
   if (to != from)
-    8f4c:	2140121e 	bne	r4,r5,8f98 <alt_load+0xc4>
-    8f50:	00000d06 	br	8f88 <alt_load+0xb4>
-    8f54:	00c00074 	movhi	r3,1
-    8f58:	18e00804 	addi	r3,r3,-32736
-    8f5c:	00bfff04 	movi	r2,-4
-    8f60:	1907c83a 	sub	r3,r3,r4
-    8f64:	1886703a 	and	r3,r3,r2
-    8f68:	0005883a 	mov	r2,zero
+    8f30:	2140121e 	bne	r4,r5,8f7c <alt_load+0xc4>
+    8f34:	00000d06 	br	8f6c <alt_load+0xb4>
+    8f38:	00c00074 	movhi	r3,1
+    8f3c:	18e00804 	addi	r3,r3,-32736
+    8f40:	00bfff04 	movi	r2,-4
+    8f44:	1907c83a 	sub	r3,r3,r4
+    8f48:	1886703a 	and	r3,r3,r2
+    8f4c:	0005883a 	mov	r2,zero
   {
     while( to != end )
-    8f6c:	10fff326 	beq	r2,r3,8f3c <_gp+0xffff7abc>
-    8f70:	114f883a 	add	r7,r2,r5
+    8f50:	10fff326 	beq	r2,r3,8f20 <_gp+0xffff7b00>
+    8f54:	114f883a 	add	r7,r2,r5
     {
       *to++ = *from++;
-    8f74:	39c00017 	ldw	r7,0(r7)
-    8f78:	110d883a 	add	r6,r2,r4
-    8f7c:	10800104 	addi	r2,r2,4
-    8f80:	31c00015 	stw	r7,0(r6)
-    8f84:	003ff906 	br	8f6c <_gp+0xffff7aec>
+    8f58:	39c00017 	ldw	r7,0(r7)
+    8f5c:	110d883a 	add	r6,r2,r4
+    8f60:	10800104 	addi	r2,r2,4
+    8f64:	31c00015 	stw	r7,0(r6)
+    8f68:	003ff906 	br	8f50 <_gp+0xffff7b30>
   
   /*
    * Now ensure that the caches are in synch.
    */
   
   alt_dcache_flush_all();
-    8f88:	00093240 	call	9324 <alt_dcache_flush_all>
+    8f6c:	00093080 	call	9308 <alt_dcache_flush_all>
   alt_icache_flush_all();
 }
-    8f8c:	dfc00017 	ldw	ra,0(sp)
-    8f90:	dec00104 	addi	sp,sp,4
+    8f70:	dfc00017 	ldw	ra,0(sp)
+    8f74:	dec00104 	addi	sp,sp,4
   /*
    * Now ensure that the caches are in synch.
    */
   
   alt_dcache_flush_all();
   alt_icache_flush_all();
-    8f94:	00093301 	jmpi	9330 <alt_icache_flush_all>
-    8f98:	00c00074 	movhi	r3,1
-    8f9c:	18e50a04 	addi	r3,r3,-27608
-    8fa0:	00bfff04 	movi	r2,-4
-    8fa4:	1907c83a 	sub	r3,r3,r4
-    8fa8:	1886703a 	and	r3,r3,r2
+    8f78:	00093141 	jmpi	9314 <alt_icache_flush_all>
+    8f7c:	00c00074 	movhi	r3,1
+    8f80:	18e4f204 	addi	r3,r3,-27704
+    8f84:	00bfff04 	movi	r2,-4
+    8f88:	1907c83a 	sub	r3,r3,r4
+    8f8c:	1886703a 	and	r3,r3,r2
 
 static void ALT_INLINE alt_load_section (alt_u32* from, 
                                          alt_u32* to, 
                                          alt_u32* end)
 {
   if (to != from)
-    8fac:	0005883a 	mov	r2,zero
+    8f90:	0005883a 	mov	r2,zero
   {
     while( to != end )
-    8fb0:	10fff526 	beq	r2,r3,8f88 <_gp+0xffff7b08>
-    8fb4:	114f883a 	add	r7,r2,r5
+    8f94:	10fff526 	beq	r2,r3,8f6c <_gp+0xffff7b4c>
+    8f98:	114f883a 	add	r7,r2,r5
     {
       *to++ = *from++;
-    8fb8:	39c00017 	ldw	r7,0(r7)
-    8fbc:	110d883a 	add	r6,r2,r4
-    8fc0:	10800104 	addi	r2,r2,4
-    8fc4:	31c00015 	stw	r7,0(r6)
-    8fc8:	003ff906 	br	8fb0 <_gp+0xffff7b30>
+    8f9c:	39c00017 	ldw	r7,0(r7)
+    8fa0:	110d883a 	add	r6,r2,r4
+    8fa4:	10800104 	addi	r2,r2,4
+    8fa8:	31c00015 	stw	r7,0(r6)
+    8fac:	003ff906 	br	8f94 <_gp+0xffff7b74>
 
-00008fcc <alt_main>:
+00008fb0 <alt_main>:
  * devices/filesystems/components in the system; and call the entry point for
  * the users application, i.e. main().
  */
 
 void alt_main (void)
 {
-    8fcc:	deffff04 	addi	sp,sp,-4
+    8fb0:	deffff04 	addi	sp,sp,-4
 #endif
 
   /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
   ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
   /* Initialize the interrupt controller. */
   alt_irq_init (NULL);
-    8fd0:	0009883a 	mov	r4,zero
+    8fb4:	0009883a 	mov	r4,zero
  * devices/filesystems/components in the system; and call the entry point for
  * the users application, i.e. main().
  */
 
 void alt_main (void)
 {
-    8fd4:	dfc00015 	stw	ra,0(sp)
+    8fb8:	dfc00015 	stw	ra,0(sp)
 #endif
 
   /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
   ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
   /* Initialize the interrupt controller. */
   alt_irq_init (NULL);
-    8fd8:	00091e40 	call	91e4 <alt_irq_init>
+    8fbc:	00091c80 	call	91c8 <alt_irq_init>
   ALT_LOG_PRINT_BOOT("[alt_main.c] Done OS Init, calling alt_sem_create.\r\n");
   ALT_SEM_CREATE (&alt_fd_list_lock, 1);
 
   /* Initialize the device drivers/software components. */
   ALT_LOG_PRINT_BOOT("[alt_main.c] Calling alt_sys_init.\r\n");
   alt_sys_init();
-    8fdc:	00092040 	call	9204 <alt_sys_init>
+    8fc0:	00091e80 	call	91e8 <alt_sys_init>
    */
 
   ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
 
 #ifdef ALT_NO_EXIT
   main (alt_argc, alt_argv, alt_envp);
-    8fe0:	d1202a17 	ldw	r4,-32600(gp)
-    8fe4:	d1602917 	ldw	r5,-32604(gp)
-    8fe8:	d1a02817 	ldw	r6,-32608(gp)
+    8fc4:	d1202a17 	ldw	r4,-32600(gp)
+    8fc8:	d1602917 	ldw	r5,-32604(gp)
+    8fcc:	d1a02817 	ldw	r6,-32608(gp)
   close(STDOUT_FILENO);
   exit (result);
 #endif
 
   ALT_LOG_PRINT_BOOT("[alt_main.c] After main - we should not be here?.\r\n");
 }
-    8fec:	dfc00017 	ldw	ra,0(sp)
-    8ff0:	dec00104 	addi	sp,sp,4
+    8fd0:	dfc00017 	ldw	ra,0(sp)
+    8fd4:	dec00104 	addi	sp,sp,4
    */
 
   ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
 
 #ifdef ALT_NO_EXIT
   main (alt_argc, alt_argv, alt_envp);
-    8ff4:	00082bc1 	jmpi	82bc <main>
+    8fd8:	00082bc1 	jmpi	82bc <main>
 
-00008ff8 <alt_printf>:
+00008fdc <alt_printf>:
 /* 
  * ALT printf function 
  */
 void 
 alt_printf(const char* fmt, ... )
 {
-    8ff8:	defff204 	addi	sp,sp,-56
-    8ffc:	dfc00a15 	stw	ra,40(sp)
-    9000:	df000915 	stw	fp,36(sp)
-    9004:	ddc00815 	stw	r23,32(sp)
-    9008:	dd800715 	stw	r22,28(sp)
-    900c:	dd400615 	stw	r21,24(sp)
-    9010:	dd000515 	stw	r20,20(sp)
-    9014:	dcc00415 	stw	r19,16(sp)
-    9018:	dc800315 	stw	r18,12(sp)
-    901c:	dc400215 	stw	r17,8(sp)
-    9020:	dc000115 	stw	r16,4(sp)
-    9024:	d9400b15 	stw	r5,44(sp)
-    9028:	d9800c15 	stw	r6,48(sp)
-    902c:	d9c00d15 	stw	r7,52(sp)
+    8fdc:	defff204 	addi	sp,sp,-56
+    8fe0:	dfc00a15 	stw	ra,40(sp)
+    8fe4:	df000915 	stw	fp,36(sp)
+    8fe8:	ddc00815 	stw	r23,32(sp)
+    8fec:	dd800715 	stw	r22,28(sp)
+    8ff0:	dd400615 	stw	r21,24(sp)
+    8ff4:	dd000515 	stw	r20,20(sp)
+    8ff8:	dcc00415 	stw	r19,16(sp)
+    8ffc:	dc800315 	stw	r18,12(sp)
+    9000:	dc400215 	stw	r17,8(sp)
+    9004:	dc000115 	stw	r16,4(sp)
+    9008:	d9400b15 	stw	r5,44(sp)
+    900c:	d9800c15 	stw	r6,48(sp)
+    9010:	d9c00d15 	stw	r7,52(sp)
     w = fmt;
     while ((c = *w++) != 0)
     {
         /* If not a format escape character, just print  */
         /* character.  Otherwise, process format string. */
         if (c != '%')
-    9030:	04000944 	movi	r16,37
+    9014:	04000944 	movi	r16,37
 /* 
  * ALT printf function 
  */
 void 
 alt_printf(const char* fmt, ... )
 {
-    9034:	2005883a 	mov	r2,r4
+    9018:	2005883a 	mov	r2,r4
 	va_list args;
 	va_start(args, fmt);
-    9038:	dd400b04 	addi	r21,sp,44
+    901c:	dd400b04 	addi	r21,sp,44
                 if (c == '%')
                 {
                     /* Process "%" escape sequence. */
                     alt_putchar(c);
                 } 
                 else if (c == 'c')
-    903c:	048018c4 	movi	r18,99
+    9020:	048018c4 	movi	r18,99
                 {
                     int v = va_arg(args, int);
                     alt_putchar(v);
                 }
                 else if (c == 'x')
-    9040:	04c01e04 	movi	r19,120
+    9024:	04c01e04 	movi	r19,120
                         else
                             c = 'a' + digit - 10;
                         alt_putchar(c);
                     }
                 }
                 else if (c == 's')
-    9044:	05001cc4 	movi	r20,115
+    9028:	05001cc4 	movi	r20,115
     const char *w;
     char c;
 
     /* Process format string. */
     w = fmt;
     while ((c = *w++) != 0)
-    9048:	11000007 	ldb	r4,0(r2)
-    904c:	20003926 	beq	r4,zero,9134 <alt_printf+0x13c>
+    902c:	11000007 	ldb	r4,0(r2)
+    9030:	20003926 	beq	r4,zero,9118 <alt_printf+0x13c>
     {
         /* If not a format escape character, just print  */
         /* character.  Otherwise, process format string. */
         if (c != '%')
-    9050:	24000226 	beq	r4,r16,905c <alt_printf+0x64>
+    9034:	24000226 	beq	r4,r16,9040 <alt_printf+0x64>
     const char *w;
     char c;
 
     /* Process format string. */
     w = fmt;
     while ((c = *w++) != 0)
-    9054:	14400044 	addi	r17,r2,1
-    9058:	00001106 	br	90a0 <alt_printf+0xa8>
+    9038:	14400044 	addi	r17,r2,1
+    903c:	00001106 	br	9084 <alt_printf+0xa8>
         }
         else
         {
             /* Get format character.  If none     */
             /* available, processing is complete. */
             if ((c = *w++) != 0)
-    905c:	14400084 	addi	r17,r2,2
-    9060:	10800047 	ldb	r2,1(r2)
-    9064:	10003326 	beq	r2,zero,9134 <alt_printf+0x13c>
+    9040:	14400084 	addi	r17,r2,2
+    9044:	10800047 	ldb	r2,1(r2)
+    9048:	10003326 	beq	r2,zero,9118 <alt_printf+0x13c>
             {
                 if (c == '%')
-    9068:	1400021e 	bne	r2,r16,9074 <alt_printf+0x7c>
+    904c:	1400021e 	bne	r2,r16,9058 <alt_printf+0x7c>
                 {
                     /* Process "%" escape sequence. */
                     alt_putchar(c);
-    906c:	8009883a 	mov	r4,r16
-    9070:	00000b06 	br	90a0 <alt_printf+0xa8>
+    9050:	8009883a 	mov	r4,r16
+    9054:	00000b06 	br	9084 <alt_printf+0xa8>
                 } 
                 else if (c == 'c')
-    9074:	1480051e 	bne	r2,r18,908c <alt_printf+0x94>
+    9058:	1480051e 	bne	r2,r18,9070 <alt_printf+0x94>
                 {
                     int v = va_arg(args, int);
                     alt_putchar(v);
-    9078:	a9000017 	ldw	r4,0(r21)
+    905c:	a9000017 	ldw	r4,0(r21)
                     /* Process "%" escape sequence. */
                     alt_putchar(c);
                 } 
                 else if (c == 'c')
                 {
                     int v = va_arg(args, int);
-    907c:	ad800104 	addi	r22,r21,4
-    9080:	b02b883a 	mov	r21,r22
+    9060:	ad800104 	addi	r22,r21,4
+    9064:	b02b883a 	mov	r21,r22
                     alt_putchar(v);
-    9084:	00091640 	call	9164 <alt_putchar>
-    9088:	00002806 	br	912c <alt_printf+0x134>
+    9068:	00091480 	call	9148 <alt_putchar>
+    906c:	00002806 	br	9110 <alt_printf+0x134>
                 }
                 else if (c == 'x')
-    908c:	14c01f1e 	bne	r2,r19,910c <alt_printf+0x114>
+    9070:	14c01f1e 	bne	r2,r19,90f0 <alt_printf+0x114>
                 {
                     /* Process hexadecimal number format. */
                     unsigned long v = va_arg(args, unsigned long);
-    9090:	adc00017 	ldw	r23,0(r21)
-    9094:	ad400104 	addi	r21,r21,4
+    9074:	adc00017 	ldw	r23,0(r21)
+    9078:	ad400104 	addi	r21,r21,4
                     unsigned long digit;
                     int digit_shift;
 
                     /* If the number value is zero, just print and continue. */
                     if (v == 0)
-    9098:	b800031e 	bne	r23,zero,90a8 <alt_printf+0xb0>
+    907c:	b800031e 	bne	r23,zero,908c <alt_printf+0xb0>
                     {
                         alt_putchar('0');
-    909c:	01000c04 	movi	r4,48
-    90a0:	00091640 	call	9164 <alt_putchar>
+    9080:	01000c04 	movi	r4,48
+    9084:	00091480 	call	9148 <alt_putchar>
                         continue;
-    90a4:	00002106 	br	912c <alt_printf+0x134>
-    90a8:	05800704 	movi	r22,28
+    9088:	00002106 	br	9110 <alt_printf+0x134>
+    908c:	05800704 	movi	r22,28
                     }
 
                     /* Find first non-zero digit. */
                     digit_shift = 28;
                     while (!(v & (0xF << digit_shift)))
-    90ac:	00c003c4 	movi	r3,15
-    90b0:	1d84983a 	sll	r2,r3,r22
-    90b4:	15c4703a 	and	r2,r2,r23
-    90b8:	1000021e 	bne	r2,zero,90c4 <alt_printf+0xcc>
+    9090:	00c003c4 	movi	r3,15
+    9094:	1d84983a 	sll	r2,r3,r22
+    9098:	15c4703a 	and	r2,r2,r23
+    909c:	1000021e 	bne	r2,zero,90a8 <alt_printf+0xcc>
                         digit_shift -= 4;
-    90bc:	b5bfff04 	addi	r22,r22,-4
-    90c0:	003ffb06 	br	90b0 <_gp+0xffff7c30>
+    90a0:	b5bfff04 	addi	r22,r22,-4
+    90a4:	003ffb06 	br	9094 <_gp+0xffff7c74>
 
                     /* Print digits. */
                     for (; digit_shift >= 0; digit_shift -= 4)
                     {
                         digit = (v & (0xF << digit_shift)) >> digit_shift;
-    90c4:	070003c4 	movi	fp,15
+    90a8:	070003c4 	movi	fp,15
                         if (digit <= 9)
-    90c8:	00c00244 	movi	r3,9
+    90ac:	00c00244 	movi	r3,9
                     digit_shift = 28;
                     while (!(v & (0xF << digit_shift)))
                         digit_shift -= 4;
 
                     /* Print digits. */
                     for (; digit_shift >= 0; digit_shift -= 4)
-    90cc:	b0001716 	blt	r22,zero,912c <alt_printf+0x134>
+    90b0:	b0001716 	blt	r22,zero,9110 <alt_printf+0x134>
                     {
                         digit = (v & (0xF << digit_shift)) >> digit_shift;
-    90d0:	e584983a 	sll	r2,fp,r22
-    90d4:	15c4703a 	and	r2,r2,r23
-    90d8:	1584d83a 	srl	r2,r2,r22
+    90b4:	e584983a 	sll	r2,fp,r22
+    90b8:	15c4703a 	and	r2,r2,r23
+    90bc:	1584d83a 	srl	r2,r2,r22
                         if (digit <= 9)
-    90dc:	18800236 	bltu	r3,r2,90e8 <alt_printf+0xf0>
+    90c0:	18800236 	bltu	r3,r2,90cc <alt_printf+0xf0>
                             c = '0' + digit;
-    90e0:	11000c04 	addi	r4,r2,48
-    90e4:	00000106 	br	90ec <alt_printf+0xf4>
+    90c4:	11000c04 	addi	r4,r2,48
+    90c8:	00000106 	br	90d0 <alt_printf+0xf4>
                         else
                             c = 'a' + digit - 10;
-    90e8:	110015c4 	addi	r4,r2,87
+    90cc:	110015c4 	addi	r4,r2,87
                         alt_putchar(c);
-    90ec:	21003fcc 	andi	r4,r4,255
-    90f0:	2100201c 	xori	r4,r4,128
-    90f4:	213fe004 	addi	r4,r4,-128
-    90f8:	d8c00015 	stw	r3,0(sp)
-    90fc:	00091640 	call	9164 <alt_putchar>
+    90d0:	21003fcc 	andi	r4,r4,255
+    90d4:	2100201c 	xori	r4,r4,128
+    90d8:	213fe004 	addi	r4,r4,-128
+    90dc:	d8c00015 	stw	r3,0(sp)
+    90e0:	00091480 	call	9148 <alt_putchar>
                     digit_shift = 28;
                     while (!(v & (0xF << digit_shift)))
                         digit_shift -= 4;
 
                     /* Print digits. */
                     for (; digit_shift >= 0; digit_shift -= 4)
-    9100:	b5bfff04 	addi	r22,r22,-4
-    9104:	d8c00017 	ldw	r3,0(sp)
-    9108:	003ff006 	br	90cc <_gp+0xffff7c4c>
+    90e4:	b5bfff04 	addi	r22,r22,-4
+    90e8:	d8c00017 	ldw	r3,0(sp)
+    90ec:	003ff006 	br	90b0 <_gp+0xffff7c90>
                         else
                             c = 'a' + digit - 10;
                         alt_putchar(c);
                     }
                 }
                 else if (c == 's')
-    910c:	1500071e 	bne	r2,r20,912c <alt_printf+0x134>
+    90f0:	1500071e 	bne	r2,r20,9110 <alt_printf+0x134>
                 {
                     /* Process string format. */
                     char *s = va_arg(args, char *);
-    9110:	ad800017 	ldw	r22,0(r21)
-    9114:	ad400104 	addi	r21,r21,4
+    90f4:	ad800017 	ldw	r22,0(r21)
+    90f8:	ad400104 	addi	r21,r21,4
 
                     while(*s)
-    9118:	b1000007 	ldb	r4,0(r22)
-    911c:	20000326 	beq	r4,zero,912c <alt_printf+0x134>
+    90fc:	b1000007 	ldb	r4,0(r22)
+    9100:	20000326 	beq	r4,zero,9110 <alt_printf+0x134>
                       alt_putchar(*s++);
-    9120:	b5800044 	addi	r22,r22,1
-    9124:	00091640 	call	9164 <alt_putchar>
-    9128:	003ffb06 	br	9118 <_gp+0xffff7c98>
+    9104:	b5800044 	addi	r22,r22,1
+    9108:	00091480 	call	9148 <alt_putchar>
+    910c:	003ffb06 	br	90fc <_gp+0xffff7cdc>
                     /* Process "%" escape sequence. */
                     alt_putchar(c);
                 } 
                 else if (c == 'c')
                 {
                     int v = va_arg(args, int);
-    912c:	8805883a 	mov	r2,r17
-    9130:	003fc506 	br	9048 <_gp+0xffff7bc8>
+    9110:	8805883a 	mov	r2,r17
+    9114:	003fc506 	br	902c <_gp+0xffff7c0c>
         }
     }
 #ifdef ALT_SEMIHOSTING
     alt_putbufflush();
 #endif
 }
-    9134:	dfc00a17 	ldw	ra,40(sp)
-    9138:	df000917 	ldw	fp,36(sp)
-    913c:	ddc00817 	ldw	r23,32(sp)
-    9140:	dd800717 	ldw	r22,28(sp)
-    9144:	dd400617 	ldw	r21,24(sp)
-    9148:	dd000517 	ldw	r20,20(sp)
-    914c:	dcc00417 	ldw	r19,16(sp)
-    9150:	dc800317 	ldw	r18,12(sp)
-    9154:	dc400217 	ldw	r17,8(sp)
-    9158:	dc000117 	ldw	r16,4(sp)
-    915c:	dec00e04 	addi	sp,sp,56
-    9160:	f800283a 	ret
+    9118:	dfc00a17 	ldw	ra,40(sp)
+    911c:	df000917 	ldw	fp,36(sp)
+    9120:	ddc00817 	ldw	r23,32(sp)
+    9124:	dd800717 	ldw	r22,28(sp)
+    9128:	dd400617 	ldw	r21,24(sp)
+    912c:	dd000517 	ldw	r20,20(sp)
+    9130:	dcc00417 	ldw	r19,16(sp)
+    9134:	dc800317 	ldw	r18,12(sp)
+    9138:	dc400217 	ldw	r17,8(sp)
+    913c:	dc000117 	ldw	r16,4(sp)
+    9140:	dec00e04 	addi	sp,sp,56
+    9144:	f800283a 	ret
 
-00009164 <alt_putchar>:
+00009148 <alt_putchar>:
  * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
  * Otherwise, uses newlib provided putchar() routine.
  */
 int 
 alt_putchar(int c)
 {
-    9164:	defffd04 	addi	sp,sp,-12
-    9168:	dc000115 	stw	r16,4(sp)
+    9148:	defffd04 	addi	sp,sp,-12
+    914c:	dc000115 	stw	r16,4(sp)
 	char        c1 = (char)(c & 0xff);
     return write(STDOUT_FILENO,&c1,1);
 #else
 #ifdef ALT_USE_DIRECT_DRIVERS
     ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
     char        c1 = (char)(c & 0xff);
-    916c:	d9000005 	stb	r4,0(sp)
+    9150:	d9000005 	stb	r4,0(sp)
  * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
  * Otherwise, uses newlib provided putchar() routine.
  */
 int 
 alt_putchar(int c)
 {
-    9170:	2021883a 	mov	r16,r4
+    9154:	2021883a 	mov	r16,r4
 #else
 #ifdef ALT_USE_DIRECT_DRIVERS
     ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
     char        c1 = (char)(c & 0xff);
 
     if (ALT_DRIVER_WRITE(ALT_STDOUT_DEV, &c1, 1, 0) == -1) {
-    9174:	01000074 	movhi	r4,1
-    9178:	21252104 	addi	r4,r4,-27516
-    917c:	d80b883a 	mov	r5,sp
-    9180:	01800044 	movi	r6,1
-    9184:	000f883a 	mov	r7,zero
+    9158:	01000074 	movhi	r4,1
+    915c:	21250904 	addi	r4,r4,-27612
+    9160:	d80b883a 	mov	r5,sp
+    9164:	01800044 	movi	r6,1
+    9168:	000f883a 	mov	r7,zero
  * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
  * Otherwise, uses newlib provided putchar() routine.
  */
 int 
 alt_putchar(int c)
 {
-    9188:	dfc00215 	stw	ra,8(sp)
+    916c:	dfc00215 	stw	ra,8(sp)
 #else
 #ifdef ALT_USE_DIRECT_DRIVERS
     ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
     char        c1 = (char)(c & 0xff);
 
     if (ALT_DRIVER_WRITE(ALT_STDOUT_DEV, &c1, 1, 0) == -1) {
-    918c:	00092940 	call	9294 <altera_avalon_uart_write>
-    9190:	00ffffc4 	movi	r3,-1
-    9194:	10c00126 	beq	r2,r3,919c <alt_putchar+0x38>
+    9170:	00092780 	call	9278 <altera_avalon_uart_write>
+    9174:	00ffffc4 	movi	r3,-1
+    9178:	10c00126 	beq	r2,r3,9180 <alt_putchar+0x38>
         return -1;
     }
     return c;
-    9198:	8005883a 	mov	r2,r16
+    917c:	8005883a 	mov	r2,r16
 #else
     return putchar(c);
 #endif
 #endif
 }
-    919c:	dfc00217 	ldw	ra,8(sp)
-    91a0:	dc000117 	ldw	r16,4(sp)
-    91a4:	dec00304 	addi	sp,sp,12
-    91a8:	f800283a 	ret
+    9180:	dfc00217 	ldw	ra,8(sp)
+    9184:	dc000117 	ldw	r16,4(sp)
+    9188:	dec00304 	addi	sp,sp,12
+    918c:	f800283a 	ret
 
-000091ac <alt_putstr>:
+00009190 <alt_putstr>:
  * Uses the ALT_DRIVER_WRITE() macro to call directly to driver if available.
  * Otherwise, uses newlib provided fputs() routine.
  */
 int 
 alt_putstr(const char* str)
 {
-    91ac:	defffe04 	addi	sp,sp,-8
-    91b0:	dc000015 	stw	r16,0(sp)
-    91b4:	dfc00115 	stw	ra,4(sp)
-    91b8:	2021883a 	mov	r16,r4
+    9190:	defffe04 	addi	sp,sp,-8
+    9194:	dc000015 	stw	r16,0(sp)
+    9198:	dfc00115 	stw	ra,4(sp)
+    919c:	2021883a 	mov	r16,r4
 #ifdef ALT_SEMIHOSTING
     return write(STDOUT_FILENO,str,strlen(str));
 #else
 #ifdef ALT_USE_DIRECT_DRIVERS
     ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
     return ALT_DRIVER_WRITE(ALT_STDOUT_DEV, str, strlen(str), 0);
-    91bc:	000933c0 	call	933c <strlen>
-    91c0:	01000074 	movhi	r4,1
-    91c4:	21252104 	addi	r4,r4,-27516
-    91c8:	800b883a 	mov	r5,r16
-    91cc:	100d883a 	mov	r6,r2
-    91d0:	000f883a 	mov	r7,zero
+    91a0:	00093200 	call	9320 <strlen>
+    91a4:	01000074 	movhi	r4,1
+    91a8:	21250904 	addi	r4,r4,-27612
+    91ac:	800b883a 	mov	r5,r16
+    91b0:	100d883a 	mov	r6,r2
+    91b4:	000f883a 	mov	r7,zero
 #else
     return fputs(str, stdout);
 #endif
 #endif
 }
-    91d4:	dfc00117 	ldw	ra,4(sp)
-    91d8:	dc000017 	ldw	r16,0(sp)
-    91dc:	dec00204 	addi	sp,sp,8
+    91b8:	dfc00117 	ldw	ra,4(sp)
+    91bc:	dc000017 	ldw	r16,0(sp)
+    91c0:	dec00204 	addi	sp,sp,8
 #ifdef ALT_SEMIHOSTING
     return write(STDOUT_FILENO,str,strlen(str));
 #else
 #ifdef ALT_USE_DIRECT_DRIVERS
     ALT_DRIVER_WRITE_EXTERNS(ALT_STDOUT_DEV);
     return ALT_DRIVER_WRITE(ALT_STDOUT_DEV, str, strlen(str), 0);
-    91e0:	00092941 	jmpi	9294 <altera_avalon_uart_write>
+    91c4:	00092781 	jmpi	9278 <altera_avalon_uart_write>
 
-000091e4 <alt_irq_init>:
+000091c8 <alt_irq_init>:
  * The "base" parameter is ignored and only
  * present for backwards-compatibility.
  */
 
 void alt_irq_init ( const void* base )
 {
-    91e4:	deffff04 	addi	sp,sp,-4
-    91e8:	dfc00015 	stw	ra,0(sp)
+    91c8:	deffff04 	addi	sp,sp,-4
+    91cc:	dfc00015 	stw	ra,0(sp)
     ALTERA_NIOS2_GEN2_IRQ_INIT ( NIOS2_PROCESSOR, nios2_processor);
-    91ec:	00093340 	call	9334 <altera_nios2_gen2_irq_init>
+    91d0:	00093180 	call	9318 <altera_nios2_gen2_irq_init>
  * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
  */
 static ALT_INLINE void ALT_ALWAYS_INLINE 
        alt_irq_cpu_enable_interrupts (void)
 {
     NIOS2_WRITE_STATUS(NIOS2_STATUS_PIE_MSK
-    91f0:	00800044 	movi	r2,1
-    91f4:	1001703a 	wrctl	status,r2
+    91d4:	00800044 	movi	r2,1
+    91d8:	1001703a 	wrctl	status,r2
     alt_irq_cpu_enable_interrupts();
 }
-    91f8:	dfc00017 	ldw	ra,0(sp)
-    91fc:	dec00104 	addi	sp,sp,4
-    9200:	f800283a 	ret
+    91dc:	dfc00017 	ldw	ra,0(sp)
+    91e0:	dec00104 	addi	sp,sp,4
+    91e4:	f800283a 	ret
 
-00009204 <alt_sys_init>:
+000091e8 <alt_sys_init>:
  * Initialize the non-interrupt controller devices.
  * Called after alt_irq_init().
  */
 
 void alt_sys_init( void )
 {
-    9204:	f800283a 	ret
+    91e8:	f800283a 	ret
 
-00009208 <altera_avalon_uart_read>:
+000091ec <altera_avalon_uart_read>:
   int flags)
 {
   int block;
   unsigned int status;
 
   block = !(flags & O_NONBLOCK);
-    9208:	39d0000c 	andi	r7,r7,16384
+    91ec:	39d0000c 	andi	r7,r7,16384
 
   do
   {
     status = IORD_ALTERA_AVALON_UART_STATUS(sp->base);
-    920c:	20c00017 	ldw	r3,0(r4)
-    9210:	18c00204 	addi	r3,r3,8
-    9214:	18800037 	ldwio	r2,0(r3)
+    91f0:	20c00017 	ldw	r3,0(r4)
+    91f4:	18c00204 	addi	r3,r3,8
+    91f8:	18800037 	ldwio	r2,0(r3)
 
     /* clear any error flags */
 
     IOWR_ALTERA_AVALON_UART_STATUS(sp->base, 0);
-    9218:	18000035 	stwio	zero,0(r3)
+    91fc:	18000035 	stwio	zero,0(r3)
 
     if (status & ALTERA_AVALON_UART_CONTROL_RRDY_MSK)
-    921c:	10c0200c 	andi	r3,r2,128
-    9220:	1800021e 	bne	r3,zero,922c <altera_avalon_uart_read+0x24>
+    9200:	10c0200c 	andi	r3,r2,128
+    9204:	1800021e 	bne	r3,zero,9210 <altera_avalon_uart_read+0x24>
       {
         return 1;
       }
     }
   }
   while (block);
-    9224:	383ff926 	beq	r7,zero,920c <_gp+0xffff7d8c>
-    9228:	00000706 	br	9248 <altera_avalon_uart_read+0x40>
+    9208:	383ff926 	beq	r7,zero,91f0 <_gp+0xffff7dd0>
+    920c:	00000706 	br	922c <altera_avalon_uart_read+0x40>
 
     IOWR_ALTERA_AVALON_UART_STATUS(sp->base, 0);
 
     if (status & ALTERA_AVALON_UART_CONTROL_RRDY_MSK)
     {
       ptr[0] = IORD_ALTERA_AVALON_UART_RXDATA(sp->base);
-    922c:	20c00017 	ldw	r3,0(r4)
-    9230:	18c00037 	ldwio	r3,0(r3)
-    9234:	28c00005 	stb	r3,0(r5)
+    9210:	20c00017 	ldw	r3,0(r4)
+    9214:	18c00037 	ldwio	r3,0(r3)
+    9218:	28c00005 	stb	r3,0(r5)
 
       if (!(status & (ALTERA_AVALON_UART_STATUS_PE_MSK | 
-    9238:	108000cc 	andi	r2,r2,3
-    923c:	103ff91e 	bne	r2,zero,9224 <_gp+0xffff7da4>
+    921c:	108000cc 	andi	r2,r2,3
+    9220:	103ff91e 	bne	r2,zero,9208 <_gp+0xffff7de8>
       ALTERA_AVALON_UART_STATUS_FE_MSK)))
       {
         return 1;
-    9240:	00800044 	movi	r2,1
-    9244:	f800283a 	ret
+    9224:	00800044 	movi	r2,1
+    9228:	f800283a 	ret
 
 extern int errno;
 
 static ALT_INLINE int* alt_get_errno(void)
 {
   return ((alt_errno) ? alt_errno() : &errno);
-    9248:	00800074 	movhi	r2,1
-    924c:	10a52804 	addi	r2,r2,-27488
-    9250:	10800017 	ldw	r2,0(r2)
-    9254:	10000926 	beq	r2,zero,927c <altera_avalon_uart_read+0x74>
+    922c:	00800074 	movhi	r2,1
+    9230:	10a51004 	addi	r2,r2,-27584
+    9234:	10800017 	ldw	r2,0(r2)
+    9238:	10000926 	beq	r2,zero,9260 <altera_avalon_uart_read+0x74>
  */
 
 int 
 altera_avalon_uart_read(altera_avalon_uart_state* sp, char* ptr, int len,
   int flags)
 {
-    9258:	deffff04 	addi	sp,sp,-4
-    925c:	dfc00015 	stw	ra,0(sp)
-    9260:	103ee83a 	callr	r2
+    923c:	deffff04 	addi	sp,sp,-4
+    9240:	dfc00015 	stw	ra,0(sp)
+    9244:	103ee83a 	callr	r2
       }
     }
   }
   while (block);
 
   ALT_ERRNO = EWOULDBLOCK;
-    9264:	00c002c4 	movi	r3,11
-    9268:	10c00015 	stw	r3,0(r2)
+    9248:	00c002c4 	movi	r3,11
+    924c:	10c00015 	stw	r3,0(r2)
  
   return 0;
-    926c:	0005883a 	mov	r2,zero
+    9250:	0005883a 	mov	r2,zero
 }
-    9270:	dfc00017 	ldw	ra,0(sp)
-    9274:	dec00104 	addi	sp,sp,4
-    9278:	f800283a 	ret
-    927c:	00800074 	movhi	r2,1
-    9280:	10a54b04 	addi	r2,r2,-27348
+    9254:	dfc00017 	ldw	ra,0(sp)
+    9258:	dec00104 	addi	sp,sp,4
+    925c:	f800283a 	ret
+    9260:	00800074 	movhi	r2,1
+    9264:	10a53304 	addi	r2,r2,-27444
       }
     }
   }
   while (block);
 
   ALT_ERRNO = EWOULDBLOCK;
-    9284:	00c002c4 	movi	r3,11
-    9288:	10c00015 	stw	r3,0(r2)
+    9268:	00c002c4 	movi	r3,11
+    926c:	10c00015 	stw	r3,0(r2)
  
   return 0;
-    928c:	0005883a 	mov	r2,zero
+    9270:	0005883a 	mov	r2,zero
 }
-    9290:	f800283a 	ret
+    9274:	f800283a 	ret
 
-00009294 <altera_avalon_uart_write>:
+00009278 <altera_avalon_uart_write>:
  */
 
 int 
 altera_avalon_uart_write(altera_avalon_uart_state* sp, const char* ptr, int len,
   int flags)
 {
-    9294:	defffd04 	addi	sp,sp,-12
-    9298:	dc400115 	stw	r17,4(sp)
-    929c:	dc000015 	stw	r16,0(sp)
-    92a0:	dfc00215 	stw	ra,8(sp)
-    92a4:	3023883a 	mov	r17,r6
+    9278:	defffd04 	addi	sp,sp,-12
+    927c:	dc400115 	stw	r17,4(sp)
+    9280:	dc000015 	stw	r16,0(sp)
+    9284:	dfc00215 	stw	ra,8(sp)
+    9288:	3023883a 	mov	r17,r6
   int block;
   unsigned int status;
   int count;
 
   block = !(flags & O_NONBLOCK);
-    92a8:	39d0000c 	andi	r7,r7,16384
+    928c:	39d0000c 	andi	r7,r7,16384
   count = len;
-    92ac:	3021883a 	mov	r16,r6
+    9290:	3021883a 	mov	r16,r6
 
   do
   {
     status = IORD_ALTERA_AVALON_UART_STATUS(sp->base);
-    92b0:	20800017 	ldw	r2,0(r4)
-    92b4:	10c00237 	ldwio	r3,8(r2)
+    9294:	20800017 	ldw	r2,0(r4)
+    9298:	10c00237 	ldwio	r3,8(r2)
    
     if (status & ALTERA_AVALON_UART_STATUS_TRDY_MSK)
-    92b8:	18c0100c 	andi	r3,r3,64
-    92bc:	18000526 	beq	r3,zero,92d4 <altera_avalon_uart_write+0x40>
+    929c:	18c0100c 	andi	r3,r3,64
+    92a0:	18000526 	beq	r3,zero,92b8 <altera_avalon_uart_write+0x40>
     {
       IOWR_ALTERA_AVALON_UART_TXDATA(sp->base, *ptr++);
-    92c0:	28c00044 	addi	r3,r5,1
-    92c4:	29400007 	ldb	r5,0(r5)
-    92c8:	11400135 	stwio	r5,4(r2)
+    92a4:	28c00044 	addi	r3,r5,1
+    92a8:	29400007 	ldb	r5,0(r5)
+    92ac:	11400135 	stwio	r5,4(r2)
       count--;
-    92cc:	843fffc4 	addi	r16,r16,-1
+    92b0:	843fffc4 	addi	r16,r16,-1
   {
     status = IORD_ALTERA_AVALON_UART_STATUS(sp->base);
    
     if (status & ALTERA_AVALON_UART_STATUS_TRDY_MSK)
     {
       IOWR_ALTERA_AVALON_UART_TXDATA(sp->base, *ptr++);
-    92d0:	180b883a 	mov	r5,r3
+    92b4:	180b883a 	mov	r5,r3
       count--;
     }
   }
   while (block && count);
-    92d4:	3800021e 	bne	r7,zero,92e0 <altera_avalon_uart_write+0x4c>
-    92d8:	803ff51e 	bne	r16,zero,92b0 <_gp+0xffff7e30>
-    92dc:	00000b06 	br	930c <altera_avalon_uart_write+0x78>
+    92b8:	3800021e 	bne	r7,zero,92c4 <altera_avalon_uart_write+0x4c>
+    92bc:	803ff51e 	bne	r16,zero,9294 <_gp+0xffff7e74>
+    92c0:	00000b06 	br	92f0 <altera_avalon_uart_write+0x78>
 
   if (count)
-    92e0:	80000a26 	beq	r16,zero,930c <altera_avalon_uart_write+0x78>
-    92e4:	00800074 	movhi	r2,1
-    92e8:	10a52804 	addi	r2,r2,-27488
-    92ec:	10800017 	ldw	r2,0(r2)
-    92f0:	10000226 	beq	r2,zero,92fc <altera_avalon_uart_write+0x68>
-    92f4:	103ee83a 	callr	r2
-    92f8:	00000206 	br	9304 <altera_avalon_uart_write+0x70>
-    92fc:	00800074 	movhi	r2,1
-    9300:	10a54b04 	addi	r2,r2,-27348
+    92c4:	80000a26 	beq	r16,zero,92f0 <altera_avalon_uart_write+0x78>
+    92c8:	00800074 	movhi	r2,1
+    92cc:	10a51004 	addi	r2,r2,-27584
+    92d0:	10800017 	ldw	r2,0(r2)
+    92d4:	10000226 	beq	r2,zero,92e0 <altera_avalon_uart_write+0x68>
+    92d8:	103ee83a 	callr	r2
+    92dc:	00000206 	br	92e8 <altera_avalon_uart_write+0x70>
+    92e0:	00800074 	movhi	r2,1
+    92e4:	10a53304 	addi	r2,r2,-27444
   {
     ALT_ERRNO = EWOULDBLOCK;
-    9304:	00c002c4 	movi	r3,11
-    9308:	10c00015 	stw	r3,0(r2)
+    92e8:	00c002c4 	movi	r3,11
+    92ec:	10c00015 	stw	r3,0(r2)
   }
 
   return (len - count);
 }
-    930c:	8c05c83a 	sub	r2,r17,r16
-    9310:	dfc00217 	ldw	ra,8(sp)
-    9314:	dc400117 	ldw	r17,4(sp)
-    9318:	dc000017 	ldw	r16,0(sp)
-    931c:	dec00304 	addi	sp,sp,12
-    9320:	f800283a 	ret
+    92f0:	8c05c83a 	sub	r2,r17,r16
+    92f4:	dfc00217 	ldw	ra,8(sp)
+    92f8:	dc400117 	ldw	r17,4(sp)
+    92fc:	dc000017 	ldw	r16,0(sp)
+    9300:	dec00304 	addi	sp,sp,12
+    9304:	f800283a 	ret
 
-00009324 <alt_dcache_flush_all>:
+00009308 <alt_dcache_flush_all>:
 /*
  * alt_dcache_flush_all() is called to flush the entire data cache.
  */
 
 void alt_dcache_flush_all (void)
 {
-    9324:	f800283a 	ret
+    9308:	f800283a 	ret
 
-00009328 <alt_dev_null_write>:
+0000930c <alt_dev_null_write>:
  */
 
 static int alt_dev_null_write (alt_fd* fd, const char* ptr, int len)
 {
   return len;
 }
-    9328:	3005883a 	mov	r2,r6
-    932c:	f800283a 	ret
+    930c:	3005883a 	mov	r2,r6
+    9310:	f800283a 	ret
 
-00009330 <alt_icache_flush_all>:
+00009314 <alt_icache_flush_all>:
 /*
  * alt_icache_flush_all() is called to flush the entire instruction cache.
  */
 
 void alt_icache_flush_all (void)
 {
-    9330:	f800283a 	ret
+    9314:	f800283a 	ret
 
-00009334 <altera_nios2_gen2_irq_init>:
+00009318 <altera_nios2_gen2_irq_init>:
  * To initialize the internal interrupt controller, just clear the IENABLE
  * register so that all possible IRQs are disabled.
  */
 void altera_nios2_gen2_irq_init(void) 
 {
     NIOS2_WRITE_IENABLE(0);
-    9334:	000170fa 	wrctl	ienable,zero
-    9338:	f800283a 	ret
+    9318:	000170fa 	wrctl	ienable,zero
+    931c:	f800283a 	ret
 
-0000933c <strlen>:
-    933c:	2005883a 	mov	r2,r4
-    9340:	10c00007 	ldb	r3,0(r2)
-    9344:	18000226 	beq	r3,zero,9350 <strlen+0x14>
-    9348:	10800044 	addi	r2,r2,1
-    934c:	003ffc06 	br	9340 <_gp+0xffff7ec0>
-    9350:	1105c83a 	sub	r2,r2,r4
-    9354:	f800283a 	ret
+00009320 <strlen>:
+    9320:	2005883a 	mov	r2,r4
+    9324:	10c00007 	ldb	r3,0(r2)
+    9328:	18000226 	beq	r3,zero,9334 <strlen+0x14>
+    932c:	10800044 	addi	r2,r2,1
+    9330:	003ffc06 	br	9324 <_gp+0xffff7f04>
+    9334:	1105c83a 	sub	r2,r2,r4
+    9338:	f800283a 	ret

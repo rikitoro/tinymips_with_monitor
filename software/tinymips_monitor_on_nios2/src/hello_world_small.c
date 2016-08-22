@@ -111,11 +111,12 @@ int main()
 { 
   char r_msg[600];
 
-  alt_putstr("Hello, This is Tiny MIPS monitor!\r\n");
+  //alt_putstr("Hello, This is Tiny MIPS monitor!\r\n");
   while (1) {
-    alt_printf("input command with hexformat\r\n");
+    //alt_printf("input command with hexformat\r\n");
+    tx_str(EOF);
     rx_str(r_msg);
-    alt_printf("\r\n");
+    //alt_printf("\r\n");
 
     switch (monitor_command(r_msg)) {
       case MONITOR_COMMAND_ASRS:  // assert reset
