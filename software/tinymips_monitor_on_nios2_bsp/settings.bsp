@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2016/08/09 16:45:22</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1470728722461</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2016/08/22 14:12:37</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1471842757914</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>D:\yoshiaki\devel\quartus_workspace\tinymips_with_monitor\software\tinymips_monitor_on_nios2_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\monitor.sopcinfo</SopcDesignFile>
@@ -1014,8 +1014,8 @@
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>onchip_memory</slaveDescriptor>
-                <addressRange>0x00008000 - 0x0000FFFF</addressRange>
-                <addressSpan>32768</addressSpan>
+                <addressRange>0x00008000 - 0x00009FFF</addressRange>
+                <addressSpan>8192</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <LinkerSection>

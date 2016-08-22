@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_processor' in SOPC Builder design 'monitor'
  * SOPC Builder design path: ../../monitor.sopcinfo
  *
- * Generated: Tue Aug 09 16:41:22 JST 2016
+ * Generated: Mon Aug 22 14:12:40 JST 2016
  */
 
 /*
@@ -526,8 +526,8 @@
 #define ONCHIP_MEMORY_READ_DURING_WRITE_MODE "DONT_CARE"
 #define ONCHIP_MEMORY_SINGLE_CLOCK_OP 0
 #define ONCHIP_MEMORY_SIZE_MULTIPLE 1
-#define ONCHIP_MEMORY_SIZE_VALUE 32768
-#define ONCHIP_MEMORY_SPAN 32768
+#define ONCHIP_MEMORY_SIZE_VALUE 8192
+#define ONCHIP_MEMORY_SPAN 8192
 #define ONCHIP_MEMORY_TYPE "altera_avalon_onchip_memory2"
 #define ONCHIP_MEMORY_WRITABLE 1
 
@@ -625,7 +625,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1470726454
+#define SYSID_QSYS_0_TIMESTAMP 1471841518
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 

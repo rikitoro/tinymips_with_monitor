@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Tue Aug 09 16:10:36 2016
+Analysis & Synthesis Status : Successful - Mon Aug 22 15:39:37 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 Revision Name : top
 Top-level Entity Name : top
@@ -7,7 +7,7 @@ Logic utilization (in ALMs) : N/A
 Total registers : 2813
 Total pins : 89
 Total virtual pins : 0
-Total block memory bits : 404,480
+Total block memory bits : 207,872
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
