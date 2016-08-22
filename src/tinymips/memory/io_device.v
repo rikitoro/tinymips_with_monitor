@@ -1,5 +1,27 @@
 `default_nettype none
 
+module io_device(
+  input wire          clk,
+  input wire          we,
+  input wire  [31:0]  wd,
+  output wire [31:0]  rd,
+  //
+  input wire  [31:0]  iport,
+  output wire [31:0]  oport
+  );
+
+  flopwe #(32) oport_register(
+    .clk  (clk),
+    .we   (we),
+    .d    (wd),
+    .q    (oport)
+    );
+  
+  assign rd = iport;
+  
+endmodule
+  
+
 module input_device(
   input wire          clk,  // not effective
   input wire          we,   // not effective
