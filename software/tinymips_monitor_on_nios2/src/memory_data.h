@@ -36,6 +36,8 @@ void read_oport_data_for_memory_data(MemoryData* md);
 void convert_hexformat_to_memory_data(const char* hf, MemoryData* md);
 void convert_memory_data_to_hexformat(const MemoryData* md, char* hf);
 
+void convert_shorthexformat_to_memory_data(const char* hf, MemoryData* md);
+
 //
 char checksum_of_memory_data(const MemoryData* md);
 

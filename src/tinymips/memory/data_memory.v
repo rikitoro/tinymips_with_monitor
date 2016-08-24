@@ -77,7 +77,7 @@ module data_memory(
   dualport_ram data_ram(
     // data ram
     .clock_a    (clk),
-    .wren_a     (we),
+    .wren_a     (dataram_we),
     .address_a  (addr[12:2]),
     .data_a     (wd),
     .q_a        (dataram_rd),

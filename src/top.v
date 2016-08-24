@@ -10,8 +10,7 @@ module top(
   input wire        clk_src,
   input wire        rst_n,
   // mips <->
-  input wire        dbg_sw,
-  input wire  [4:0] dbg_ra,
+  input wire  [5:0] dbg_addr,
   input wire        hl_sw,
   output wire [6:0] dbg_hex3,
   output wire [6:0] dbg_hex2,
@@ -90,7 +89,7 @@ module top(
   wire  [31:0]  dbg_rd;
   
   //
-  wire  [31:0]  display_data;
+  wire  [31:0]  dbg_data;
   
 
 
@@ -124,7 +123,7 @@ module top(
     .aluout(dmem_addr),
     .writedata(dmem_wd),
     .readdata(dmem_rd),
-    .dbg_ra(dbg_ra),
+    .dbg_ra(dbg_addr[4:0]),
     .dbg_rd(dbg_rd));
 
   // *** instruction memory *** //
@@ -168,8 +167,8 @@ module top(
     );
 
   
-  // *** monitor on niosII *** //
-  monitor monitor (
+  // *** monitor server on niosII *** //
+  monitor monitor_server (
     .clk_clk                (nonitor_clk),      //             clk.clk
     .reset_reset_n          (nonitor_rst_n),    //           reset.reset_n
     //
@@ -210,13 +209,13 @@ module top(
   
   // word display
   
-  assign display_data = (dbg_sw == 1'b0)    ? dbg_rd    :
-                        (dbg_ra[4] == 1'b0) ? ioport_rd :
-                                              imem_addr ;
+  assign dbg_data = (dbg_addr[5] == 1'b0) ? dbg_rd    : // 0xxxxx
+                    (dbg_addr[4] == 1'b0) ? imem_addr : // 10xxxx
+                                            ioport_rd ; // 11xxxx
 
   // ioport_rd
   mux8 # (32) ioport_rd_mux(
-    .s(dbg_ra[2:0]),
+    .s(dbg_addr[2:0]),
     .d0(oport0),
     .d1(oport1),
     .d2(oport2),
@@ -230,7 +229,7 @@ module top(
   
   // dbg_rd
   worddata_display display(
-  .word(display_data),
+  .word(dbg_data),
   .hl_sw(hl_sw),
   .hex3(dbg_hex3),
   .hex2(dbg_hex2),

@@ -12,7 +12,7 @@ module address_decoder(
   
   /// addr : 00000000_00000000_00Mxxxxx_xxxxPP00
   assign rd_sel = addr[13];         // bit M in addr (M = 0: ram, M = 1: ioport)
-  assign ioport_rd_sel = addr[4:2]; // 3-bit PPP in addr
+  assign ioport_rd_sel = addr[3:2]; // 3-bit PPP in addr
   
   always @ (*) begin
     casex ({we, addr})

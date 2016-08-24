@@ -61,12 +61,6 @@ set_location_assignment PIN_P14 -to clk2
 set_location_assignment PIN_C1 -to clk3
 set_location_assignment PIN_H13 -to clk_src
 set_location_assignment PIN_M6 -to hl_sw
-set_location_assignment PIN_AB12 -to dbg_sw
-set_location_assignment PIN_AA15 -to dbg_ra[0]
-set_location_assignment PIN_AB15 -to dbg_ra[1]
-set_location_assignment PIN_AA14 -to dbg_ra[2]
-set_location_assignment PIN_AA13 -to dbg_ra[3]
-set_location_assignment PIN_AB13 -to dbg_ra[4]
 set_location_assignment PIN_U21 -to dbg_hex0[0]
 set_location_assignment PIN_V21 -to dbg_hex0[1]
 set_location_assignment PIN_W22 -to dbg_hex0[2]
@@ -96,8 +90,8 @@ set_location_assignment PIN_U17 -to dbg_hex3[4]
 set_location_assignment PIN_V18 -to dbg_hex3[5]
 set_location_assignment PIN_V19 -to dbg_hex3[6]
 set_location_assignment PIN_M9 -to nonitor_clk
-set_location_assignment PIN_U7 -to nonitor_rst_n
-set_location_assignment PIN_W9 -to rst_n
+set_location_assignment PIN_P22 -to nonitor_rst_n
+set_location_assignment PIN_U7 -to rst_n
 set_location_assignment PIN_T20 -to uart_rxd
 set_location_assignment PIN_T18 -to uart_txd
 set_location_assignment PIN_A13 -to iport1_gpio[7]
@@ -181,4 +175,10 @@ set_global_assignment -name VERILOG_FILE src/de0interface/worddata_display.v
 set_global_assignment -name QSYS_FILE src/monitor_qsys/monitor.qsys
 set_global_assignment -name QIP_FILE src/tinymips/memory/dualport_ram.qip
 set_global_assignment -name VERILOG_FILE src/tinymips/general/mux4.v
+set_location_assignment PIN_AB12 -to dbg_addr[5]
+set_location_assignment PIN_AB13 -to dbg_addr[4]
+set_location_assignment PIN_AA13 -to dbg_addr[3]
+set_location_assignment PIN_AA14 -to dbg_addr[2]
+set_location_assignment PIN_AB15 -to dbg_addr[1]
+set_location_assignment PIN_AA15 -to dbg_addr[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

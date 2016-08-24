@@ -137,3 +137,14 @@ void convert_memory_data_to_hexformat(const MemoryData* md, char* hf) {
   hf[9 + 2 * md->bytecount + 3] = '\n';
   hf[9 + 2 * md->bytecount + 4] = '\0';
 }
+
+void convert_shorthexformat_to_memory_data(const char* hf, MemoryData* md) {
+  int i;
+
+  md->bytecount  = bytecount_of_hexformat(hf);
+  md->address    = address_of_hexformat(hf);
+  md->recordtype = DATA_TYPE;
+  for (i = 0; i < md->bytecount / 4; ++i) {
+    md->data[i] = 0;
+  }
+}

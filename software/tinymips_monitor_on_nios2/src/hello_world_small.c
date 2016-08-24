@@ -92,16 +92,16 @@
 const char* EOF = ":00000001FF\r\n";
 
 ///
-void do_ASRS();
-void do_NGRS();
-void do_ASPM();
-void do_NGPM();
-void do_RDIM(const char* hf);
-void do_WRIM(const char* hf);
-void do_RDDM(const char* hf);
-void do_WRDM(const char* hf);
-void do_STIP(const char* hf);
-void do_GTOP(const char* hf);
+void do_AR();
+void do_NR();
+void do_AP();
+void do_NP();
+void do_RI(const char* hf);
+void do_WI(const char* hf);
+void do_RD(const char* hf);
+void do_WD(const char* hf);
+void do_IP(const char* hf);
+void do_OP(const char* hf);
 
 ///
 void pp_memory_data(const MemoryData* md);
@@ -111,34 +111,32 @@ int main()
 { 
   char r_msg[600];
 
-  //alt_putstr("Hello, This is Tiny MIPS monitor!\r\n");
+  tx_str(EOF);
+
   while (1) {
-    //alt_printf("input command with hexformat\r\n");
-    tx_str(EOF);
     rx_str(r_msg);
-    //alt_printf("\r\n");
 
     switch (monitor_command(r_msg)) {
-      case MONITOR_COMMAND_ASRS:  // assert reset
-        do_ASRS();          break;
-      case MONITOR_COMMAND_NGRS:  // negate reset
-        do_NGRS();          break;
-      case MONITOR_COMMAND_ASPM:  // assert programming mode
-        do_ASPM();          break;
-      case MONITOR_COMMAND_NGPM:  // negate programming mode
-        do_NGPM();          break;
-      case MONITOR_COMMAND_RDIM:  // read instruction memory
-        do_RDIM(&r_msg[4]); break;
-      case MONITOR_COMMAND_WRIM:  // write instruction memory
-        do_WRIM(&r_msg[4]); break;
-      case MONITOR_COMMAND_RDDM:  // read data memory
-        do_RDDM(&r_msg[4]); break;
-      case MONITOR_COMMAND_WRDM:  // write data memory
-        do_WRDM(&r_msg[4]); break;
-      case MONITOR_COMMAND_STIP:  // set iport data
-        do_STIP(&r_msg[4]); break;
-      case MONITOR_COMMAND_GTOP:  // get oport data
-        do_GTOP(&r_msg[4]); break;
+      case MONITOR_COMMAND_AR:  // assert reset
+        do_AR();          break;
+      case MONITOR_COMMAND_NR:  // negate reset
+        do_NR();          break;
+      case MONITOR_COMMAND_AP:  // assert programming mode
+        do_AP();          break;
+      case MONITOR_COMMAND_NP:  // negate programming mode
+        do_NP();          break;
+      case MONITOR_COMMAND_RI:  // read instruction memory
+        do_RI(&r_msg[2]); break;
+      case MONITOR_COMMAND_WI:  // write instruction memory
+        do_WI(&r_msg[2]); break;
+      case MONITOR_COMMAND_RD:  // read data memory
+        do_RD(&r_msg[2]); break;
+      case MONITOR_COMMAND_WD:  // write data memory
+        do_WD(&r_msg[2]); break;
+      case MONITOR_COMMAND_IP:  // set iport data
+        do_IP(&r_msg[2]); break;
+      case MONITOR_COMMAND_OP:  // get oport data
+        do_OP(&r_msg[2]); break;
       default:
         break;
     }
@@ -147,75 +145,73 @@ int main()
 
 ///////////////////
 
-void do_ASRS() {
+void do_AR() {
   assert_rst();
-  tx_str(":00000001FF\r\n");
+  tx_str(EOF);
 }
 
-void do_NGRS() {
+void do_NR() {
   negate_rst();
-  tx_str(":00000001FF\r\n");
+  tx_str(EOF);
 }
 
-void do_ASPM() {
+void do_AP() {
   assert_prg_mode();
-  tx_str(":00000001FF\r\n");
+  tx_str(EOF);
 }
 
-void do_NGPM() {
+void do_NP() {
   negate_prg_mode();
-  tx_str(":00000001FF\r\n");
+  tx_str(EOF);
 }
 
-void do_RDIM(const char* hf) {
+void do_RI(const char* hf) {
   MemoryData md;
   char s_msg[522];
 
-  convert_hexformat_to_memory_data(hf, &md);
+  convert_shorthexformat_to_memory_data(hf, &md);
   read_imem_for_memory_data(&md);
   convert_memory_data_to_hexformat(&md, s_msg);
   tx_str(s_msg);
-  //pp_memory_data(&md0);
 }
 
-void do_WRIM(const char* hf) {
+void do_WI(const char* hf) {
   MemoryData md;
 
   convert_hexformat_to_memory_data(hf, &md);
   write_memory_data_to_imem(&md);
-  tx_str(":00000001FF\r\n");
+  tx_str(EOF);
 }
 
-void do_RDDM(const char* hf) {
+void do_RD(const char* hf) {
   MemoryData md;
   char s_msg[522];
 
-  convert_hexformat_to_memory_data(hf, &md);
+  convert_shorthexformat_to_memory_data(hf, &md);
   read_dmem_for_memory_data(&md);
   convert_memory_data_to_hexformat(&md, s_msg);
   tx_str(s_msg);
-  //pp_memory_data(&md0);
 }
 
-void do_WRDM(const char* hf) {
+void do_WD(const char* hf) {
   MemoryData md;
 
   convert_hexformat_to_memory_data(hf, &md);
   write_memory_data_to_dmem(&md);
-  tx_str(":00000001FF\r\n");
+  tx_str(EOF);
 }
 
-void do_STIP(const char* hf) {
+void do_IP(const char* hf) {
   MemoryData md;
   convert_hexformat_to_memory_data(hf, &md);
   write_memory_data_to_iport_data(&md);
-  tx_str(":00000001FF\r\n");
+  tx_str(EOF);
 }
 
-void do_GTOP(const char* hf) {
+void do_OP(const char* hf) {
   MemoryData md;
   char s_msg[522];
-  convert_hexformat_to_memory_data(hf, &md);
+  convert_shorthexformat_to_memory_data(hf, &md);
   read_oport_data_for_memory_data(&md);
   convert_memory_data_to_hexformat(&md, s_msg);
   tx_str(s_msg);
