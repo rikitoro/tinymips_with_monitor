@@ -102,6 +102,7 @@ void do_RD(const char* hf);
 void do_WD(const char* hf);
 void do_IP(const char* hf);
 void do_OP(const char* hf);
+void do_Nothing();
 
 ///
 void pp_memory_data(const MemoryData* md);
@@ -138,6 +139,7 @@ int main()
       case MONITOR_COMMAND_OP:  // get oport data
         do_OP(&r_msg[2]); break;
       default:
+        do_Nothing(); break;
         break;
     }
   }
@@ -217,6 +219,9 @@ void do_OP(const char* hf) {
   tx_str(s_msg);
 }
 
+void do_Nothing() {
+  tx_str(EOF);
+}
 //////////////////
 
 void pp_memory_data(const MemoryData* md) {
@@ -229,3 +234,4 @@ void pp_memory_data(const MemoryData* md) {
     alt_printf("%x : %x\r\n", md->address + i * 4, md->data[i]);
   }
 }
+
